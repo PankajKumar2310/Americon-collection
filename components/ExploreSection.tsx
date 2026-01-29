@@ -12,9 +12,11 @@ interface ExploreSectionProps {
 }
 
 const ExploreSection = ({ title, children, imageUrl, reverse = false }: ExploreSectionProps) => {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
+    if (!sectionRef.current) return;
+    
     const ctx = gsap.context(() => {
       const imageEl = sectionRef.current.querySelector(".explore-image");
       const textEls = sectionRef.current.querySelectorAll(".explore-text");
