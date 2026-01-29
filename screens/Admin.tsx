@@ -36,7 +36,7 @@ type Blog = {
 };
 
 async function fetchBlogs(): Promise<{ blogs: Blog[] }> {
-  const res = await fetch("/api/blogs", { cache: "no-store" });
+  const res = await fetch("https://americon-collection-781m.vercel.app/api/blogs", { cache: "no-store" });
   if (!res.ok) throw new Error("Failed to load blogs");
   return res.json();
 }
@@ -77,7 +77,7 @@ export default function Admin() {
     setSaving(true);
 
     try {
-      const res = await fetch("/api/blogs", {
+      const res = await fetch("https://americon-collection-781m.vercel.app/api/blogs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

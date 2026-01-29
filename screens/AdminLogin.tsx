@@ -34,7 +34,7 @@ export default function AdminLogin() {
 
   useEffect(() => {
     const check = async () => {
-      const res = await fetch("/api/admin/me", { cache: "no-store" });
+      const res = await fetch("https://americon-collection-781m.vercel.app/api/admin/me", { cache: "no-store" });
       if (res.ok) router.replace("/admin");
     };
     check();
@@ -45,7 +45,7 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/admin/login", {
+      const res = await fetch("https://americon-collection-781m.vercel.app/api/admin/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
