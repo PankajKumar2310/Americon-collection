@@ -3,7 +3,15 @@ import { Translations } from "./types";
 const zhHant: Translations = {
   languageCode: "zh-Hant",
   languageName: "繁體中文",
-  nav: { home: "首頁", listings: "住宿", gallery: "畫廊", worldCup: "KCWC26", about: "關於我們", contact: "聯繫" },
+  nav: { 
+    home: "首頁", 
+    listings: "住宿", 
+    gallery: "畫廊", 
+    worldCup: "KCWC26", 
+    about: "關於我們", 
+    contact: "聯繫",
+    blogs: "部落格",
+  },
   footer: {
     collectionSectionLabel: "系列",
     exploreSectionLabel: "探索",

@@ -10,6 +10,7 @@ const ko: Translations = {
     worldCup: "KCWC26",
     about: "소개",
     contact: "문의",
+    blogs: "블로그",
   },
   footer: {
     collectionSectionLabel: "컬렉션",

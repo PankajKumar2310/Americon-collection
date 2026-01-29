@@ -5,11 +5,12 @@ const ru: Translations = {
   languageName: "Русский",
   nav: {
     home: "Главная",
-    listings: "Размещение",
+    listings: "Объекты",
     gallery: "Галерея",
     worldCup: "KCWC26",
     about: "О нас",
     contact: "Контакты",
+    blogs: "Блог",
   },
   footer: {
     collectionSectionLabel: "Коллекция",

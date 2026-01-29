@@ -3,7 +3,15 @@ import { Translations } from "./types";
 const sv: Translations = {
   languageCode: "sv",
   languageName: "Svenska",
-  nav: { home: "Hem", listings: "Boenden", gallery: "Galleri", worldCup: "KCWC26", about: "Om oss", contact: "Kontakt" },
+  nav: {
+    home: "Hem",
+    listings: "Boenden",
+    gallery: "Galleri",
+    worldCup: "KCWC26",
+    about: "Om oss",
+    contact: "Kontakt",
+    blogs: "Blogg",
+  },
   footer: {
     collectionSectionLabel: "Kollektion",
     exploreSectionLabel: "Utforska",

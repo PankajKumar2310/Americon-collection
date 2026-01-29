@@ -20,7 +20,8 @@ export type NavKey =
   | "gallery"
   | "worldCup"
   | "about"
-  | "contact";
+  | "contact"
+  | "blogs";
 
 export type Translations = {
   languageCode: LanguageCode;

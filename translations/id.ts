@@ -10,6 +10,7 @@ const id: Translations = {
     worldCup: "KCWC26",
     about: "Tentang Kami",
     contact: "Kontak",
+    blogs: "Blogs",
   },
   footer: {
     collectionSectionLabel: "Koleksi",

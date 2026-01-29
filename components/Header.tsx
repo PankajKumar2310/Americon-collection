@@ -40,6 +40,7 @@ const Header = () => {
     { to: "/world-cup", key: "worldCup" as const },
     { to: "/about", key: "about" as const },
     { to: "/contact", key: "contact" as const },
+    { to: "/blogs", key: "blogs" as const },
   ];
 
   return (

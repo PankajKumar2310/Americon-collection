@@ -28,7 +28,7 @@ const Footer = () => {
   ];
 
   const FooterLabel = ({ children }: { children: React.ReactNode }) => (
-    <h4 className="font-sans text-xs uppercase tracking-wider text-muted-foreground/80 mb-4">
+    <h4 className="font-sans text-[10px] md:text-xs uppercase tracking-wider text-muted-foreground/80 mb-2 md:mb-4">
       {children}
     </h4>
   );
@@ -38,14 +38,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Constrain the grid width and center it for better balance */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-left">
+          <div className="grid grid-cols-3 gap-4 md:gap-8 text-left">
 
             {/* Column 1: The Collection */}
             <div>
               <FooterLabel>{translations.footer.collectionSectionLabel}</FooterLabel>
-              <nav className="flex flex-col space-y-3">
+              <nav className="flex flex-col space-y-2 md:space-y-3">
                 {collectionLinks.map(link => (
-                  <Link key={link.to} to={link.to} className="font-sans text-base text-muted-foreground hover:text-foreground transition-colors duration-300">
+                  <Link key={link.to} to={link.to} className="font-sans text-sm md:text-base text-muted-foreground hover:text-foreground transition-colors duration-300">
                     {link.label}
                   </Link>
                 ))}
@@ -55,9 +55,9 @@ const Footer = () => {
             {/* Column 2: Explore & Pages */}
             <div>
               <FooterLabel>{translations.footer.exploreSectionLabel}</FooterLabel>
-              <nav className="flex flex-col space-y-3">
+              <nav className="flex flex-col space-y-2 md:space-y-3">
                 {exploreLinks.map(link => (
-                  <Link key={link.to} to={link.to} className="font-sans font-light text-base text-muted-foreground hover:text-foreground transition-colors duration-300">
+                  <Link key={link.to} to={link.to} className="font-sans font-light text-sm md:text-base text-muted-foreground hover:text-foreground transition-colors duration-300">
                     {link.label}
                   </Link>
                 ))}
@@ -67,13 +67,13 @@ const Footer = () => {
             {/* Column 3: Information */}
             <div>
               <FooterLabel>{translations.footer.informationSectionLabel}</FooterLabel>
-              <div className="flex flex-col space-y-3">
+              <div className="flex flex-col space-y-2 md:space-y-3">
                 {infoLinks.map(link => (
-                  <Link key={link.to} to={link.to} className="font-sans text-sm text-muted-foreground/90 hover:text-foreground transition-colors duration-300">
+                  <Link key={link.to} to={link.to} className="font-sans text-xs md:text-sm text-muted-foreground/90 hover:text-foreground transition-colors duration-300">
                     {link.label}
                   </Link>
                 ))}
-                <p className="font-sans text-sm text-muted-foreground/70 pt-2">
+                <p className="font-sans text-xs md:text-sm text-muted-foreground/70 pt-2">
                   {translations.footer.worldCupTagline}
                 </p>
               </div>

@@ -5,11 +5,12 @@ const pl: Translations = {
   languageName: "Polski",
   nav: {
     home: "Strona główna",
-    listings: "Noclegi",
+    listings: "Oferty",
     gallery: "Galeria",
     worldCup: "KCWC26",
     about: "O nas",
     contact: "Kontakt",
+    blogs: "Blog",
   },
   footer: {
     collectionSectionLabel: "Kolekcja",

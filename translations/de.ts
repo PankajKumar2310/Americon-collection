@@ -10,6 +10,7 @@ const de: Translations = {
     worldCup: "KCWC26",
     about: "Über uns",
     contact: "Kontakt",
+    blogs: "Blogs",
   },
   footer: {
     collectionSectionLabel: "Kollektion",

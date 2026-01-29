@@ -10,6 +10,7 @@ const ja: Translations = {
     worldCup: "KCWC26",
     about: "私たちについて",
     contact: "お問い合わせ",
+    blogs: "ブログ",
   },
   footer: {
     collectionSectionLabel: "コレクション",

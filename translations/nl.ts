@@ -8,8 +8,9 @@ const nl: Translations = {
     listings: "Accommodaties",
     gallery: "Galerij",
     worldCup: "KCWC26",
-    about: "Over ons",
+    about: "Over",
     contact: "Contact",
+    blogs: "Blogs",
   },
   footer: {
     collectionSectionLabel: "Collectie",
