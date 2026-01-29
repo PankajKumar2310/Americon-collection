@@ -2,10 +2,6 @@ import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { cn } from '@/lib/utils';
 
-const Draggable = require('gsap/Draggable');
-
-gsap.registerPlugin(Draggable);
-
 interface DraggableCardProps {
   id: string;
   caption: string;
@@ -23,44 +19,56 @@ const DraggableCard = ({ id, caption, imageUrl, position, rotation, size, zIndex
     const card = cardRef.current;
     if (!card) return;
 
-    // Set initial state
-    gsap.set(card, {
-      top: position.top,
-      left: position.left,
-      width: size.width,
-      height: size.height,
-      rotation: rotation,
-      zIndex: zIndex,
-    });
+    // Dynamically import and register Draggable
+    const initDraggable = async () => {
+      try {
+        const { Draggable } = await import('gsap/Draggable');
+        gsap.registerPlugin(Draggable);
 
-    // Create draggable instance
-    const dragInstance = Draggable.create(card, {
-      type: 'x,y',
-      edgeResistance: 0.85,
-      bounds: 'body',
-      inertia: true,
-      onPress: function() {
-        gsap.to(this.target, { 
-          zIndex: 100,
-          scale: 1.02,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      },
-      onRelease: function() {
-        gsap.to(this.target, { 
+        // Set initial state
+        gsap.set(card, {
+          top: position.top,
+          left: position.left,
+          width: size.width,
+          height: size.height,
+          rotation: rotation,
           zIndex: zIndex,
-          scale: 1,
-          duration: 0.3,
-          ease: 'power2.out'
         });
-      },
-    });
 
-    return () => {
-      // Cleanup draggable instance
-      dragInstance[0].kill();
+        // Create draggable instance
+        const dragInstance = Draggable.create(card, {
+          type: 'x,y',
+          edgeResistance: 0.85,
+          bounds: 'body',
+          inertia: true,
+          onPress: function() {
+            gsap.to(this.target, { 
+              zIndex: 100,
+              scale: 1.02,
+              duration: 0.3,
+              ease: 'power2.out'
+            });
+          },
+          onRelease: function() {
+            gsap.to(this.target, { 
+              zIndex: zIndex,
+              scale: 1,
+              duration: 0.3,
+              ease: 'power2.out'
+            });
+          },
+        });
+
+        return () => {
+          // Cleanup draggable instance
+          dragInstance[0].kill();
+        };
+      } catch (error) {
+        console.error('Failed to load Draggable:', error);
+      }
     };
+
+    initDraggable();
   }, [id, position, rotation, size, zIndex]);
 
   return (
