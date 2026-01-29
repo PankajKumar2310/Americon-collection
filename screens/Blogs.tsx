@@ -72,7 +72,8 @@ export default function Blogs() {
           )}
 
           {blogs.map((blog) => {
-            const preview = blog.content.trim().slice(0, 160);
+            const strippedContent = blog.content.replace(/<[^>]*>/g, "");
+            const preview = strippedContent.trim().slice(0, 160);
             return (
               <Card key={blog.slug} className="overflow-hidden border-white/10 bg-card/60 blogs-anim">
                 <div className="relative aspect-[16/9]">

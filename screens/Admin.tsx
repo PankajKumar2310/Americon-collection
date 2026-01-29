@@ -9,6 +9,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { showError, showSuccess } from "@/utils/toast";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import { Editor } from "primereact/editor";
+
+// Import PrimeReact and Quill styles
+import "primereact/resources/themes/lara-dark-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "quill/dist/quill.snow.css";
 import {
   Dialog,
   DialogContent,
@@ -106,7 +112,7 @@ export default function Admin() {
   };
 
   return (
-    <div ref={pageRef} className="min-h-screen pt-32 md:pt-48 pb-24">
+    <div ref={pageRef} className="min-h-screen pt-32 md:pt-38 pb-24">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center admin-anim">
           <h1 className="text-4xl md:text-5xl font-serif">Admin</h1>
@@ -214,12 +220,14 @@ export default function Admin() {
                 <label className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
                   Paragraph Content
                 </label>
-                <Textarea
-                  value={content}
-                  onChange={(e) => setContent(e.target.value)}
-                  className="min-h-[180px] bg-card border border-white/8 rounded-md p-6 mt-2"
-                  placeholder="Write paragraph(s). Use a blank line to separate paragraphs."
-                />
+                <div className="mt-2 text-editor-container">
+                  <Editor
+                    value={content}
+                    onTextChange={(e) => setContent(e.htmlValue || "")}
+                    style={{ height: "320px" }}
+                    placeholder="Write your blog content here..."
+                  />
+                </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

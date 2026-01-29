@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useMemo, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 
@@ -15,13 +15,6 @@ type Blog = {
 
 export default function BlogDetailClient({ blog }: { blog: Blog }) {
   const pageRef = useRef(null);
-
-  const paragraphs = useMemo(() => {
-    return blog.content
-      .split(/\n\s*\n/)
-      .map((p) => p.trim())
-      .filter(Boolean);
-  }, [blog.content]);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -68,16 +61,10 @@ export default function BlogDetailClient({ blog }: { blog: Blog }) {
           </div>
         </div>
 
-        <div className="mt-10 space-y-6">
-          {paragraphs.map((p, idx) => (
-            <p
-              key={idx}
-              className="text-base md:text-lg text-muted-foreground leading-relaxed blog-detail-anim"
-            >
-              {p}
-            </p>
-          ))}
-        </div>
+        <div
+          className="mt-10 blog-detail-anim prose prose-invert max-w-none text-muted-foreground leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: blog.content }}
+        />
       </div>
     </div>
   );
