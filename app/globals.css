@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 207 48% 10%; /* #0E1A24 Deep Navy */
+    --foreground: 40 56% 94%; /* #F6F2EB Warm Off-White */
+
+    --card: 210 29% 15%; /* #1C2530 Ink Charcoal */
+    --card-foreground: 40 56% 94%;
+
+    --popover: 207 48% 10%;
+    --popover-foreground: 40 56% 94%;
+
+    --primary: 40 56% 94%; /* Button text color */
+    --primary-foreground: 207 48% 10%; /* Button background color */
+
+    --secondary: 210 29% 15%;
+    --secondary-foreground: 40 56% 94%;
+
+    --muted: 210 29% 15%;
+    --muted-foreground: 40 10% 76%; /* #C9C4BB Editorial Gray */
+
+    --accent: 42 35% 54%; /* #B89A5B Muted Gold */
+    --accent-foreground: 40 56% 94%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 56% 94%;
+
+    --border: 0 0% 100%; /* White for use with opacity */
+    --input: 0 0% 100%; /* White for use with opacity */
+    --ring: 42 35% 54%; /* Muted Gold for ring */
+
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: theme('fontFamily.sans');
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
