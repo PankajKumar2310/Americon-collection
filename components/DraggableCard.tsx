@@ -1,6 +1,5 @@
 import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
-import { cn } from '@/lib/utils';
 
 interface DraggableCardProps {
   id: string;
@@ -19,63 +18,49 @@ const DraggableCard = ({ id, caption, imageUrl, position, rotation, size, zIndex
     const card = cardRef.current;
     if (!card) return;
 
-    // Dynamically import and register Draggable
-    const initDraggable = async () => {
-      try {
-        const { Draggable } = await import('gsap/Draggable');
-        gsap.registerPlugin(Draggable);
+    // Set initial state without draggable functionality
+    gsap.set(card, {
+      top: position.top,
+      left: position.left,
+      width: size.width,
+      height: size.height,
+      rotation: rotation,
+      zIndex: zIndex,
+    });
 
-        // Set initial state
-        gsap.set(card, {
-          top: position.top,
-          left: position.left,
-          width: size.width,
-          height: size.height,
-          rotation: rotation,
-          zIndex: zIndex,
-        });
-
-        // Create draggable instance
-        const dragInstance = Draggable.create(card, {
-          type: 'x,y',
-          edgeResistance: 0.85,
-          bounds: 'body',
-          inertia: true,
-          onPress: function() {
-            gsap.to(this.target, { 
-              zIndex: 100,
-              scale: 1.02,
-              duration: 0.3,
-              ease: 'power2.out'
-            });
-          },
-          onRelease: function() {
-            gsap.to(this.target, { 
-              zIndex: zIndex,
-              scale: 1,
-              duration: 0.3,
-              ease: 'power2.out'
-            });
-          },
-        });
-
-        return () => {
-          // Cleanup draggable instance
-          dragInstance[0].kill();
-        };
-      } catch (error) {
-        console.error('Failed to load Draggable:', error);
-      }
+    // Hover effect (safe for build; avoids gsap/Draggable casing/type issues)
+    const handleMouseEnter = () => {
+      gsap.to(card, {
+        zIndex: 100,
+        scale: 1.02,
+        duration: 0.3,
+        ease: 'power2.out',
+      });
     };
 
-    initDraggable();
+    const handleMouseLeave = () => {
+      gsap.to(card, {
+        zIndex: zIndex,
+        scale: 1,
+        duration: 0.3,
+        ease: 'power2.out',
+      });
+    };
+
+    card.addEventListener('mouseenter', handleMouseEnter);
+    card.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      card.removeEventListener('mouseenter', handleMouseEnter);
+      card.removeEventListener('mouseleave', handleMouseLeave);
+    };
   }, [id, position, rotation, size, zIndex]);
 
   return (
     <div
       ref={cardRef}
       id={id}
-      className="absolute cursor-grab active:cursor-grabbing"
+      className="absolute cursor-pointer"
     >
       <div className="relative w-full h-full rounded-lg shadow-2xl shadow-black/40 overflow-hidden">
         <img src={imageUrl} alt={caption} className="w-full h-full object-cover" />
