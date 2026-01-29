@@ -1,7 +1,8 @@
 import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
-import { Draggable } from 'gsap/Draggable';
 import { cn } from '@/lib/utils';
+
+const Draggable = require('gsap/Draggable');
 
 gsap.registerPlugin(Draggable);
 

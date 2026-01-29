@@ -7,10 +7,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const OriginStory = () => {
   const { translations } = useLanguage();
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
+    if (!sectionRef.current) return;
+    
     const ctx = gsap.context(() => {
+      if (!sectionRef.current) return;
       const imageContainer = sectionRef.current.querySelector(".origin-image-container");
       const image = sectionRef.current.querySelector(".origin-image");
       const text = sectionRef.current.querySelector(".origin-text");

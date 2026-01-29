@@ -18,6 +18,7 @@ const ExploreSection = ({ title, children, imageUrl, reverse = false }: ExploreS
     if (!sectionRef.current) return;
     
     const ctx = gsap.context(() => {
+      if (!sectionRef.current) return;
       const imageEl = sectionRef.current.querySelector(".explore-image");
       const textEls = sectionRef.current.querySelectorAll(".explore-text");
 

@@ -7,11 +7,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const BookDirectMessage = () => {
   const { translations } = useLanguage();
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
+    if (!sectionRef.current) return;
+    
     const ctx = gsap.context(() => {
+      if (!sectionRef.current) return;
       const el = sectionRef.current.querySelector(".book-direct-anim");
+      if (!el) return;
       gsap.set(el, { autoAlpha: 0, y: 20 });
 
       ScrollTrigger.create({

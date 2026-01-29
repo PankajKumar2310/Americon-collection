@@ -7,10 +7,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PersonalityStory = () => {
   const { translations } = useLanguage();
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useLayoutEffect(() => {
+    if (!sectionRef.current) return;
+    
     const ctx = gsap.context(() => {
+      if (!sectionRef.current) return;
       const imageEl = sectionRef.current.querySelector(".personality-image");
       const textEls = sectionRef.current.querySelectorAll(".personality-text");
 
