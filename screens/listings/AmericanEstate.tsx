@@ -1,6 +1,9 @@
 import ListingPageLayout from "@/components/ListingPageLayout";
 import AmenityList from "@/components/AmenityList";
+import ImageGalleryModal from "@/components/ImageGalleryModal";
+import { getAmericanEstateImages } from "@/lib/americanEstateImages";
 import { BedDouble, Bath, Users, Wifi, UtensilsCrossed, ParkingCircle, Wind, LandPlot } from "lucide-react";
+import { useState } from "react";
 
 const americanEstateAmenities = [
   { icon: <BedDouble size={28} />, label: "Bedrooms", value: "5" },
@@ -14,11 +17,16 @@ const americanEstateAmenities = [
 ];
 
 const AmericanEstate = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const allImages = getAmericanEstateImages();
+  const previewImages = allImages.slice(0, 4);
+
   return (
     <ListingPageLayout
       title="The American Estate"
       descriptor="Private. Spacious. Elevated in scale and setting."
-      heroImageUrl="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=3270&auto=format&fit=crop"
+      heroImageUrl="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
     >
       <div className="max-w-4xl mx-auto">
         <section className="text-center">
@@ -36,13 +44,35 @@ const AmericanEstate = () => {
         <section className="text-center">
           <h2 className="text-3xl md:text-4xl font-serif">Gallery</h2>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=3270&auto=format&fit=crop" alt="Exterior of The American Estate" className="rounded-lg object-cover aspect-square shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=3270&auto=format&fit=crop" alt="Dining area in The American Estate" className="rounded-lg object-cover aspect-square shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=3270&auto=format&fit=crop" alt="Kitchen in The American Estate" className="rounded-lg object-cover aspect-square shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=3270&auto=format&fit=crop" alt="Master bedroom in The American Estate" className="rounded-lg object-cover aspect-square shadow-lg" />
+            {previewImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`The American Estate - Image ${index + 1}`}
+                className="rounded-lg object-cover aspect-square shadow-lg transition-transform duration-300 hover:scale-105"
+              />
+            ))}
           </div>
+          
+          {allImages.length > 4 && (
+            <div className="mt-8">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-200"
+              >
+                View More Images ({allImages.length - 4} more)
+              </button>
+            </div>
+          )}
         </section>
       </div>
+      
+      <ImageGalleryModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        images={allImages}
+        title="The American Estate"
+      />
     </ListingPageLayout>
   );
 };

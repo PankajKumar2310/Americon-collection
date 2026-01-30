@@ -20,19 +20,19 @@ const Listings = () => {
       title: translations.pages.home?.featuredListings?.yellowHouse?.title || "The Yellow House",
       descriptor: translations.pages.home?.featuredListings?.yellowHouse?.descriptor || "Relaxed. Family-friendly. Inviting.",
       linkTo: "/listings/yellow-house",
-      imageUrl: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=3200&auto=format&fit=crop",
+      imageUrl: "/images/yellowimages/bannerimage.jpg",
     },
     {
       title: translations.pages.home?.featuredListings?.americanEstate?.title || "The American Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Considered.",
       linkTo: "/listings/american-estate",
-      imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=3270&auto=format&fit=crop",
+     imageUrl: "/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp",
     },
     {
       title: translations.pages.home?.featuredListings?.carriageHouse?.title || "The Carriage House",
       descriptor: translations.pages.home?.featuredListings?.carriageHouse?.descriptor || "Independent. Refined. Effortless.",
       linkTo: "/listings/carriage-house",
-      imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=3087&auto=format&fit=crop",
+      imageUrl: "/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp",
     },
   ];
 

@@ -36,7 +36,7 @@ const AboutHero = () => {
         <h1 className="text-5xl md:text-7xl font-serif about-hero-anim">
           {translations.pages.about?.hero?.title || "About American Collection"}
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-foreground/80 about-hero-anim">
+        <p className="mt-4 text-lg max-w-4xl md:text-md text-foreground/80 about-hero-anim">
           {translations.pages.about?.hero?.subtitle || "Kansas City comfort with a personal touch."}
         </p>
       </div>

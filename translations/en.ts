@@ -47,6 +47,17 @@ const en: Translations = {
       description:
         "For booking inquiries, questions, or collaboration ideas, please reach out. We typically respond within 24 hours.",
     },
+    gallery:{
+      title:"Explore the Americon Collection",
+      subtitle :"Step inside our thoughtfully curated residences and experience the comfort, design, and character that define every Americon Collection stay. Our gallery offers a closer look at our short-term homes near Kansas City and Liberty, Missouri, showcasing interiors, exteriors, and the details that make each property unique."
+    },
+    about :{
+        hero:{
+          title :"About Americon Collection",
+          subtitle : "Americon Collection was created with a simple idea in mind — travel should feel calm, personal, and intentional. We offer thoughtfully curated short-term residences near Kansas City and Liberty, Missouri, designed for guests who value comfort, space, and a more meaningful way to stay.",
+        },
+        
+    },
     home: {
       hero: {
         headlineLine1: "Thoughtful Stays.",

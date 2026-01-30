@@ -1,6 +1,9 @@
 import ListingPageLayout from "@/components/ListingPageLayout";
 import AmenityList from "@/components/AmenityList";
+import ImageGalleryModal from "@/components/ImageGalleryModal";
+import { getCarriageHouseImages } from "@/lib/carriageHouseImages";
 import { Bed, Bath, User, Wifi, Tv, UtensilsCrossed, ParkingCircle, KeyRound } from "lucide-react";
+import { useState } from "react";
 
 const carriageHouseAmenities = [
   { icon: <Bed size={28} />, label: "Bedroom", value: "1" },
@@ -14,11 +17,16 @@ const carriageHouseAmenities = [
 ];
 
 const CarriageHouse = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  const allImages = getCarriageHouseImages();
+  const previewImages = allImages.slice(0, 4);
+
   return (
     <ListingPageLayout
       title="The Carriage House"
       descriptor="Refined. Self-contained. Calm by design."
-      heroImageUrl="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=3087&auto=format&fit=crop"
+      heroImageUrl="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
     >
       <div className="max-w-4xl mx-auto">
         <section className="text-center">
@@ -36,13 +44,35 @@ const CarriageHouse = () => {
         <section className="text-center">
           <h2 className="text-3xl md:text-4xl font-serif">Gallery</h2>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=3270&auto=format&fit=crop" alt="Living area of The Carriage House" className="rounded-lg object-cover aspect-square shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=3270&auto=format&fit=crop" alt="Bedroom in The Carriage House" className="rounded-lg object-cover aspect-square shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1575517111478-7f6afd0973db?q=80&w=3270&auto=format&fit=crop" alt="Exterior view of The Carriage House" className="rounded-lg object-cover aspect-square shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1617104679095-040635393fac?q=80&w=3270&auto=format&fit=crop" alt="Kitchenette detail in The Carriage House" className="rounded-lg object-cover aspect-square shadow-lg" />
+            {previewImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`The Carriage House - Image ${index + 1}`}
+                className="rounded-lg object-cover aspect-square shadow-lg transition-transform duration-300 hover:scale-105"
+              />
+            ))}
           </div>
+          
+          {allImages.length > 4 && (
+            <div className="mt-8">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="inline-flex items-center justify-center rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-200"
+              >
+                View More Images ({allImages.length - 4} more)
+              </button>
+            </div>
+          )}
         </section>
       </div>
+      
+      <ImageGalleryModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        images={allImages}
+        title="The Carriage House"
+      />
     </ListingPageLayout>
   );
 };

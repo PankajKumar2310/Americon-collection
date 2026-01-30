@@ -71,6 +71,8 @@ const Header = () => {
               {translations.nav[link.key]}
             </NavLink>
           ))}
+          {/* Language Dropdown - Commented Out */}
+          {/*
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <button className="flex items-center gap-2 text-muted-foreground hover:text-foreground focus:outline-none">
@@ -93,6 +95,7 @@ const Header = () => {
               </DropdownMenuRadioGroup>
             </DropdownMenuContent>
           </DropdownMenu>
+          */}
         </nav>
 
         <div className="md:hidden">
@@ -119,6 +122,8 @@ const Header = () => {
                       </Link>
                     </SheetClose>
                   ))}
+                  {/* Language Dropdown - Commented Out */}
+                  {/*
                   <div className="pt-4">
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
@@ -143,6 +148,7 @@ const Header = () => {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
+                  */}
                 </nav>
                 <div className="mt-auto">
                   <SheetClose asChild>
