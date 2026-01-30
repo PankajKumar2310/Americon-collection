@@ -52,8 +52,8 @@ const WorldCup = () => {
           </div>
           <div className="wc-anim">
             <img
-              src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=3270&auto=format&fit=crop"
-              alt="A modern, luxurious living room with a large sofa and view"
+              src="/images/americonimages/175903-461844-w68i-JV8SA-1nCCmPOPwuR1iiBYFYhx5l5HwmId4M9E-693246335eeb6.webp"
+              alt="American Estate luxurious living space perfect for World Cup stays"
               className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
             />
           </div>

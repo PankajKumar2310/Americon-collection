@@ -26,8 +26,8 @@ const AboutHero = () => {
     <section ref={heroRef} className="relative min-h-[80vh] md:min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0 about-hero-bg" style={{ opacity: 0 }}>
         <img
-          src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=3270&auto=format&fit=crop"
-          alt="A cozy and welcoming bedroom interior"
+          src="/images/americonimages/175903-461844-nfwa8MTVuOEChQI8jx--XWhu4bgPmbu2CJuZpxikCiWw-693258278814b.webp"
+          alt="A cozy and welcoming bedroom interior from American Estate"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#0E1A24]/60"></div>

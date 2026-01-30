@@ -40,7 +40,7 @@ const OriginStory = () => {
     <section ref={sectionRef} className="relative py-32 md:py-56 bg-card text-white text-center">
       <div className="absolute inset-0 overflow-hidden origin-image-container">
         <img
-          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=3087&auto=format&fit=crop"
+          src="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
           alt="The Carriage House interior"
           className="origin-image w-full h-full object-cover"
         />

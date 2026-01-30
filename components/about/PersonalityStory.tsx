@@ -38,7 +38,7 @@ const PersonalityStory = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-12 md:gap-24 items-center">
         <div className="personality-image md:order-2">
           <img
-            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=3200&auto=format&fit=crop"
+            src="/images/yellowimages/175903-457908-rjzvwN--hRpYGLMqcTTvJ9dbsV3HcSxjU8htI3hvGzVM-69264dcd87f82.webp"
             alt="A vibrant, colorful living room from The Yellow House"
             className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
           />

@@ -18,7 +18,7 @@ const WhyAmericanCollection = () => {
     {
       category: translations.pages.home?.why?.cards?.approach?.category || "Approach",
       title: translations.pages.home?.why?.cards?.approach?.title || "Thoughtfully Selected Homes",
-      imageUrl: "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=2070&auto=format&fit=crop",
+      imageUrl: "/images/yellowimages/175903-457908-ytPIXqmkh96mv1WChBGjrF--yBb-UyKSGshJIDbfplH0-69264e3acc9ac.webp",
       expandedContent: (
         <>
           {(translations.pages.home?.why?.cards?.approach?.paragraphs || [
@@ -31,7 +31,7 @@ const WhyAmericanCollection = () => {
     {
       category: translations.pages.home?.why?.cards?.experience?.category || "Experience",
       title: translations.pages.home?.why?.cards?.experience?.title || "Calm, Comfortable Stays",
-      imageUrl: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2071&auto=format&fit=crop",
+      imageUrl: "/images/americonimages/175903-461844-O0tM9Ht2xbRFTrKN-qEkLMxGuGUu6j6KZpGW9gWV1fo-69324626d64be.webp",
       expandedContent: (
         <>
           {(translations.pages.home?.why?.cards?.experience?.paragraphs || [
@@ -43,7 +43,7 @@ const WhyAmericanCollection = () => {
     {
       category: translations.pages.home?.why?.cards?.hospitality?.category || "Hospitality",
       title: translations.pages.home?.why?.cards?.hospitality?.title || "Personal, Local Hosting",
-      imageUrl: "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=2071&auto=format&fit=crop",
+      imageUrl: "/images/carriageimages/175903-461812-edyFladL-33C3gxlSE4dwe6x3YJlmM3IzmbXi1--IFAo-693229f8628c9.webp",
       expandedContent: (
         <>
           {(translations.pages.home?.why?.cards?.hospitality?.paragraphs || [
@@ -55,7 +55,7 @@ const WhyAmericanCollection = () => {
     {
       category: translations.pages.home?.why?.cards?.booking?.category || "Booking",
       title: translations.pages.home?.why?.cards?.booking?.title || "Direct, Transparent Reservations",
-      imageUrl: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+      imageUrl: "/images/americonimages/175903-461844-clD4NJiOYHOXqYci--64o73--oGGgzjLh27fncd5rxcOw-6932462cbbb2c.webp",
       expandedContent: (
         <>
           {(translations.pages.home?.why?.cards?.booking?.paragraphs || [

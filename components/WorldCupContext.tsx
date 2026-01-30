@@ -52,8 +52,8 @@ const WorldCupContext = () => {
         </div>
         <div className="wc-context-anim">
           <img
-            src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=3270&auto=format&fit=crop"
-            alt="A modern, luxurious living room with a large sofa and view"
+            src="/images/americonimages/175903-461844-JxqP12ae9iRAbgIYi--tqho6aTXYuWHssz5IkfpKYK0w-6932462412395.webp"
+            alt="American Estate living space perfect for World Cup stays"
             className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full"
           />
         </div>
