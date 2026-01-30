@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import DraggableCard from '@/components/DraggableCard';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useLanguage } from '@/translations/LanguageProvider';
+import FeaturedListings from '@/components/FeaturedListings';
+// import FeaturedListingCard from '@/components/FeaturedListingCard';
 
 const Gallery = () => {
   const { translations } = useLanguage();
@@ -56,7 +58,12 @@ const Gallery = () => {
           </p>
         </div>
       </div>
+      {/* our collection */}
+
+      <FeaturedListings/>
+      
     </div>
+    
   );
 };
 

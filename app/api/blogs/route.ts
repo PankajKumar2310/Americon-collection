@@ -14,9 +14,17 @@ function slugify(input: string) {
 }
 
 export async function GET() {
-  await connectMongo();
-  const blogs = await Blog.find({}, { __v: 0 }).sort({ createdAt: -1 }).lean();
-  return NextResponse.json({ blogs });
+  try {
+    await connectMongo();
+    const blogs = await Blog.find({}, { __v: 0 }).sort({ createdAt: -1 }).lean();
+    return NextResponse.json({ blogs });
+  } catch (error: any) {
+    console.error("GET /api/blogs error:", error);
+    return NextResponse.json(
+      { message: "Failed to fetch blogs", error: error.message },
+      { status: 500 },
+    );
+  }
 }
 
 const createSchema = z.object({
@@ -29,34 +37,42 @@ const createSchema = z.object({
 });
 
 export async function POST(req: Request) {
-  const isAdmin = cookies().get("ac_admin")?.value === "1";
-  if (!isAdmin) {
-    return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
-  }
+  try {
+    const isAdmin = cookies().get("ac_admin")?.value === "1";
+    if (!isAdmin) {
+      return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+    }
 
-  const body = await req.json().catch(() => null);
-  const parsed = createSchema.safeParse(body);
-  if (!parsed.success) {
+    const body = await req.json().catch(() => null);
+    const parsed = createSchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json(
+        { message: "Invalid payload", errors: parsed.error.flatten() },
+        { status: 400 },
+      );
+    }
+
+    await connectMongo();
+
+    const baseSlug = slugify(parsed.data.title);
+    let slug = baseSlug;
+    let i = 2;
+    while (await Blog.exists({ slug })) {
+      slug = `${baseSlug}-${i}`;
+      i += 1;
+    }
+
+    const blog = await Blog.create({
+      ...parsed.data,
+      slug,
+    });
+
+    return NextResponse.json({ blog });
+  } catch (error: any) {
+    console.error("POST /api/blogs error:", error);
     return NextResponse.json(
-      { message: "Invalid payload", errors: parsed.error.flatten() },
-      { status: 400 },
+      { message: "Failed to create blog", error: error.message },
+      { status: 500 },
     );
   }
-
-  await connectMongo();
-
-  const baseSlug = slugify(parsed.data.title);
-  let slug = baseSlug;
-  let i = 2;
-  while (await Blog.exists({ slug })) {
-    slug = `${baseSlug}-${i}`;
-    i += 1;
-  }
-
-  const blog = await Blog.create({
-    ...parsed.data,
-    slug,
-  });
-
-  return NextResponse.json({ blog });
 }

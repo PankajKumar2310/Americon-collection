@@ -52,7 +52,7 @@ const en: Translations = {
         headlineLine1: "Thoughtful Stays.",
         headlineLine2: "Intentionally Located.",
         subtitle:
-          "Refined short-term residences near Kansas City—designed for calm, comfort, and effortless arrivals.",
+          "Welcome to Americon Collection — where refined short-term residences near Kansas City and Liberty, Missouri are designed for calm, comfort, and effortless arrivals. Whether you’re traveling for leisure, events, or extended stays, our thoughtfully curated properties offer a peaceful retreat that feels like home.",
         primaryCta: "Book Your Stay",
         secondaryCta: "Explore the Collection",
       },
@@ -67,26 +67,26 @@ const en: Translations = {
       featuredListingsIntro: {
         eyebrow: "Our Collection",
         heading:
-          "Three distinctive residences, each designed to feel composed, welcoming, and quietly refined.",
+          "Americon Collection offers three unique short-term stays — each intentionally chosen and designed for comfort, quiet luxury, and meaningful travel experiences.",
       },
       featuredListings: {
         yellowHouse: {
           title: "The Yellow House",
-          descriptor: "Warm. Light-filled. Designed for shared moments.",
+          descriptor: "Warm and light-filled, The Yellow House is perfect for families, longer stays, and relaxed gatherings. Its inviting spaces are ideal for creating lasting memories.",
           supportingLine:
             "Ideal for families, longer stays, and relaxed gatherings.",
           ctaText: "View residence",
         },
         americanEstate: {
           title: "The American Estate",
-          descriptor: "Private. Spacious. Elevated in scale and setting.",
+          descriptor: "Private and spacious, The American Estate offers an elevated setting with room to arrive, settle, and stay in style — excellent for groups or special trips.",
           supportingLine:
             "A refined retreat with room to arrive, settle, and stay.",
           ctaText: "Explore the estate",
         },
         carriageHouse: {
           title: "The Carriage House",
-          descriptor: "Refined. Self-contained. Calm by design.",
+          descriptor: "Refined and self-contained, The Carriage House is designed for independent travelers who want space, privacy, and calm comfort.",
           supportingLine:
             "Thoughtfully designed for independent, effortless stays.",
           ctaText: "Discover the carriage house",
@@ -94,35 +94,35 @@ const en: Translations = {
       },
       why: {
         title: "Why American Collection",
-        subtitle: "A quieter, more intentional approach to short-term stays.",
+        subtitle: "At Americon Collection, we believe a great stay starts with a thoughtful home — not just a room. That’s why each residence is chosen for its quality, comfort, and thoughtful design.",
         cards: {
           approach: {
             category: "Approach",
             title: "Thoughtfully Selected Homes",
             paragraphs: [
-              "Homes chosen for character, location, and comfort — not volume.",
-              "Each residence is managed with care, consistency, and long-term intention.",
+              "Every property in our collection reflects intention and care — from location to layout — so you feel grounded and at ease from the moment you arrive.",
+              // "Each residence is managed with care, consistency, and long-term intention.",
             ],
           },
           experience: {
             category: "Experience",
             title: "Calm, Comfortable Stays",
             paragraphs: [
-              "Spaces designed to feel settled, clean, and welcoming from the moment you arrive — whether your stay is short or extended.",
+              "Enjoy well-appointed spaces that blend style with functionality, quiet neighborhoods, and environments where you can truly relax.",
             ],
           },
           hospitality: {
             category: "Hospitality",
             title: "Personal, Local Hosting",
             paragraphs: [
-              "Quick communication, local insight, and discreet support — without intrusion. Hosting that feels human, not automated.",
+              "Our team provides attentive but unobtrusive support — helping you enjoy your stay without interruptions.",
             ],
           },
           booking: {
             category: "Booking",
             title: "Direct, Transparent Reservations",
             paragraphs: [
-              "When you book direct, you receive our best rates, clear policies, and a more personal experience — without third-party friction.",
+              "Book direct with us — no confusing fees, no hidden costs, and clear policies that keep your experience stress-free.",
             ],
           },
         },
@@ -130,7 +130,7 @@ const en: Translations = {
       worldCupContext: {
         title: "World Cup 2026 — Calmly Located",
         body:
-          "Our residences in Liberty offer a refined retreat just a short drive from the heart of the action in Kansas City. Avoid the congestion and enjoy the space, privacy, and amenities of a private home, creating a World Cup experience that is both thrilling and restorative.",
+          "Planning your stay for World Cup 2026? Americon Collection offers elegant homes in Liberty, Missouri, just a short drive from Kansas City’s biggest event venues and attractions. Enjoy the space, privacy, and convenience of a private residence while being close enough to experience every moment of the action — without the congestion of downtown hotels.",
         cta: "Explore World Cup Stays",
       },
       theExperience: {
@@ -139,7 +139,7 @@ const en: Translations = {
           {
             title: "Arrive Easily",
             description:
-              "Seamless check-ins and clear instructions mean your stay begins without friction.",
+              "Seamless check-in and clear arrival instructions help you start your stay with peace of mind.",
           },
           {
             title: "Settle Comfortably",
@@ -149,27 +149,28 @@ const en: Translations = {
           {
             title: "Move at Your Pace",
             description:
-              "Our support is discreet and responsive, giving you the space to enjoy your stay on your own terms.",
+              "Discreet and responsive guest support ensures your stay is smooth and enjoyable.",
           },
         ],
       },
       capturedMoments: {
-        title: "Captured Moments",
-        body: "Moments across the American Collection.",
+        title: "Gallery — Captured Moments",
+        body: "Explore highlights from our residences and guest stays. Discover the warmth of shared moments, relaxing spaces, and purposeful design that define the Americon experience.",
         cta: "View Gallery",
       },
       bookWithConfidence: {
         title: "Book With Confidence",
         points: [
-          "Direct reservations for a seamless experience.",
-          "Clear, straightforward booking and cancellation policies.",
-          "Transparent pricing with no hidden platform fees.",
-          "Responsive, personal support from our dedicated team.",
+          "Direct Reservations for clear pricing.",
+          "Straightforward Booking & Cancellation Policies.",
+          "Transparent Rates with No Hidden Fees.",
+          "Responsive, Personal Support from Our Team.",
         ],
       },
       finalCta: {
         title: "Find the Right Place to Stay",
         primaryCta: "Book Your Stay",
+        para:"Whether you’re planning a weekend getaway, a longer visit, or a special event stay, Americon Collection residences offer thoughtful comfort, intentional design, and a calmer way to stay near Kansas City & Liberty, Missouri.",
         secondaryCta: "Explore the Collection",
       },
     },

@@ -111,8 +111,12 @@ const Hero = () => {
             {translations.pages.home?.hero?.subtitle || "Refined short-term residences near Kansas City—designed for calm, comfort, and effortless arrivals."}
           </p>
           <div className="hero-cta-group mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6" style={{ transform: 'translateY(12px)' }}>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest">
-              <Link to="/contact">{translations.pages.home?.hero?.primaryCta || "Book Your Stay"}</Link>
+            <Button 
+              size="lg" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest"
+              onClick={() => window.open('https://www.americancollectionkc.com/', '_blank')}
+            >
+              {translations.pages.home?.hero?.primaryCta || "Book Your Stay"}
             </Button>
             <Button asChild variant="link" size="lg" className="text-foreground hover:text-accent rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest">
               <Link to="/listings">{translations.pages.home?.hero?.secondaryCta || "Explore the Collection"}</Link>
@@ -123,7 +127,7 @@ const Hero = () => {
 
       <div className="relative z-30 w-full px-4 pb-8 md:pb-12">
         <div className="hero-search-container max-w-4xl mx-auto" style={{ transform: 'translateY(12px)' }}>
-          <HeroSearch />
+          {/* <HeroSearch /> */}
         </div>
       </div>
     </section>
