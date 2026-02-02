@@ -65,7 +65,7 @@ const FooterBrandText = () => {
     return (
       <svg viewBox="0 0 1600 110" className="w-full">
         <text {...textProps} stroke="hsl(var(--muted-foreground))">
-          AMERICAN COLLECTION
+          AMERICON COLLECTION
         </text>
       </svg>
     );
@@ -97,7 +97,7 @@ const FooterBrandText = () => {
         {...textProps}
         stroke="hsl(var(--muted-foreground))"
       >
-        AMERICAN COLLECTION
+        AMERICON COLLECTION
       </text>
 
       <text
@@ -106,7 +106,7 @@ const FooterBrandText = () => {
         stroke="url(#cursorGradient)"
         opacity="0"
       >
-        AMERICAN COLLECTION
+        AMERICON COLLECTION
       </text>
     </svg>
   );

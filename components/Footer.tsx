@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
 
         <p className="text-xs text-muted-foreground text-center pb-12">
-          &copy; {new Date().getFullYear()} American Collection. All rights reserved.
+          &copy; {new Date().getFullYear()} Americon Collection. All rights reserved.
         </p>
       </div>
     </footer>

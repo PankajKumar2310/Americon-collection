@@ -53,7 +53,7 @@ const WorldCup = () => {
           <div className="wc-anim">
             <img
               src="/images/americonimages/175903-461844-w68i-JV8SA-1nCCmPOPwuR1iiBYFYhx5l5HwmId4M9E-693246335eeb6.webp"
-              alt="American Estate luxurious living space perfect for World Cup stays"
+              alt="Americon Estate luxurious living space perfect for World Cup stays"
               className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
             />
           </div>

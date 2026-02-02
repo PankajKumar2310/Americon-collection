@@ -39,7 +39,7 @@ const ClosingStatement = () => {
           {translations.pages.about?.closingStatement?.text || "Whether you love simple charm or a house with a little attitude, we've got a stay ready for you."}
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground closing-anim">
-          {translations.pages.about?.closingStatement?.signature || "Welcome to The American Collection; KC comfort with a personal touch."}
+          {translations.pages.about?.closingStatement?.signature || "Welcome to The Americon Collection; KC comfort with a personal touch."}
         </p>
       </div>
     </section>

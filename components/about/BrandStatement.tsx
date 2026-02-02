@@ -36,7 +36,7 @@ const BrandStatement = () => {
     <section ref={sectionRef} className="py-24 md:py-32 bg-card">
       <div className="container mx-auto text-center max-w-4xl space-y-10">
         <h2 className="text-4xl md:text-6xl font-serif brand-statement-anim">
-          {translations.pages.about?.brandStatement?.line1 || "That's how The American Collection was born."}
+          {translations.pages.about?.brandStatement?.line1 || "That's how The Americon Collection was born."}
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground leading-relaxed brand-statement-anim">
           {translations.pages.about?.brandStatement?.line2 || "Each home has its own style, some mild and some a little wild, but every stay includes sparkling clean spaces, thoughtful touches, quick and personal communication, and hosts who truly care."}

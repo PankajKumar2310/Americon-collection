@@ -159,7 +159,7 @@ const Concierge = () => {
         <DrawerContent className="bg-background border-t-white/10 h-[85vh] mt-24 flex flex-col">
           <DrawerHeader className="text-left p-4 border-b border-white/10 flex-shrink-0">
             <DrawerTitle className="font-serif text-2xl">Concierge</DrawerTitle>
-            <p className="text-sm text-muted-foreground mt-1">Planning your stay with American Collection</p>
+            <p className="text-sm text-muted-foreground mt-1">Planning your stay with Americon Collection</p>
           </DrawerHeader>
           <div className="flex-grow overflow-hidden">
             <ChatInterface />
@@ -181,7 +181,7 @@ const Concierge = () => {
         <div className="flex items-center justify-between p-4 border-b border-white/10 flex-shrink-0">
           <div>
             <h2 className="font-serif text-xl">Concierge</h2>
-            <p className="text-xs text-muted-foreground">Planning your stay with American Collection</p>
+            <p className="text-xs text-muted-foreground">Planning your stay with Americon Collection</p>
           </div>
         </div>
         <div className="flex-grow overflow-hidden">

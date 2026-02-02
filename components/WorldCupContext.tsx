@@ -53,7 +53,7 @@ const WorldCupContext = () => {
         <div className="wc-context-anim">
           <img
             src="/images/americonimages/175903-461844-JxqP12ae9iRAbgIYi--tqho6aTXYuWHssz5IkfpKYK0w-6932462412395.webp"
-            alt="American Estate living space perfect for World Cup stays"
+            alt="Americon Estate living space perfect for World Cup stays"
             className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full"
           />
         </div>

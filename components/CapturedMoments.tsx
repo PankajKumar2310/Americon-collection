@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const images = [
   { src: "/images/yellowimages/175903-457908-H4rg2XMl0jsgdpP3IVEfe5aMWBtXFQWNhsFtcN2QWJA-69264eedb8aba.webp", alt: "Yellow House exterior", className: "w-[45vw] md:w-[22vw] top-0 left-[5%] -rotate-6" },
-  { src: "/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp", alt: "American Estate grounds", className: "w-[55vw] md:w-[28vw] top-[15%] left-[40%] rotate-3" },
+  { src: "/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp", alt: "Americon Estate grounds", className: "w-[55vw] md:w-[28vw] top-[15%] left-[40%] rotate-3" },
   { src: "/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp", alt: "Carriage House interior", className: "w-[40vw] md:w-[20vw] top-[50%] left-[15%] rotate-8" },
   { src: "/images/yellowimages/175903-457908-D8gCyZRdRY81MkZaO5FfoTtuRdKDITwElB6LEkSR7v4-69264e716f2b2.webp", alt: "Yellow House living room", className: "w-[50vw] md:w-[25vw] top-[60%] left-[55%] -rotate-4" },
 ];
@@ -54,7 +54,7 @@ const CapturedMoments = () => {
         <div className="text-center md:text-left row-start-1 md:row-start-auto">
           <h2 className="text-3xl md:text-4xl font-serif moments-text-anim">{translations.pages.home?.capturedMoments?.title || "Captured Moments"}</h2>
           <p className="mt-4 text-lg text-muted-foreground moments-text-anim">
-            {translations.pages.home?.capturedMoments?.body || "Moments across the American Collection."}
+            {translations.pages.home?.capturedMoments?.body || "Moments across the Americon Collection."}
           </p>
           <div className="mt-8 moments-text-anim">
             <Button asChild variant="link" className="text-lg text-accent hover:text-primary p-0 h-auto">
