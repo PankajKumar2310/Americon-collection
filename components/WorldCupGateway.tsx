@@ -59,10 +59,10 @@ const WorldCupGateway = () => {
                 </ul>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="md" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-sm font-sans uppercase tracking-widest">
+                <Button asChild size="default" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-sm font-sans uppercase tracking-widest">
                   <Link to="/kcwc26">View Complete Match Schedule</Link>
                 </Button>
-                <Button asChild variant="outline" size="md" className="rounded-full px-6 py-3 text-sm font-sans uppercase tracking-widest">
+                <Button asChild variant="outline" size="default" className="rounded-full px-6 py-3 text-sm font-sans uppercase tracking-widest">
                   <Link to="/explore-kc-liberty">Plan Your KC Adventure</Link>
                 </Button>
               </div>

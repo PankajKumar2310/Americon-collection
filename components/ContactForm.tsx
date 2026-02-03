@@ -54,7 +54,9 @@ export function ContactForm() {
       const data = await response.json();
 
       if (response.ok) {
-        dismissToast(loadingToast);
+        if (typeof loadingToast === 'string') {
+          dismissToast(loadingToast);
+        }
         showSuccess(data.message || "Thank you for your message! We'll be in touch soon.");
         form.reset();
       } else {
@@ -62,7 +64,9 @@ export function ContactForm() {
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      dismissToast(loadingToast);
+      if (typeof loadingToast === 'string') {
+        dismissToast(loadingToast);
+      }
       showError("Failed to send message. Please try again later.");
     }
   }

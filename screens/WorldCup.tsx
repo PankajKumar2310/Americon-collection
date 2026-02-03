@@ -13,7 +13,7 @@ const WorldCup = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const elements = gsap.utils.toArray(".wc-anim");
+      const elements = gsap.utils.toArray(".wc-anim") as HTMLElement[];
       gsap.set(elements, { autoAlpha: 0, y: 20 });
 
       ScrollTrigger.create({
