@@ -32,11 +32,11 @@ const AboutHero = () => {
         />
         <div className="absolute inset-0 bg-[#0E1A24]/60"></div>
       </div>
-      <div className="relative z-10 p-8">
+      <div className="relative z-10 p-8 ">
         <h1 className="text-5xl md:text-7xl font-serif about-hero-anim">
           {translations.pages.about?.hero?.title || "About Americon Collection"}
         </h1>
-        <p className="mt-4 text-lg max-w-4xl md:text-md text-foreground/80 about-hero-anim">
+        <p className=" text-center mt-4 text-lg max-w-6xl md:text-md text-foreground/80 about-hero-anim">
           {translations.pages.about?.hero?.subtitle || "Kansas City comfort with a personal touch."}
         </p>
       </div>

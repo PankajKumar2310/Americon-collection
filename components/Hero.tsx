@@ -102,24 +102,20 @@ const Hero = () => {
       </div>
 
       <div className="flex-grow flex flex-col items-center justify-center p-8 pt-24">
-        <div className="relative z-30 w-full max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-serif leading-tight">
-            <span className="hero-headline-line block" style={{ transform: 'translateY(16px)' }}>{translations.pages.home?.hero?.headlineLine1 || "Thoughtful Stays."}</span>
-            <span className="hero-headline-line block" style={{ transform: 'translateY(16px)' }}>{translations.pages.home?.hero?.headlineLine2 || "Intentionally Located."}</span>
+        <div className="relative z-30 w-full max-w-7xl">
+          <h1 className="text-4xl md:text-6xl font-serif leading-tight">
+            <span className="hero-headline-line block" style={{ transform: 'translateY(16px)' }}>{translations.pages.home?.hero?.headlineLine1 || "Experience FIFA World Cup 2026 in Luxury"}</span>
+            <span className="hero-headline-line block" style={{ transform: 'translateY(16px)' }}>{translations.pages.home?.hero?.headlineLine2 || "Premium Rentals Near Kansas City"}</span>
           </h1>
           <p className="hero-subheadline mt-8 text-base md:text-lg max-w-2xl mx-auto text-muted-foreground" style={{ transform: 'translateY(12px)' }}>
             {translations.pages.home?.hero?.subtitle || "Refined short-term residences near Kansas City—designed for calm, comfort, and effortless arrivals."}
           </p>
           <div className="hero-cta-group mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6" style={{ transform: 'translateY(12px)' }}>
-            <Button 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest"
-              onClick={() => window.open('https://www.americancollectionkc.com/', '_blank')}
-            >
-              {translations.pages.home?.hero?.primaryCta || "Book Your Stay"}
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest">
+              <Link to="/listings">{translations.pages.home?.hero?.primaryCta || "Book Your Stay"}</Link>
             </Button>
             <Button asChild variant="link" size="lg" className="text-foreground hover:text-accent rounded-full px-8 py-4 text-base font-sans uppercase tracking-widest">
-              <Link to="/listings">{translations.pages.home?.hero?.secondaryCta || "Explore the Collection"}</Link>
+              <Link to="/gallery">{translations.pages.home?.hero?.secondaryCta || "Explore the Collection"}</Link>
             </Button>
           </div>
         </div>

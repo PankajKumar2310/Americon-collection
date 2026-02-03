@@ -38,10 +38,10 @@ const FeaturedListingsIntro = () => {
 
   return (
     <div ref={introRef} className="container mx-auto text-center py-24 md:py-32">
-      <h2 className="text-sm font-sans uppercase tracking-widest text-muted-foreground intro-line">
+      <h2 className="text-md font-sans uppercase tracking-widest text-muted-foreground intro-line">
         {translations.pages.home?.featuredListingsIntro?.eyebrow || "Our Collection"}
       </h2>
-      <p className="mt-6 text-3xl md:text-4xl font-serif text-foreground leading-snug max-w-3xl mx-auto intro-line">
+      <p className="mt-6 text-3xl md:text-xl font-serif text-foreground leading-snug max-w-4xl mx-auto intro-line">
         {translations.pages.home?.featuredListingsIntro?.heading || "Three distinctive residences, each designed to feel composed, welcoming, and quietly refined."}
       </p>
     </div>

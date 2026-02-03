@@ -25,6 +25,7 @@ const YellowHouse = () => {
       title="The Yellow House"
       descriptor="Warm. Light-filled. Designed for shared moments."
       heroImageUrl="/images/yellowimages/bannerimage.jpg"
+      bookingLink="https://www.americancollectionkc.com/listings/457908"
     >
       <div className="max-w-4xl mx-auto">
         <section className="text-center">

@@ -27,6 +27,7 @@ const AmericanEstate = () => {
       title="The American Estate"
       descriptor="Private. Spacious. Elevated in scale and setting."
       heroImageUrl="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
+      bookingLink="https://www.americancollectionkc.com/listings/461812"
     >
       <div className="max-w-4xl mx-auto">
         <section className="text-center">

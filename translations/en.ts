@@ -60,12 +60,12 @@ const en: Translations = {
     },
     home: {
       hero: {
-        headlineLine1: "Thoughtful Stays.",
-        headlineLine2: "Intentionally Located.",
+        headlineLine1: "Experience FIFA World Cup 2026 in Luxury",
+        headlineLine2: "Premium Rentals Near Kansas City",
         subtitle:
-          "Welcome to Americon Collection — where refined short-term residences near Kansas City and Liberty, Missouri are designed for calm, comfort, and effortless arrivals. Whether you’re traveling for leisure, events, or extended stays, our thoughtfully curated properties offer a peaceful retreat that feels like home.",
-        primaryCta: "Book Your Stay",
-        secondaryCta: "Explore the Collection",
+          "Welcome to The American Collection, a curated portfolio of upscale short-term vacation rentals in Kansas City and Liberty, Missouri, created specifically for World Cup 2026 travelers, international guests, teams, and groups. Your exclusive collection of luxury vacation homes in Liberty, Missouri. Perfect for World Cup fans, families, and groups seeking comfort just minutes from Arrowhead Stadium.",
+        primaryCta: "Book Your World Cup Stay Now",
+        secondaryCta: "View Our Collection",
       },
       heroSearch: {
         pickDate: "Pick your dates",
@@ -76,9 +76,9 @@ const en: Translations = {
         selectStay: "Select your stay",
       },
       featuredListingsIntro: {
-        eyebrow: "Our Collection",
+        eyebrow: "Our Premier Collection: Luxury Kansas City Vacation Rentals",
         heading:
-          "Americon Collection offers three unique short-term stays — each intentionally chosen and designed for comfort, quiet luxury, and meaningful travel experiences.",
+          "Discover your perfect home base for the FIFA World Cup 2026 and Kansas City adventures. Each property in The American Collection offers distinctive luxury, modern amenities, and the perfect blend of privacy and proximity to world-class events. Whether you need space for a large family reunion, a group of friends traveling for the World Cup, or an intimate getaway, our collection delivers unforgettable experiences in the heart of Missouri. ",
       },
       featuredListings: {
         yellowHouse: {
