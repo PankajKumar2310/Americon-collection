@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { showSuccess, showError } from "@/utils/toast";
+import { showSuccess, showError, showLoading, dismissToast } from "@/utils/toast";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -38,12 +38,12 @@ export function ContactForm() {
     },
   });
 
-
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Form submitted:", values);
+    const loadingToast = showLoading("Sending message...");
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,13 +54,15 @@ export function ContactForm() {
       const data = await response.json();
 
       if (response.ok) {
-        showSuccess("Thank you for your message! We'll be in touch soon.");
+        dismissToast(loadingToast);
+        showSuccess(data.message || "Thank you for your message! We'll be in touch soon.");
         form.reset();
       } else {
         throw new Error(data.message || "Failed to send message");
       }
     } catch (error) {
       console.error("Error sending message:", error);
+      dismissToast(loadingToast);
       showError("Failed to send message. Please try again later.");
     }
   }
