@@ -3,10 +3,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const WorldCupGateway = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -38,10 +40,10 @@ const WorldCupGateway = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 gateway-anim">
-              Your Gateway to FIFA World Cup 2026™ and Kansas City
+              {translations.pages.home?.worldCupGateway?.title || "Your Gateway to FIFA World Cup 2026™ and Kansas City"}
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto gateway-anim">
-              Kansas City earned its reputation as the "Soccer Capital of America®" long before being selected as a FIFA World Cup 2026™ host city, and the region is ready to welcome the world. From June 11 through July 13, 2026, Kansas City will host multiple matches, including crucial group stage games and a quarterfinal showdown at GEHA Field at Arrowhead Stadium.
+              {translations.pages.home?.worldCupGateway?.description || "Kansas City earned its reputation as the \"Soccer Capital of America®\" long before being selected as a FIFA World Cup 2026™ host city, and the region is ready to welcome the world. From June 11 through July 13, 2026, Kansas City will host multiple matches, including crucial group stage games and a quarterfinal showdown at GEHA Field at Arrowhead Stadium."}
             </p>
           </div>
 

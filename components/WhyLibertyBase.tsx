@@ -3,10 +3,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyLibertyBase = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -38,10 +40,10 @@ const WhyLibertyBase = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 liberty-base-anim">
-              Why Liberty, Missouri Is Your Perfect World Cup 2026 Base
+              {translations.pages.home?.whyLibertyBase?.title || "Why Liberty, Missouri Is Your Perfect World Cup 2026 Base"}
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto liberty-base-anim">
-              While Kansas City hosts the FIFA World Cup 2026 matches, smart travelers are discovering that Liberty, Missouri offers the perfect combination of convenience, charm, and value. Located just 15 minutes from Arrowhead Stadium and 20 minutes from downtown Kansas City, Liberty provides a peaceful retreat from the crowds while keeping you close to all the action. Our historic town offers exceptional dining, unique shopping, and genuine Midwestern hospitality—all without the premium prices and congestion of staying in the urban core.
+              {translations.pages.home?.whyLibertyBase?.description || "While Kansas City hosts the FIFA World Cup 2026 matches, smart travelers are discovering that Liberty, Missouri offers the perfect combination of convenience, charm, and value. Located just 15 minutes from Arrowhead Stadium and 20 minutes from downtown Kansas City, Liberty provides a peaceful retreat from the crowds while keeping you close to all the action. Our historic town offers exceptional dining, unique shopping, and genuine Midwestern hospitality—all without the premium prices and congestion of staying in the urban core."}
             </p>
           </div>
 

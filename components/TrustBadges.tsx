@@ -1,10 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TrustBadges = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -36,8 +38,11 @@ const TrustBadges = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 trust-anim">
-              Trust Badges & Credentials
+              {translations.pages.home?.trustBadges?.title || "Trust Badges & Credentials"}
             </h2>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto trust-anim">
+              {translations.pages.home?.trustBadges?.subtitle || "Quality, trust, and reliability are the cornerstones of our service. These credentials represent our commitment to providing exceptional experiences for every guest."}
+            </p>
           </div>
 
           {/* Logos Section */}

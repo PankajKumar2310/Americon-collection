@@ -429,6 +429,25 @@ const en: Translations = {
         primaryCta:"Book Your World Cup Stay",
         secondaryCta:"View Match Schedule"
       },
+      matchSchedule:{
+        title:"Kansas City World Cup 2026 Match Schedule",
+        description:"GEHA Field at Arrowhead Stadium will host six FIFA World Cup 2026™ matches featuring teams from four continents competing over three weeks. Kansas City's match schedule includes crucial group stage games that will determine which teams advance to the knockout rounds, plus an exciting quarterfinal match that could feature some of the tournament's biggest stars.",
+        completeSchedule:"Complete Match Schedule",
+        tableHeaders:{
+          matchType:"Match Type",
+          date:"Date",
+          venue:"Venue",
+          significance:"Significance"
+        },
+        matches:[
+          {type:"Group Stage Match 1", date:"June 16, 2026", venue:"GEHA Field at Arrowhead Stadium", significance:"Opening group stage action"},
+          {type:"Group Stage Match 2", date:"June 20, 2026", venue:"GEHA Field at Arrowhead Stadium", significance:"Mid-group stage competition"},
+          {type:"Group Stage Match 3", date:"June 22, 2026", venue:"GEHA Field at Arrowhead Stadium", significance:"Critical group positioning"},
+          {type:"Group Stage Match 4", date:"June 27, 2026", venue:"GEHA Field at Arrowhead Stadium", significance:"Final group stage matches"},
+          {type:"Round of 32", date:"July 3, 2026", venue:"GEHA Field at Arrowhead Stadium", significance:"Knockout stage begins"},
+          {type:"Quarterfinal", date:"July 11, 2026", venue:"GEHA Field at Arrowhead Stadium", significance:"Path to semifinals"}
+        ]
+      },
       venue:{
         title:"Arrowhead Stadium: World Cup Venue",
         subtitle:"Home of Kansas City Chiefs and FIFA World Cup 2026™ matches",
@@ -487,17 +506,55 @@ const en: Translations = {
         ]
       },
       kansasCity:{
-        title:"Explore Kansas City",
+        title:"Explore Kansas City: Top Attractions and Activities",
         subtitle:"Discover why Kansas City is the perfect World Cup host city",
-        description:"Beyond the soccer matches, Kansas City offers visitors a rich tapestry of experiences. From world-class barbecue and jazz music to cultural attractions and Midwestern hospitality, our city provides the perfect backdrop for your World Cup adventure.",
+        description:"While the FIFA World Cup 2026™ brings you to Kansas City, the region offers world-class attractions and experiences that make your visit memorable beyond the matches. Planning time to explore Kansas City's diverse offerings enhances your trip and provides engaging activities for non-match days.",
         attractions:[
-          "World-famous barbecue restaurants and food scene",
-          "Historic 18th & Vine Jazz District",
-          "Nelson-Atkins Museum of Art and cultural institutions",
-          "Power & Light District entertainment",
-          "Country Club Plaza shopping and dining",
-          "Professional sports beyond soccer"
+          {
+            title:"Museums and Cultural Attractions",
+            description:"The Nelson-Atkins Museum of Art, National WWI Museum and Memorial, and American Jazz Museum offer world-class cultural experiences that enrich your World Cup visit."
+          },
+          {
+            title:"Family-Friendly Activities", 
+            description:"Science City at Union Station, SEA LIFE Kansas City Aquarium, and LEGOLAND Discovery Center provide engaging entertainment for visitors of all ages."
+          },
+          {
+            title:"Shopping and Entertainment",
+            description:"The Country Club Plaza, Power & Light District, and historic Westport offer diverse shopping, dining, and entertainment experiences."
+          }
         ]
+      },
+      liberty:{
+        title:"Discover Liberty, Missouri: Your World Cup Home Base",
+        description:"Liberty, Missouri, offers World Cup visitors a strategic location combining quick access to Arrowhead Stadium with small-town charm and authentic Midwest hospitality. Staying in Liberty provides a peaceful retreat from tournament crowds while keeping you close to all the action.",
+        locationBenefits:[
+          "15 minutes north of Arrowhead Stadium",
+          "20 minutes from downtown Kansas City", 
+          "Perfect balance of convenience and tranquility",
+          "Easy access to all World Cup activities",
+          "Quiet, relaxed environment for evenings"
+        ]
+      },
+      conclusion:{
+        title:"Your Unforgettable Kansas City World Cup Experience Awaits",
+        description:"FIFA World Cup 2026™ in Kansas City represents a once-in-a-lifetime opportunity to experience soccer's greatest tournament in America's heartland. From the passionate atmosphere at Arrowhead Stadium to the cultural richness of Kansas City's attractions and the warm hospitality of Liberty, Missouri, every element combines to create unforgettable memories.",
+        secondDescription:"The Americon Collection provides the perfect home base for your World Cup adventure. Our luxury properties offer space, comfort, and convenience that transform your visit from a simple trip to an extraordinary experience. Start planning your FIFA World Cup 2026™ Kansas City experience today.",
+        primaryCta:"Reserve Your Property Now",
+        secondaryCta:"Contact Us"
+      },
+      newsletter:{
+        title:"Subscribe for World Cup Updates",
+        description:"Stay informed about the FIFA World Cup 2026™ in Kansas City with our newsletter. Receive updates about match schedules, ticket information, local events, and exclusive offers for Americon Collection guests.",
+        emailPlaceholder:"Email Address (required)",
+        namePlaceholder:"First Name (optional)",
+        interestLabel:"Interested in...",
+        interestOptions:[
+          "Booking Accommodation",
+          "General World Cup Info", 
+          "Local Attractions",
+          "All Updates"
+        ],
+        submitButton:"Get World Cup Updates"
       },
       booking:{
         title:"Book Your World Cup Stay",

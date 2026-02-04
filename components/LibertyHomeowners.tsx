@@ -3,10 +3,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const LibertyHomeowners = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -38,10 +40,10 @@ const LibertyHomeowners = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif mb-8 homeowners-anim">
-              Liberty Homeowners: Capitalize on World Cup 2026
+              {translations.pages.home?.libertyHomeowners?.title || "Liberty Homeowners: Capitalize on World Cup 2026"}
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto homeowners-anim">
-              Own a home in Liberty? FIFA World Cup 2026 brings unprecedented demand for accommodations near Arrowhead Stadium. The Americon Collection handles all marketing, bookings, guest services, and property management while you earn premium revenue.
+              {translations.pages.home?.libertyHomeowners?.description || "Own a home in Liberty? FIFA World Cup 2026 brings unprecedented demand for accommodations near Arrowhead Stadium. The Americon Collection handles all marketing, bookings, guest services, and property management while you earn premium revenue."}
             </p>
           </div>
 
@@ -82,7 +84,7 @@ const LibertyHomeowners = () => {
                 </li>
               </ul>
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-sans uppercase tracking-widest">
-                <Link to="/contact">Learn More About Our Concierge Program</Link>
+                <Link to="/contact">{translations.pages.home?.libertyHomeowners?.cta || "Learn More About Our Concierge Program"}</Link>
               </Button>
             </div>
           </div>
