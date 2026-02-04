@@ -57,7 +57,7 @@ const ko: Translations = {
           chefKitchen: "셰프 주방",
           ampleParking: "충분한 주차 공간",
           highSpeedWifi: "고속 와이파이"
-        }
+        },
       },
       yellowHouse: {
         title: "옐로우 하우스",
@@ -74,7 +74,7 @@ const ko: Translations = {
           smartTvs: "스마트 TV",
           fullKitchen: "풀 주방",
           parking: "주차장"
-        }
+        },
       },
       carriageHouse: {
         title: "캐리지 하우스",
@@ -92,7 +92,7 @@ const ko: Translations = {
           highSpeedWifi: "고속 와이파이",
           smartTv: "스마트 TV",
           parking: "주차장"
-        }
+        },
       },
       bookYourStay: "예약하기",
       viewMoreImages: "더 많은 사진 보기",
@@ -119,7 +119,7 @@ const ko: Translations = {
           sending: "메시지 전송 중...",
           success: "메시지를 보내주셔서 감사합니다! 곧 연락드리겠습니다.",
           error: "메시지 전송에 실패했습니다. 나중에 다시 시도해주세요."
-        }
+        },
       }
     },
     gallery: {
@@ -186,7 +186,7 @@ const ko: Translations = {
           {
             name: "캐리지 하우스",
             description: "프라이버시와 평온함을 추구하는 독립적인 여행자에게 이상적인 세련되고 독립된 주거 공간입니다."
-          }
+          },
         ]
       },
       whyLiberty: {
@@ -213,12 +213,10 @@ const ko: Translations = {
           "팀과 서포터를 위한 장기 체류 옵션",
           "게스트 경험을 향상시키기 위한 현지 파트너십"
         ],
-        futureVision: "월드컵을 넘어, 저희는 캔자스시티 환대의 최고를 보여주는 탁월한 숙박을 제공한다는 헌신을 항상 유지하면서 컬렉션을 확장하고 서비스를 향상시켜 나가고 있습니다."
-      }
-    },
-    home: {
-      hero: {
-        headlineLine1: "FIFA 월드컵 2026을 럭셔리하게 경험하세요",
+        futureVision: "월드컵을 넘어, 저희는 캔자스시티 환대의 최고를 보여주는 탁월한 숙박을 제공한다는 헌신을 항상 유지하면서 컬렉션을 확장하고 서비스를 향상시켜 나가고 있습니다.",
+        bookDirectMessage: {
+          description: "직접 예약하시면 최저 요금과 저희가 알려진 따뜻한 현지 환대를 받으실 수 있습니다."
+        },
         headlineLine2: "캔자스시티 근처 프리미엄 숙소",
         subtitle:
           "아메리콘 컬렉션에 오신 것을 환영합니다. 월드컵 2026 여행자, 국제 게스트, 팀, 그룹을 위해 특별히 제작된 캔자스시티와 미주리주 리버티의 고급 단기 휴가 숙소 선별 포트폴리오입니다. 미주리주 리버티에 있는 귀하만의 럭셔리 휴가용 주택 컬렉션. 애로우헤드 스타디움에서 불과 몇 분 거리에서 편안함을 추구하는 월드컵 팬, 가족, 그룹에게 완벽합니다.",
@@ -336,7 +334,7 @@ const ko: Translations = {
           {
             name: "월드컵 대비 완료",
             description: "FIFA 월드컵 2026 방문객과 팀을 위해 공식적으로 준비됨"
-          }
+          },
         ]
       },
       why: {
@@ -457,7 +455,7 @@ const ko: Translations = {
           {
             name: "럭셔리 경험",
             description: "더 높은 수준의 편안함을 추구하는 방문객을 위한 프리미엄 편의시설, 디자이너 가구, 탁월한 서비스."
-          }
+          },
         ]
       },
       transportation: {

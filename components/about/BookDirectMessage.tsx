@@ -39,7 +39,7 @@ const BookDirectMessage = () => {
     <section ref={sectionRef} className="py-24 md:py-32 bg-card">
       <div className="container mx-auto text-center max-w-3xl">
         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed book-direct-anim">
-          {translations.pages.about?.bookDirectMessage?.description || "When you book direct, you get our best rates and the warm local hospitality we're known for."}
+          {translations.pages.about?.lookingAhead?.description || "When you book direct, you get our best rates and the warm local hospitality we're known for."}
         </p>
       </div>
     </section>

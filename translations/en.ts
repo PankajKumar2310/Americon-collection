@@ -214,6 +214,9 @@ const en: Translations = {
             "Local partnerships for enhanced guest experiences"
           ],
           futureVision:"Beyond the World Cup, we continue to expand our collection and enhance our services, always maintaining our commitment to providing exceptional stays that showcase the best of Kansas City hospitality."
+        },
+        bookDirectMessage:{
+          description:"When you book direct, you get our best rates and the warm local hospitality we're known for."
         }
     },
     home: {
