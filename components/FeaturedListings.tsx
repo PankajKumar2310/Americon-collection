@@ -49,45 +49,51 @@ const FeaturedListings = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      listings.forEach((listing) => {
-        const cardSelector = `.${listing.cardClass}`;
-        const cardEl = document.querySelector(cardSelector);
-        if (!cardEl) return;
+      // Small delay to ensure elements are rendered after language change
+      setTimeout(() => {
+        listings.forEach((listing) => {
+          const cardSelector = `.${listing.cardClass}`;
+          const cardEl = document.querySelector(cardSelector);
+          if (!cardEl) return;
 
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: cardEl,
-            start: "top 75%",
-            toggleActions: "play none none none",
-          },
-        });
+          // Just ensure the card is visible - no animation changes
+          gsap.set(cardEl, { opacity: 1, visibility: "visible" });
 
-        tl.to(cardEl, {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: "power2.out",
-        })
-          .fromTo(
-            `${cardSelector} .listing-card-image`,
-            { rotateY: listing.animation.rotateY, opacity: 0.8 },
-            {
-              rotateY: 0,
-              opacity: 1,
-              duration: listing.animation.duration,
-              ease: "power3.out",
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: cardEl,
+              start: "top 75%",
+              toggleActions: "play none none none",
             },
-            "-=0.5"
-          )
-          .to(`${cardSelector} .listing-card-title`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.8")
-          .to(`${cardSelector} .listing-card-descriptor`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.6")
-          .to(`${cardSelector} .listing-card-supporting`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.6")
-          .to(`${cardSelector} .listing-card-cta`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.5");
-      });
+          });
+
+          tl.to(cardEl, {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power2.out",
+          })
+            .fromTo(
+              `${cardSelector} .listing-card-image`,
+              { rotateY: listing.animation.rotateY, opacity: 0.8 },
+              {
+                rotateY: 0,
+                opacity: 1,
+                duration: listing.animation.duration,
+                ease: "power3.out",
+              },
+              "-=0.5"
+            )
+            .to(`${cardSelector} .listing-card-title`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.8")
+            .to(`${cardSelector} .listing-card-descriptor`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.6")
+            .to(`${cardSelector} .listing-card-supporting`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.6")
+            .to(`${cardSelector} .listing-card-cta`, { y: 0, autoAlpha: 1, duration: 0.7, ease: "power2.out" }, "-=0.5");
+        });
+      }, 100); // Small delay to wait for language change to complete
     }, componentRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [translations]);
 
   return (
     <section ref={componentRef} className="bg-background" style={{ perspective: "1200px" }}>
