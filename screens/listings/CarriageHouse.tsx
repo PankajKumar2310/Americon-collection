@@ -29,7 +29,7 @@ const CarriageHouse = () => {
       title={translations.pages.listings?.carriageHouse?.title || "The Carriage House"}
       descriptor={translations.pages.listings?.carriageHouse?.descriptor || "Refined. Self-contained. Calm by design."}
       heroImageUrl="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
-      bookingLink="https://www.americancollectionkc.com/listings/461844"
+      bookingLink="https://www.americancollectionkc.com/listings/461812"
     >
       <div className="max-w-4xl mx-auto">
         <section className="text-center">

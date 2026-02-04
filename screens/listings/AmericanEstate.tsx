@@ -29,7 +29,8 @@ const AmericanEstate = () => {
       title={translations.pages.listings?.americanEstate?.title || "The American Estate"}
       descriptor={translations.pages.listings?.americanEstate?.descriptor || "Private. Spacious. Elevated in scale and setting."}
       heroImageUrl="/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp"
-      bookingLink="https://www.americancollectionkc.com/listings/461812"
+      
+      bookingLink="https://www.americancollectionkc.com/listings/461844"
     >
       <div className="max-w-4xl mx-auto">
         <section className="text-center">
