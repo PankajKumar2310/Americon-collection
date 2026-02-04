@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { showError, showSuccess } from "@/utils/toast";
 import { Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { Editor } from "primereact/editor";
 
 // Import PrimeReact and Quill styles
@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { GALLERY_IMAGES } from "@/lib/gallery-images";
+import { Trash2, Eye } from "lucide-react";
 
 type Blog = {
   title: string;
@@ -41,13 +42,21 @@ async function fetchBlogs(): Promise<{ blogs: Blog[] }> {
   return res.json();
 }
 
+async function deleteBlog(slug: string): Promise<{ message: string }> {
+  const res = await fetch(`/api/blogs?slug=${slug}`, { method: "DELETE" });
+  if (!res.ok) throw new Error("Failed to delete blog");
+  return res.json();
+}
+
 export default function Admin() {
   const pageRef = useRef(null);
+  const queryClient = useQueryClient();
 
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
   const [content, setContent] = useState("");
   const [imageUrl, setImageUrl] = useState("");
+  const [imageInputUrl, setImageInputUrl] = useState("");
   const [metaTitle, setMetaTitle] = useState("");
   const [metaDescription, setMetaDescription] = useState("");
   const [saving, setSaving] = useState(false);
@@ -55,6 +64,30 @@ export default function Admin() {
 
   const { data, refetch } = useQuery({ queryKey: ["blogs"], queryFn: fetchBlogs });
   const blogs = data?.blogs ?? [];
+
+  const deleteMutation = useMutation({
+    mutationFn: deleteBlog,
+    onSuccess: () => {
+      showSuccess("Blog deleted successfully");
+      queryClient.invalidateQueries({ queryKey: ["blogs"] });
+    },
+    onError: (error: any) => {
+      showError(error.message || "Failed to delete blog");
+    },
+  });
+
+  const handleDelete = async (slug: string) => {
+    if (window.confirm("Are you sure you want to delete this blog? This action cannot be undone.")) {
+      deleteMutation.mutate(slug);
+    }
+  };
+
+  const handleImageUrlFromUrl = () => {
+    if (imageInputUrl.trim()) {
+      setImageUrl(imageInputUrl.trim());
+      setImageInputUrl("");
+    }
+  };
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -101,6 +134,7 @@ export default function Admin() {
       setSubtitle("");
       setContent("");
       setImageUrl("");
+      setImageInputUrl("");
       setMetaTitle("");
       setMetaDescription("");
       await refetch();
@@ -147,74 +181,97 @@ export default function Admin() {
                   value={subtitle}
                   onChange={(e) => setSubtitle(e.target.value)}
                   className="bg-card border border-white/8 rounded-md p-6 mt-2"
-                  placeholder="Subtitle"
+                  placeholder="Blog subtitle"
                 />
               </div>
 
               <div>
                 <label className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
-                  Image URL
+                  Featured Image
                 </label>
-                <Input
-                  value={imageUrl}
-                  onChange={(e) => setImageUrl(e.target.value)}
-                  className="bg-card border border-white/8 rounded-md p-6 mt-2"
-                  placeholder="https://..."
-                />
-
-                <div className="mt-3 flex flex-col md:flex-row md:items-center gap-3">
-                  <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
-                    <DialogTrigger asChild>
+                <div className="mt-2 space-y-4">
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={() => setGalleryOpen(true)}
+                      className="border-white/15 rounded-full"
+                    >
+                      {imageUrl ? "Change Image" : "Select from Gallery"}
+                    </Button>
+                    {imageUrl && (
                       <Button
                         type="button"
-                        variant="outline"
-                        className="rounded-full border-white/15"
+                        variant="ghost"
+                        onClick={() => setImageUrl("")}
+                        className="text-red-500 hover:text-red-600"
                       >
-                        Select from Gallery
+                        Remove
                       </Button>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-4xl">
-                      <DialogHeader>
-                        <DialogTitle>Select an image</DialogTitle>
-                      </DialogHeader>
-
-                      <ScrollArea className="h-[70vh] pr-3">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                          {GALLERY_IMAGES.map((img) => (
-                            <button
-                              key={img.id}
-                              type="button"
-                              onClick={() => {
-                                setImageUrl(img.imageUrl);
-                                setGalleryOpen(false);
-                              }}
-                              className="group relative aspect-[4/3] overflow-hidden rounded-lg border border-white/10 bg-card text-left"
-                            >
-                              <img
-                                src={img.imageUrl}
-                                alt={img.id}
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-                              />
-                            </button>
-                          ))}
-                        </div>
-                      </ScrollArea>
-                    </DialogContent>
-                  </Dialog>
-
-                  {imageUrl ? (
-                    <div className="flex-1">
-                      <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-white/10 bg-card">
-                        <img
-                          src={imageUrl}
-                          alt="Selected"
-                          className="absolute inset-0 w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  ) : null}
+                    )}
+                  </div>
+                  
+                  <div className="flex gap-2">
+                    <Input
+                      type="url"
+                      placeholder="https://example.com/image.jpg"
+                      value={imageInputUrl}
+                      onChange={(e) => setImageInputUrl(e.target.value)}
+                      className="bg-card border border-white/8 rounded-md p-4 flex-1"
+                    />
+                    <Button
+                      type="button"
+                      onClick={handleImageUrlFromUrl}
+                      disabled={!imageInputUrl.trim()}
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6"
+                    >
+                      Add URL
+                    </Button>
+                  </div>
                 </div>
               </div>
+
+              <Dialog open={galleryOpen} onOpenChange={setGalleryOpen}>
+                <DialogContent className="max-w-4xl max-h-[80vh]">
+                  <DialogHeader>
+                    <DialogTitle className="font-serif">Select Featured Image</DialogTitle>
+                  </DialogHeader>
+                  <ScrollArea className="max-h-[60vh]">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
+                      {GALLERY_IMAGES.map((img, index) => (
+                        <div
+                          key={img.id}
+                          onClick={() => {
+                            setImageUrl(img.imageUrl);
+                            setGalleryOpen(false);
+                          }}
+                          className="cursor-pointer group"
+                        >
+                          <div className="aspect-[16/9] overflow-hidden rounded-lg border border-white/10 bg-card">
+                            <img
+                              src={img.imageUrl}
+                              alt={`Gallery image ${index + 1}`}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </ScrollArea>
+                </DialogContent>
+              </Dialog>
+
+              {imageUrl ? (
+                <div className="flex-1">
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-white/10 bg-card">
+                    <img
+                      src={imageUrl}
+                      alt="Selected"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              ) : null}
 
               <div>
                 <label className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
@@ -280,9 +337,23 @@ export default function Admin() {
                 </CardHeader>
                 <CardContent className="flex items-center justify-between">
                   <p className="text-xs text-muted-foreground">/{b.slug}</p>
-                  <Button asChild variant="outline" className="rounded-full border-white/15">
-                    <Link to={`/blogs/${b.slug}`}>View</Link>
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button asChild variant="outline" size="sm" className="rounded-full border-white/15">
+                      <Link to={`/blogs/${b.slug}`} className="flex items-center gap-2">
+                        <Eye className="w-4 h-4" />
+                        View
+                      </Link>
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => handleDelete(b.slug)}
+                      disabled={deleteMutation.isPending}
+                      className="rounded-full border-red-500/20 text-red-500 hover:bg-red-500 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}

@@ -49,7 +49,7 @@ const WorldCup = () => {
                 {translations.pages.worldCup?.hero?.description || "Kansas City earned its place as a FIFA World Cup 2026™ host city through decades of passionate soccer support and world-class facilities. From June 11 through July 13, 2026, the region will welcome fans from around the globe to GEHA Field at Arrowhead Stadium for six thrilling matches spanning three weeks of competition. Whether you are traveling internationally for your first World Cup experience or coming from across the United States to support your team, this comprehensive guide provides everything you need to plan an unforgettable visit to America's Soccer Capital."}
               </p>
               <p className="wc-anim">
-                {translations.pages.worldCup?.hero?.americonDescription || "The Americon Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action."}
+                {translations.pages.worldCup?.hero?.americanDescription || "The American Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action."}
               </p>
             </div>
             <div className="mt-10 wc-anim">
@@ -61,7 +61,7 @@ const WorldCup = () => {
           <div className="wc-anim">
             <img
               src="/images/americonimages/kansascity.jpeg"
-              alt="Americon Estate luxurious living space perfect for World Cup stays"
+              alt="American Estate luxurious living space perfect for World Cup stays"
               className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
             />
           </div>
@@ -146,7 +146,7 @@ const WorldCup = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="wc-anim">
               <img
-                src="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
+                src="/images/carriageimages/tesla.jpeg"
                 alt="Transportation Options"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
@@ -156,10 +156,10 @@ const WorldCup = () => {
                 {translations.pages.worldCup?.transportation?.description || "FIFA World Cup 2026™ offers a dedicated transportation solution for tournament visitors. The ConnectKC motorcoach bus service operates throughout the entire tournament period from June 11 through July 13, 2026, connecting the FIFA Fan Festival™ in downtown Kansas City with 15 regional sites across the metropolitan area."}
               </p>
               <p>
-                {translations.pages.worldCup?.transportation?.rentalVehicles || "For visitors with rental vehicles or staying at properties like The Americon Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions."}
+                {translations.pages.worldCup?.transportation?.rentalVehicles || "For visitors with rental vehicles or staying at properties like The American Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions."}
               </p>
               <p>
-                {translations.pages.worldCup?.transportation?.cyberTruckService || "Guests staying at The Americon Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress."}
+                {translations.pages.worldCup?.transportation?.cyberTruckService || "Guests staying at The American Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress."}
               </p>
             </div>
           </div>
@@ -240,9 +240,9 @@ const WorldCup = () => {
           </div>
         </section>
 
-        {/* Why Choose Americon Collection Section */}
+        {/* Why Choose American Collection Section */}
         <section className="mb-24">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 wc-anim">{translations.pages.worldCup?.accommodations?.title || "Why Choose The Americon Collection for Your World Cup Stay"}</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-8 wc-anim">{translations.pages.worldCup?.accommodations?.title || "Why Choose The American Collection for Your World Cup Stay"}</h2>
           <p className="text-lg text-muted-foreground max-w-4xl mb-8 wc-anim">
             {translations.pages.worldCup?.accommodations?.description || "Our properties provide more space than hotel rooms, with multiple bedrooms, full living areas, complete kitchens, and outdoor spaces. Perfect for groups and families."}
           </p>
@@ -278,7 +278,7 @@ const WorldCup = () => {
                 {translations.pages.worldCup?.conclusion?.description || "FIFA World Cup 2026™ in Kansas City represents a once-in-a-lifetime opportunity to experience soccer's greatest tournament in America's heartland. From the passionate atmosphere at Arrowhead Stadium to the cultural richness of Kansas City's attractions and the warm hospitality of Liberty, Missouri, every element combines to create unforgettable memories."}
               </p>
               <p>
-                {translations.pages.worldCup?.conclusion?.secondDescription || "The Americon Collection provides the perfect home base for your World Cup adventure. Our luxury properties offer space, comfort, and convenience that transform your visit from a simple trip to an extraordinary experience. Start planning your FIFA World Cup 2026™ Kansas City experience today."}
+                {translations.pages.worldCup?.conclusion?.secondDescription || "The American Collection provides the perfect home base for your World Cup adventure. Our luxury properties offer space, comfort, and convenience that transform your visit from a simple trip to an extraordinary experience. Start planning your FIFA World Cup 2026™ Kansas City experience today."}
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center wc-anim">
@@ -297,7 +297,7 @@ const WorldCup = () => {
           <div className="bg-card p-8 md:p-12 rounded-lg shadow-lg">
             <h2 className="text-3xl md:text-4xl font-serif mb-6 text-center wc-anim">{translations.pages.worldCup?.newsletter?.title || "Subscribe for World Cup Updates"}</h2>
             <p className="text-lg text-muted-foreground text-center mb-8 wc-anim">
-              {translations.pages.worldCup?.newsletter?.description || "Stay informed about the FIFA World Cup 2026™ in Kansas City with our newsletter. Receive updates about match schedules, ticket information, local events, and exclusive offers for Americon Collection guests."}
+              {translations.pages.worldCup?.newsletter?.description || "Stay informed about the FIFA World Cup 2026™ in Kansas City with our newsletter. Receive updates about match schedules, ticket information, local events, and exclusive offers for American Collection guests."}
             </p>
             <form className="max-w-md mx-auto space-y-4 wc-anim">
               <input

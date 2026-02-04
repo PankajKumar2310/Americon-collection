@@ -18,7 +18,7 @@ const en: Translations = {
     informationSectionLabel: "Information",
     collectionLinks: {
       yellowHouse: "The Yellow House",
-      americanEstate: "The Americon Estate",
+      americanEstate: "The American Estate",
       carriageHouse: "The Carriage House",
     },
     exploreLinks: {
@@ -38,14 +38,14 @@ const en: Translations = {
   },
   pages: {
     listings: {
-      title: "The Americon Collection",
+      title: "The American Collection",
       subtitle: "Three residences. One consistent standard.",
       exploreCta: "Explore",
       americanEstate: {
-        title: "The Americon Estate",
+        title: "The American Estate",
         descriptor: "Private. Spacious. Elevated in scale and setting.",
         heroTitle: "A refined retreat.",
-        heroDescription: "Set on three private acres, The Americon Estate offers a sense of scale and seclusion. It's a place for significant gatherings, executive stays, or simply a desire for more space. With expansive living areas, a chef's kitchen, and private grounds, it provides a backdrop for memorable moments.",
+        heroDescription: "Set on three private acres, The American Estate offers a sense of scale and seclusion. It's a place for significant gatherings, executive stays, or simply a desire for more space. With expansive living areas, a chef's kitchen, and private grounds, it provides a backdrop for memorable moments.",
         keyFeatures: "Key Features",
         gallery: "Gallery",
         amenities: {
@@ -105,9 +105,11 @@ const en: Translations = {
       form: {
         fullName: "Full Name",
         emailAddress: "Email Address",
+        phoneNumber: "Phone Number",
         yourMessage: "Your Message",
         namePlaceholder: "Jane Doe",
         emailPlaceholder: "jane.doe@example.com",
+        phonePlaceholder: "+1 (555) 123-4567",
         messagePlaceholder: "Tell us about your travel plans or any questions you have...",
         sendButton: "Send Message",
         validation: {
@@ -123,8 +125,8 @@ const en: Translations = {
       }
     },
     gallery:{
-      title:"Explore the Americon Collection",
-      subtitle :"Step inside our thoughtfully curated residences and experience the comfort, design, and character that define every Americon Collection stay. Our gallery offers a closer look at our short-term homes near Kansas City and Liberty, Missouri, showcasing interiors, exteriors, and the details that make each property unique.",
+      title:"Explore the American Collection",
+      subtitle :"Step inside our thoughtfully curated residences and experience the comfort, design, and character that define every American Collection stay. Our gallery offers a closer look at our short-term homes near Kansas City and Liberty, Missouri, showcasing interiors, exteriors, and the details that make each property unique.",
       captions:{
         morningLight:"Morning light",
         sharedEvenings:"Shared evenings",
@@ -136,13 +138,13 @@ const en: Translations = {
     },
     about :{
         hero:{
-          title :"About Americon Collection",
-          subtitle : "Americon Collection was created with a simple idea in mind — travel should feel calm, personal, and intentional. We offer thoughtfully curated short-term residences near Kansas City and Liberty, Missouri, designed for guests who value comfort, space, and a more meaningful way to stay.",
+          title :"About American Collection",
+          subtitle : "American Collection was created with a simple idea in mind — travel should feel calm, personal, and intentional. We offer thoughtfully curated short-term residences near Kansas City and Liberty, Missouri, designed for guests who value comfort, space, and a more meaningful way to stay.",
         },
         philosophy:{
           title:"Our Philosophy: Intentional Hospitality",
           subtitle:"Travel should feel like coming home, not just visiting a place. We believe in creating spaces where guests can settle in, breathe deeply, and experience the genuine warmth of Midwestern hospitality.",
-          description:"Every detail matters when you are creating memories with the people who matter most. At The Americon Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary.",
+          description:"Every detail matters when you are creating memories with the people who matter most. At The American Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary.",
           management:"We personally manage every home in our collection, remaining hands-on with every detail and intentionally curating each stay from arrival to departure. This approach allows us to maintain the quality and consistency that turns first-time guests into returning friends. When you stay with us, you are not just booking a rental property. You are stepping into something thoughtfully created by people who genuinely care how your story unfolds.",
           properties:"Our properties share a common philosophy even as each maintains its own distinct character. We focus on homes that comfortably accommodate groups, provide spaces for gathering and celebration, and offer the privacy and amenities that make extended stays effortless. Whether you are hosting a multi-generational family reunion, traveling with friends for a sporting event, or welcoming international visitors for the FIFA World Cup 2026, our properties provide the foundation for extraordinary experiences.",
           values:[
@@ -153,17 +155,17 @@ const en: Translations = {
           ]
         },
         flagship:{
-          title:"The Americon Estate: Our Flagship Property",
+          title:"The American Estate: Our Flagship Property",
           subtitle:"Where luxury meets livability in the heart of Liberty.",
-          description:"The Americon Estate represents the pinnacle of our collection — a spacious, elegantly appointed residence that showcases our commitment to exceptional guest experiences. This property serves as the benchmark for quality and comfort that defines every Americon Collection stay.",
+          description:"The American Estate represents the pinnacle of our collection — a spacious, elegantly appointed residence that showcases our commitment to exceptional guest experiences. This property serves as the benchmark for quality and comfort that defines every American Collection stay.",
           resortTitle:"A Resort Experience in a Private Setting",
-          resortDescription1:"The Americon Estate is offered exclusively to guests seeking the ultimate vacation experience, without compromise. The property features a resort-style private pool larger than most public pools, complete with a water slide, waterfall, and hot tub. This creates a setting that feels more like a private club than a rental home, giving your group exclusive access to amenities typically found only at high-end resorts.",
+          resortDescription1:"The American Estate is offered exclusively to guests seeking the ultimate vacation experience, without compromise. The property features a resort-style private pool larger than most public pools, complete with a water slide, waterfall, and hot tub. This creates a setting that feels more like a private club than a rental home, giving your group exclusive access to amenities typically found only at high-end resorts.",
           resortDescription2:"Poolside, guests can relax and watch matches on one of the two outdoor televisions, host cookouts using the professional-grade outdoor kitchen, or enjoy a refreshing drink from the poolside refrigerator. Everything is designed to keep your group together, comfortable, and entertained without ever leaving the property.",
           outdoorTitle:"Beyond the Pool: Outdoor Experiences",
           outdoorDescription1:"The experience continues beyond the pool area. A large fire pit tucked into the back corner of the woods offers a rare and unforgettable setting for summer nights. Perfect for s'mores, storytelling, and unwinding under the stars, this secluded space offers a peaceful retreat that feels worlds away from everyday life.",
-          outdoorDescription2:"Despite its privacy and acreage, The Americon Estate is located just minutes from Kansas City's major transportation corridors, making it easy for international travelers and groups to reach Arrowhead Stadium, downtown Kansas City attractions, and the region's entertainment districts.",
+          outdoorDescription2:"Despite its privacy and acreage, The American Estate is located just minutes from Kansas City's major transportation corridors, making it easy for international travelers and groups to reach Arrowhead Stadium, downtown Kansas City attractions, and the region's entertainment districts.",
           celebrationTitle:"Designed for Groups and Celebrations",
-          celebrationDescription:"The Americon Estate accommodates large groups comfortably, with multiple bedrooms, spacious common areas, and both indoor and outdoor gathering spaces. The open floor plan encourages togetherness while providing enough space that everyone can find their own comfortable spot. Every element reflects our understanding that the best vacation memories happen when spaces support natural interaction and celebration.",
+          celebrationDescription:"The American Estate accommodates large groups comfortably, with multiple bedrooms, spacious common areas, and both indoor and outdoor gathering spaces. The open floor plan encourages togetherness while providing enough space that everyone can find their own comfortable spot. Every element reflects our understanding that the best vacation memories happen when spaces support natural interaction and celebration.",
           features:[
             "Expansive living areas perfect for groups and families",
             "Premium furnishings and designer finishes throughout",
@@ -190,7 +192,7 @@ const en: Translations = {
               description:"Warm and inviting, perfect for families and longer stays with its light-filled spaces and comfortable layout."
             },
             {
-              name:"The Americon Estate", 
+              name:"The American Estate", 
               description:"Our flagship property offering luxury amenities, spacious living areas, and premium finishes throughout."
             },
             {
@@ -215,7 +217,7 @@ const en: Translations = {
         lookingAhead:{
           title:"Looking Ahead: World Cup 2026 and Beyond",
           subtitle:"Positioned for the future while maintaining our commitment to exceptional hospitality.",
-          description:"As Kansas City prepares to host FIFA World Cup 2026 matches, The Americon Collection is perfectly positioned to welcome international visitors, teams, and soccer fans. Our properties offer the ideal combination of proximity to venues and the peaceful retreat needed to enjoy this global event.",
+          description:"As Kansas City prepares to host FIFA World Cup 2026 matches, The American Collection is perfectly positioned to welcome international visitors, teams, and soccer fans. Our properties offer the ideal combination of proximity to venues and the peaceful retreat needed to enjoy this global event.",
           worldcupPrep:[
             "Strategic location just minutes from Arrowhead Stadium",
             "Experience hosting international guests and groups",
@@ -257,7 +259,7 @@ const en: Translations = {
       featuredListingsIntro: {
         eyebrow: "Our Premier Collection: Luxury Kansas City Vacation Rentals",
         heading:
-          "Discover your perfect home base for the FIFA World Cup 2026 and Kansas City adventures. Each property in The Americon Collection offers distinctive luxury, modern amenities, and the perfect blend of privacy and proximity to world-class events. Whether you need space for a large family reunion, a group of friends traveling for the World Cup, or an intimate getaway, our collection delivers unforgettable experiences in the heart of Missouri. ",
+          "Discover your perfect home base for the FIFA World Cup 2026 and Kansas City adventures. Each property in The American Collection offers distinctive luxury, modern amenities, and the perfect blend of privacy and proximity to world-class events. Whether you need space for a large family reunion, a group of friends traveling for the World Cup, or an intimate getaway, our collection delivers unforgettable experiences in the heart of Missouri. ",
       },
       featuredListings: {
         yellowHouse: {
@@ -268,8 +270,8 @@ const en: Translations = {
           ctaText: "Book Your Stay",
         },
         americanEstate: {
-          title: "The Americon Estate",
-          descriptor: "Private and spacious, The Americon Estate offers an elevated setting with room to arrive, settle, and stay in style — excellent for groups or special trips.",
+          title: "The American Estate",
+          descriptor: "Private and spacious, The American Estate offers an elevated setting with room to arrive, settle, and stay in style — excellent for groups or special trips.",
           supportingLine:
             "A refined retreat with room to arrive, settle, and stay.",
           ctaText: "Book Your Stay",
@@ -292,19 +294,19 @@ const en: Translations = {
           "Airport transfers from Kansas City International (MCI)",
           "Transportation to World Cup venues and events",
           "Custom city tours and exploration services",
-          "Available for all Americon Collection guests"
+          "Available for all American Collection guests"
         ],
         cta:"Reserve Your Ride"
       },
       libertyHomeowners:{
         title:"Liberty Homeowners: Capitalize on World Cup 2026",
         subtitle:"Partner with us to showcase Liberty's hospitality to the world.",
-        description:"As Liberty prepares to welcome thousands of international visitors for FIFA World Cup 2026, local homeowners have a unique opportunity to participate in this historic event. Partner with The Americon Collection to showcase your property while maintaining our standards of excellence.",
+        description:"As Liberty prepares to welcome thousands of international visitors for FIFA World Cup 2026, local homeowners have a unique opportunity to participate in this historic event. Partner with The American Collection to showcase your property while maintaining our standards of excellence.",
         benefits:[
           "Access to our premium booking and marketing platform",
           "Professional property management and guest services",
           "Revenue potential during World Cup and beyond",
-          "Association with The Americon Collection brand",
+          "Association with The American Collection brand",
           "Support from experienced hospitality professionals"
         ],
         cta:"Learn About Partnership"
@@ -326,7 +328,7 @@ const en: Translations = {
       worldCupGateway:{
         title:"Your Gateway to FIFA World Cup 2026™ and Kansas City",
         subtitle:"Premier accommodations for the world's biggest soccer celebration.",
-        description:"The Americon Collection presents exclusive luxury accommodations perfectly positioned for FIFA World Cup 2026™. Our premium properties in Liberty, Missouri, offer the ideal combination of proximity to World Cup venues and the peaceful retreat needed to enjoy this global sporting event in comfort and style.",
+        description:"The American Collection presents exclusive luxury accommodations perfectly positioned for FIFA World Cup 2026™. Our premium properties in Liberty, Missouri, offer the ideal combination of proximity to World Cup venues and the peaceful retreat needed to enjoy this global sporting event in comfort and style.",
         highlights:[
           "Minutes from Arrowhead Stadium - World Cup venue",
           "Luxury accommodations for groups and families",
@@ -340,7 +342,7 @@ const en: Translations = {
       trustBadges:{
         title:"Trust Badges & Credentials",
         subtitle:"Your assurance of quality, reliability, and exceptional service.",
-        description:"The Americon Collection maintains the highest standards in short-term rental hospitality. Our credentials and partnerships reflect our commitment to providing exceptional experiences for every guest, from World Cup visitors to leisure travelers.",
+        description:"The American Collection maintains the highest standards in short-term rental hospitality. Our credentials and partnerships reflect our commitment to providing exceptional experiences for every guest, from World Cup visitors to leisure travelers.",
         badges:[
           {
             name:"Licensed & Insured",
@@ -361,7 +363,7 @@ const en: Translations = {
         ]
       },
       why: {
-        title: "Why Americon Collection",
+        title: "Why American Collection",
         subtitle: "At Americon Collection, we believe a great stay starts with a thoughtful home — not just a room. That’s why each residence is chosen for its quality, comfort, and thoughtful design.",
         cards: {
           approach: {
@@ -423,7 +425,7 @@ const en: Translations = {
       },
       capturedMoments: {
         title: "Gallery — Captured Moments",
-        body: "Explore highlights from our residences and guest stays. Discover the warmth of shared moments, relaxing spaces, and purposeful design that define the Americon experience.",
+        body: "Explore highlights from our residences and guest stays. Discover the warmth of shared moments, relaxing spaces, and purposeful design that define the American experience.",
         cta: "View Gallery",
       },
       bookWithConfidence: {
@@ -446,8 +448,8 @@ const en: Translations = {
       hero:{
         title:"FIFA World Cup 2026™ Kansas City",
         subtitle:"Experience the world's biggest soccer celebration from luxury accommodations just minutes from Arrowhead Stadium",
-        description:"Welcome to Kansas City's premier destination for FIFA World Cup 2026™! The Americon Collection offers exclusive luxury accommodations in Liberty, Missouri, perfectly positioned for soccer fans and international visitors. Our premium properties provide the ideal base for experiencing World Cup matches while enjoying the comfort and privacy of upscale residences.",
-        americonDescription:"The Americon Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action.",
+        description:"Welcome to Kansas City's premier destination for FIFA World Cup 2026™! The American Collection offers exclusive luxury accommodations in Liberty, Missouri, perfectly positioned for soccer fans and international visitors. Our premium properties provide the ideal base for experiencing World Cup matches while enjoying the comfort and privacy of upscale residences.",
+        americanDescription:"The American Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action.",
         primaryCta:"Book Your World Cup Stay",
         secondaryCta:"View Match Schedule"
       },
@@ -476,7 +478,7 @@ const en: Translations = {
         description:"Arrowhead Stadium, located just 15 minutes from our properties, will host multiple FIFA World Cup 2026™ matches. This legendary venue, known for its incredible atmosphere and passionate fans, will welcome soccer fans from around the world for this historic event.",
         capacity:"With a capacity of approximately 76,640 for soccer configurations, Arrowhead Stadium creates an intimate yet massive atmosphere, with every seat offering a clear view of the pitch. The stadium's bowl design keeps fans close to the action, while modern amenities ensure comfort throughout the match experience.",
         highlights:[
-          "15-minute drive from Americon Collection properties",
+          "15-minute drive from American Collection properties",
           "Home to multiple World Cup matches including knockout rounds",
           "Legendary venue with 76,000+ seat capacity",
           "State-of-the-art facilities and fan experience",
@@ -506,8 +508,8 @@ const en: Translations = {
         title:"Transportation & Access",
         subtitle:"Seamless connectivity to World Cup venues and Kansas City attractions",
         description:"Getting around during World Cup 2026™ is effortless from our Liberty locations. Enjoy convenient access to Arrowhead Stadium, downtown Kansas City, and all tournament venues with our premium transportation services and strategic location.",
-        rentalVehicles:"For visitors with rental vehicles or staying at properties like The Americon Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions.",
-        cyberTruckService:"Guests staying at The Americon Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress.",
+        rentalVehicles:"For visitors with rental vehicles or staying at properties like The American Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions.",
+        cyberTruckService:"Guests staying at The American Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress.",
         options:[
           "Premium CyberTruck transportation service",
           "15-minute drive to Arrowhead Stadium",

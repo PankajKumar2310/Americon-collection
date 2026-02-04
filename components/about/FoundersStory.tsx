@@ -44,7 +44,7 @@ const FoundersStory = () => {
         <div className="founder-image">
           <img
             src="/founders.png"
-            alt="Jay and Jenny, founders of Americon Collection"
+            alt="Jay and Jenny, founders of American Collection"
             className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
           />
         </div>

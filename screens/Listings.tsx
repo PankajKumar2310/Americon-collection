@@ -23,7 +23,7 @@ const Listings = () => {
       imageUrl: "/images/yellowimages/bannerimage.jpg",
     },
     {
-      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The Americon Estate",
+      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The American Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Considered.",
       linkTo: "/listings/american-estate",
       imageUrl: "/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp",
@@ -68,7 +68,7 @@ const Listings = () => {
     return (
       <div ref={componentRef} className="container mx-auto pt-32 pb-24">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-serif">{translations.pages.listings?.title || "The Americon Collection"}</h1>
+          <h1 className="text-4xl font-serif">{translations.pages.listings?.title || "The American Collection"}</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-md mx-auto">{translations.pages.listings?.subtitle || "Three residences. One consistent standard."}</p>
         </div>
         <div className="space-y-24">

@@ -43,7 +43,7 @@ const LibertyHomeowners = () => {
               {translations.pages.home?.libertyHomeowners?.title || "Liberty Homeowners: Capitalize on World Cup 2026"}
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto homeowners-anim">
-              {translations.pages.home?.libertyHomeowners?.description || "Own a home in Liberty? FIFA World Cup 2026 brings unprecedented demand for accommodations near Arrowhead Stadium. The Americon Collection handles all marketing, bookings, guest services, and property management while you earn premium revenue."}
+              {translations.pages.home?.libertyHomeowners?.description || "Own a home in Liberty? FIFA World Cup 2026 brings unprecedented demand for accommodations near Arrowhead Stadium. The American Collection handles all marketing, bookings, guest services, and property management while you earn premium revenue."}
             </p>
           </div>
 

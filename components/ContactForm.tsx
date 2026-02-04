@@ -27,6 +27,7 @@ export function ContactForm() {
     email: z.string().email({
       message: translations.pages.contact?.form?.validation?.emailValid || "Please enter a valid email address.",
     }),
+    phone: z.string().optional(),
     message: z.string().min(10, {
       message: translations.pages.contact?.form?.validation?.messageMin || "Message must be at least 10 characters.",
     }),
@@ -37,6 +38,7 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   });
@@ -117,6 +119,25 @@ export function ContactForm() {
             )}
           />
         </div>
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
+                {translations.pages.contact?.form?.phoneNumber || "Phone Number"}
+              </FormLabel>
+              <FormControl>
+                <Input 
+                  placeholder={translations.pages.contact?.form?.phonePlaceholder || "+1 (555) 123-4567"} 
+                  {...field} 
+                  className="bg-card border border-white/8 rounded-md p-6" 
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="message"

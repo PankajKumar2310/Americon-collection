@@ -24,11 +24,11 @@ const FeaturedListings = () => {
       reverseLayout: false,
     },
     {
-      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The Americon Estate",
+      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The American Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Elevated in scale and setting.",
       supportingLine: translations.pages.home?.featuredListings?.americanEstate?.supportingLine || "A refined retreat with room to arrive, settle, and stay.",
       ctaText: translations.pages.home?.featuredListings?.americanEstate?.ctaText || "Explore the estate",
-      imageUrl: "/images/americonimages/175903-461844-O0tM9Ht2xbRFTrKN-qEkLMxGuGUu6j6KZpGW9gWV1fo-69324626d64be.webp",
+      imageUrl: "/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp",
       linkTo: "/listings/american-estate",
       cardClass: "american-estate",
       animation: { rotateY: -4, duration: 1.4 },

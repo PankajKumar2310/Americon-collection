@@ -52,7 +52,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-6">
         <Link to="/" className="transition-opacity hover:opacity-80 flex-shrink-0">
-          <img src="/logo.png" alt="Americon Collection Logo" className="h-24" />
+          <img src="/logo.png" alt="Americon Collection Logo" className="h-14" />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-10">

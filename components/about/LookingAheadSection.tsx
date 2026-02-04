@@ -43,7 +43,7 @@ const LookingAheadSection = () => {
               {translations.pages.about?.lookingAhead?.title || "Looking Ahead: World Cup 2026 and Beyond"}
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground looking-ahead-anim max-w-4xl mx-auto">
-              {translations.pages.about?.lookingAhead?.description || "FIFA World Cup 2026 represents a transformative moment for Kansas City and The Americon Collection. As one of the host cities for this global event, Kansas City will welcome hundreds of thousands of visitors from around the world. The Americon Collection is preparing to play a significant role in ensuring these visitors experience exceptional hospitality and create lasting positive impressions of the United States."}
+              {translations.pages.about?.lookingAhead?.description || "FIFA World Cup 2026 represents a transformative moment for Kansas City and The American Collection. As one of the host cities for this global event, Kansas City will welcome hundreds of thousands of visitors from around the world. The American Collection is preparing to play a significant role in ensuring these visitors experience exceptional hospitality and create lasting positive impressions of the United States."}
             </p>
           </div>
 

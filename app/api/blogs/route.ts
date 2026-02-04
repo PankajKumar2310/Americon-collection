@@ -76,3 +76,34 @@ export async function POST(req: Request) {
     );
   }
 }
+
+export async function DELETE(req: Request) {
+  try {
+    const isAdmin = cookies().get("ac_admin")?.value === "1";
+    if (!isAdmin) {
+      return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+    }
+
+    const { searchParams } = new URL(req.url);
+    const slug = searchParams.get("slug");
+
+    if (!slug) {
+      return NextResponse.json({ message: "Slug is required" }, { status: 400 });
+    }
+
+    await connectMongo();
+
+    const blog = await Blog.findOneAndDelete({ slug });
+    if (!blog) {
+      return NextResponse.json({ message: "Blog not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ message: "Blog deleted successfully" });
+  } catch (error: any) {
+    console.error("DELETE /api/blogs error:", error);
+    return NextResponse.json(
+      { message: "Failed to delete blog", error: error.message },
+      { status: 500 },
+    );
+  }
+}

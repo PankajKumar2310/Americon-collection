@@ -46,14 +46,14 @@ const MeetHostsSection = () => {
                   Their vision was simple: create spaces where visitors can experience the authentic warmth and charm of Liberty while enjoying world-class comfort and service.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4 hosts-anim">
-                  Jay and Jenny bring years of experience in hospitality and a deep love for the Kansas City area to every aspect of The Americon Collection.
+                  Jay and Jenny bring years of experience in hospitality and a deep love for the Kansas City area to every aspect of The American Collection.
                 </p>
               </div>
             </div>
             <div className="order-1 md:order-2">
               <img
                 src="/founders.png"
-                alt="Jay and Jenny, founders of Americon Collection"
+                alt="Jay and Jenny, founders of American Collection"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5] hosts-anim"
               />
             </div>
@@ -80,7 +80,7 @@ const MeetHostsSection = () => {
                   Jay and Jenny do not outsource the experience. They are hands-on with every property, every stay, and every decision. From how a home flows for a group gathering, to how an outdoor space feels at night, to whether a guest arriving from another country will feel instantly at ease, nothing is accidental. This personal involvement enables them to maintain quality standards that larger property management companies cannot match.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Their goal is not just great reviews, though The Americon Collection consistently earns them. Their goal is to create moments where guests say, "This is exactly what we hoped for." That might mean helping international visitors understand American customs, recommending the perfect local restaurant for a celebration dinner, or simply ensuring that every light bulb works and every amenity functions flawlessly.
+                  Their goal is not just great reviews, though The American Collection consistently earns them. Their goal is to create moments where guests say, "This is exactly what we hoped for." That might mean helping international visitors understand American customs, recommending the perfect local restaurant for a celebration dinner, or simply ensuring that every light bulb works and every amenity functions flawlessly.
                 </p>
               </div>
             </div>

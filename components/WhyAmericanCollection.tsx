@@ -8,7 +8,7 @@ import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const WhyAmericonCollection = () => {
+const WhyAmericanCollection = () => {
   const { translations } = useLanguage();
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -133,7 +133,7 @@ const WhyAmericonCollection = () => {
       <section ref={sectionRef} className="bg-card py-24 overflow-hidden">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif why-title-anim">{translations.pages.home?.why?.title || "Why Americon Collection"}</h2>
+            <h2 className="text-3xl font-serif why-title-anim">{translations.pages.home?.why?.title || "Why American Collection"}</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto why-title-anim">
               {translations.pages.home?.why?.subtitle || "A quieter, more intentional approach to short-term stays."}
             </p>
@@ -154,7 +154,7 @@ const WhyAmericonCollection = () => {
     <section ref={sectionRef} className="relative bg-card h-screen overflow-hidden">
       <div className="container mx-auto h-full flex items-center">
         <div className="w-full max-w-sm md:max-w-md">
-          <h2 className="text-4xl font-serif why-title-anim">{translations.pages.home?.why?.title || "Why Americon Collection"}</h2>
+          <h2 className="text-4xl font-serif why-title-anim">{translations.pages.home?.why?.title || "Why American Collection"}</h2>
           <p className="mt-4 text-lg text-muted-foreground why-title-anim">
             {translations.pages.home?.why?.subtitle || "A quieter, more intentional approach to short-term stays."}
           </p>
@@ -174,4 +174,4 @@ const WhyAmericonCollection = () => {
   );
 };
 
-export default WhyAmericonCollection;
+export default WhyAmericanCollection;

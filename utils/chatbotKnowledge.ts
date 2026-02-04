@@ -81,7 +81,7 @@ export const websiteKnowledgeBase: Record<string, ChatbotResponse> = {
 export const chatbotFlow: ChatbotFlow[] = [
   {
     id: 'welcome',
-    question: 'Welcome to The Americon Collection! How can I help you today?',
+    question: 'Welcome to The American Collection! How can I help you today?',
     options: [
       { text: 'I\'m interested in World Cup stays', nextId: 'worldcup' },
       { text: 'Tell me about your properties', nextId: 'properties' },

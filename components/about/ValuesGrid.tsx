@@ -48,7 +48,7 @@ const ValuesGrid = () => {
 
       {/* ✅ CENTERED HEADING */}
       <h1 className="text-5xl md:text-5xl font-serif about-hero-anim text-center mb-16">
-        What Makes Americon Collection Different
+        What Makes American Collection Different
       </h1>
 
       <div className="container mx-auto">

@@ -541,7 +541,7 @@ export type Translations = {
       title: string;
       subtitle: string;
       description: string;
-      americonDescription: string;
+      americanDescription: string;
       primaryCta: string;
       secondaryCta: string;
     };

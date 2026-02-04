@@ -91,7 +91,7 @@ const WhyLibertySection = () => {
             <div>
               <h3 className="text-2xl md:text-3xl font-serif mb-4">Room to Grow</h3>
               <p className="text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                As Kansas City prepares for World Cup 2026, Liberty provides the space and housing stock necessary to accommodate the surge in visitor demand. The community includes numerous well-maintained homes suitable for vacation rentals, allowing The Americon Collection to expand thoughtfully while maintaining quality standards. This growth potential ensures we can serve more visitors without compromising the personalized service and attention to detail that define our brand.
+                As Kansas City prepares for World Cup 2026, Liberty provides the space and housing stock necessary to accommodate the surge in visitor demand. The community includes numerous well-maintained homes suitable for vacation rentals, allowing The American Collection to expand thoughtfully while maintaining quality standards. This growth potential ensures we can serve more visitors without compromising the personalized service and attention to detail that define our brand.
               </p>
             </div>
           </div>
