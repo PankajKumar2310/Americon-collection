@@ -38,13 +38,13 @@ const FoundersStory = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-12 md:gap-24 items-center">
         <div className="text-center md:text-left">
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed founder-text">
-            {translations.pages.about?.foundersStory || "We're Jay and Jenny, Kansas City locals who started hosting with one simple goal: create clean, comfortable spaces that feel good the moment you walk in."}
+            {translations.pages.about?.hosts?.description || "We're Jay and Jenny, Kansas City locals who started hosting with one simple goal: create clean, comfortable spaces that feel good the moment you walk in."}
           </p>
         </div>
         <div className="founder-image">
           <img
             src="/founders.png"
-            alt="Jay and Jenny, founders of American Collection"
+            alt="Jay and Jenny, founders of Americon Collection"
             className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
           />
         </div>

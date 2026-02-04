@@ -41,7 +41,7 @@ const PhilosophySection = () => {
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed philosophy-anim">
             <p>
-              Every detail matters when you are creating memories with the people who matter most. At The American Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary.
+              Every detail matters when you are creating memories with the people who matter most. At The Americon Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary.
             </p>
             <p>
               We personally manage every home in our collection, remaining hands-on with every detail and intentionally curating each stay from arrival to departure. This approach allows us to maintain the quality and consistency that turns first-time guests into returning friends. When you stay with us, you are not just booking a rental property. You are stepping into something thoughtfully created by people who genuinely care how your story unfolds.

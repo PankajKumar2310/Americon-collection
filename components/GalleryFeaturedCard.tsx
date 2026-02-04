@@ -24,7 +24,7 @@ const FeaturedListings = () => {
       reverseLayout: false,
     },
     {
-      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The American Estate",
+      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The Americon Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Elevated in scale and setting.",
       supportingLine: translations.pages.home?.featuredListings?.americanEstate?.supportingLine || "A refined retreat with room to arrive, settle, and stay.",
       ctaText: translations.pages.home?.featuredListings?.americanEstate?.ctaText || "Explore the estate",

@@ -52,7 +52,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-6">
         <Link to="/" className="transition-opacity hover:opacity-80 flex-shrink-0">
-          <img src="/logo.png" alt="American Collection Logo" className="h-14" />
+          <img src="/logo.png" alt="Americon Collection Logo" className="h-14" />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-10">
@@ -109,7 +109,7 @@ const Header = () => {
             <SheetContent side="right" className="bg-background border-l border-white/8 w-[280px]">
               <div className="flex flex-col h-full p-4">
                 <Link to="/" className="mb-12 mt-4">
-                  <img src="/logo.png" alt="American Collection Logo" className="h-20" />
+                  <img src="/logo.png" alt="Americon Collection Logo" className="h-20" />
                 </Link>
                 <nav className="flex flex-col space-y-6">
                   {navLinks.map(link => (

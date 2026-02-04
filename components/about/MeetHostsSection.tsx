@@ -39,7 +39,7 @@ const MeetHostsSection = () => {
               Meet Jay & Jenny: The Hosts Behind The Collection
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground hosts-anim max-w-4xl mx-auto">
-              The American Collection exists because Jay and Jenny believe that where you stay should be part of the story, not just the place you sleep. They are hosts by nature and the kind of people who notice the small things because those are the things guests remember long after the trip is over.
+              The Americon Collection exists because Jay and Jenny believe that where you stay should be part of the story, not just the place you sleep. They are hosts by nature and the kind of people who notice the small things because those are the things guests remember long after the trip is over.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const MeetHostsSection = () => {
                   Jay is the big-picture thinker. He loves the strategy, the vision, and turning a "what if" into something real. His background in business and project management means he approaches hospitality with both creativity and precision. Jay sees possibilities where others see obstacles, whether that means transforming a property into something extraordinary or solving logistical challenges that make international travel seamless for guests.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  Jenny is the heartbeat of The American Collection. She brings the design instincts, the warmth, and the eye for detail that make a space feel welcoming the moment you walk in. Her talent for creating environments that feel both luxurious and livable ensures every property in the collection strikes the perfect balance between impressive and comfortable.
+                  Jenny is the heartbeat of The Americon Collection. She brings the design instincts, the warmth, and the eye for detail that make a space feel welcoming the moment you walk in. Her talent for creating environments that feel both luxurious and livable ensures every property in the collection strikes the perfect balance between impressive and comfortable.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
                   Together, they balance each other perfectly. One dreaming ahead, the other making sure every detail feels intentional and personal. This partnership creates properties that are both aspirational and accessible, impressive yet inviting.
@@ -61,7 +61,7 @@ const MeetHostsSection = () => {
             <div className="space-y-6 hosts-anim">
               <img 
                 src="/images/yellowimages/bannerimage.jpg"
-                alt="Jay and Jenny - The American Collection Hosts"
+                alt="Jay and Jenny - The Americon Collection Hosts"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />
             </div>
@@ -82,7 +82,7 @@ const MeetHostsSection = () => {
                   Jay and Jenny do not outsource the experience. They are hands-on with every property, every stay, and every decision. From how a home flows for a group gathering, to how an outdoor space feels at night, to whether a guest arriving from another country will feel instantly at ease, nothing is accidental. This personal involvement enables them to maintain quality standards that larger property management companies cannot match.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  Their goal is not just great reviews, though The American Collection consistently earns them. Their goal is to create moments where guests say, "This is exactly what we hoped for." That might mean helping international visitors understand American customs, recommending the perfect local restaurant for a celebration dinner, or simply ensuring that every light bulb works and every amenity functions flawlessly.
+                  Their goal is not just great reviews, though The Americon Collection consistently earns them. Their goal is to create moments where guests say, "This is exactly what we hoped for." That might mean helping international visitors understand American customs, recommending the perfect local restaurant for a celebration dinner, or simply ensuring that every light bulb works and every amenity functions flawlessly.
                 </p>
               </div>
             </div>

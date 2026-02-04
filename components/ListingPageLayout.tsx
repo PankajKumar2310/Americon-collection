@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 interface ListingPageLayoutProps {
   title: string;
@@ -12,6 +13,7 @@ interface ListingPageLayoutProps {
 }
 
 const ListingPageLayout = ({ title, descriptor, heroImageUrl, bookingLink, children }: ListingPageLayoutProps) => {
+  const { translations } = useLanguage();
   const layoutRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -45,7 +47,7 @@ const ListingPageLayout = ({ title, descriptor, heroImageUrl, bookingLink, child
               className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-sans uppercase tracking-widest"
               onClick={() => window.open(bookingLink, '_blank')}
             >
-              Book Your Stay
+              {translations.pages.listings?.bookYourStay || "Book Your Stay"}
             </Button>
           </div>
         </div>

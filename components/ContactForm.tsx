@@ -15,20 +15,23 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { showSuccess, showError, showLoading, dismissToast } from "@/utils/toast";
-
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-});
+import { useLanguage } from "@/translations/LanguageProvider";
 
 export function ContactForm() {
+  const { translations } = useLanguage();
+  
+  const formSchema = z.object({
+    name: z.string().min(2, {
+      message: translations.pages.contact?.form?.validation?.nameMin || "Name must be at least 2 characters.",
+    }),
+    email: z.string().email({
+      message: translations.pages.contact?.form?.validation?.emailValid || "Please enter a valid email address.",
+    }),
+    message: z.string().min(10, {
+      message: translations.pages.contact?.form?.validation?.messageMin || "Message must be at least 10 characters.",
+    }),
+  });
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,7 +43,7 @@ export function ContactForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Form submitted:", values);
-    const loadingToast = showLoading("Sending message...");
+    const loadingToast = showLoading(translations.pages.contact?.form?.messages?.sending || "Sending message...");
 
     try {
       const response = await fetch("/api/contact", {
@@ -57,7 +60,7 @@ export function ContactForm() {
         if (typeof loadingToast === 'string') {
           dismissToast(loadingToast);
         }
-        showSuccess(data.message || "Thank you for your message! We'll be in touch soon.");
+        showSuccess(data.message || translations.pages.contact?.form?.messages?.success || "Thank you for your message! We'll be in touch soon.");
         form.reset();
       } else {
         throw new Error(data.message || "Failed to send message");
@@ -67,7 +70,7 @@ export function ContactForm() {
       if (typeof loadingToast === 'string') {
         dismissToast(loadingToast);
       }
-      showError("Failed to send message. Please try again later.");
+      showError(translations.pages.contact?.form?.messages?.error || "Failed to send message. Please try again later.");
     }
   }
 
@@ -80,9 +83,15 @@ export function ContactForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">Full Name</FormLabel>
+                <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
+                  {translations.pages.contact?.form?.fullName || "Full Name"}
+                </FormLabel>
                 <FormControl>
-                  <Input placeholder="Jane Doe" {...field} className="bg-card border border-white/8 rounded-md p-6" />
+                  <Input 
+                    placeholder={translations.pages.contact?.form?.namePlaceholder || "Jane Doe"} 
+                    {...field} 
+                    className="bg-card border border-white/8 rounded-md p-6" 
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -93,9 +102,15 @@ export function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">Email Address</FormLabel>
+                <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
+                  {translations.pages.contact?.form?.emailAddress || "Email Address"}
+                </FormLabel>
                 <FormControl>
-                  <Input placeholder="jane.doe@example.com" {...field} className="bg-card border border-white/8 rounded-md p-6" />
+                  <Input 
+                    placeholder={translations.pages.contact?.form?.emailPlaceholder || "jane.doe@example.com"} 
+                    {...field} 
+                    className="bg-card border border-white/8 rounded-md p-6" 
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -107,10 +122,12 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">Your Message</FormLabel>
+              <FormLabel className="font-sans uppercase tracking-wider text-xs text-muted-foreground">
+                {translations.pages.contact?.form?.yourMessage || "Your Message"}
+              </FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us about your travel plans or any questions you have..."
+                  placeholder={translations.pages.contact?.form?.messagePlaceholder || "Tell us about your travel plans or any questions you have..."}
                   className="min-h-[150px] bg-card border border-white/8 rounded-md p-6"
                   {...field}
                 />
@@ -120,8 +137,12 @@ export function ContactForm() {
           )}
         />
         <div className="text-center">
-          <Button type="submit" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-sans uppercase tracking-widest">
-            Send Message
+          <Button 
+            type="submit" 
+            size="lg" 
+            className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 py-7 text-base font-sans uppercase tracking-widest"
+          >
+            {translations.pages.contact?.form?.sendButton || "Send Message"}
           </Button>
         </div>
       </form>

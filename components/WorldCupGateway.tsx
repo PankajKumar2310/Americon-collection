@@ -118,7 +118,7 @@ const WorldCupGateway = () => {
                 </div>
               </div>
               <p className="text-muted-foreground">
-                The American Collection properties place you at the center of this historic event while providing comfortable home bases for exploring everything the region offers.
+                The Americon Collection properties place you at the center of this historic event while providing comfortable home bases for exploring everything the region offers.
               </p>
             </div>
           </div>

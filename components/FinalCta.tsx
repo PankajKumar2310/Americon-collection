@@ -41,7 +41,7 @@ const FinalCta = () => {
           {translations.pages.home?.finalCta?.title || "Find the Right Place to Stay"}
         </h2>
         <p className="mt-4 text-lg text-muted-foreground moments-text-anim">
-            {translations.pages.home?.finalCta?.para || "Moments across the American Collection."}
+            {translations.pages.home?.finalCta?.para || "Moments across the Americon Collection."}
           </p>
         <div className="final-cta-anim mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-sans uppercase tracking-widest">

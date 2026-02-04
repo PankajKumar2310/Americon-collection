@@ -39,7 +39,7 @@ const PropertiesSection = () => {
               Our Properties: Curated for Exceptional Experiences
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground properties-anim max-w-4xl mx-auto">
-              While The American Estate serves as our flagship property, The American Collection includes additional carefully selected homes throughout Liberty and the Kansas City suburbs. Each property is selected and prepared with the same attention to detail and commitment to the guest experience that define our brand.
+              While The Americon Estate serves as our flagship property, The Americon Collection includes additional carefully selected homes throughout Liberty and the Kansas City suburbs. Each property is selected and prepared with the same attention to detail and commitment to the guest experience that define our brand.
             </p>
           </div>
 
@@ -61,13 +61,13 @@ const PropertiesSection = () => {
             <div className="bg-background rounded-lg shadow-lg overflow-hidden properties-anim">
               <img 
                 src="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
-                alt="The American Estate"
+                alt="The Americon Estate"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl md:text-2xl font-serif mb-3">The American Estate: Flagship Luxury</h3>
+                <h3 className="text-xl md:text-2xl font-serif mb-3">The Americon Estate: Flagship Luxury</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Experience the pinnacle of luxury accommodation at The American Estate. This expansive property features breathtaking architecture, a private pool, and premium amenities throughout. Designed for guests who demand the finest, the estate offers multiple entertainment areas and stunning outdoor spaces.
+                  Experience the pinnacle of luxury accommodation at The Americon Estate. This expansive property features breathtaking architecture, a private pool, and premium amenities throughout. Designed for guests who demand the finest, the estate offers multiple entertainment areas and stunning outdoor spaces.
                 </p>
               </div>
             </div>
@@ -91,10 +91,10 @@ const PropertiesSection = () => {
             <div>
               <h3 className="text-2xl md:text-3xl font-serif mb-4">Expanding the Collection</h3>
               <p className="text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                As we prepare for the FIFA World Cup 2026 and beyond, The American Collection is thoughtfully expanding to include additional properties throughout Liberty and the Kansas City area. We are partnering with select Liberty homeowners who share our commitment to quality and guest experience, helping them prepare their properties for the unprecedented demand the World Cup will bring.
+                As we prepare for the FIFA World Cup 2026 and beyond, The Americon Collection is thoughtfully expanding to include additional properties throughout Liberty and the Kansas City area. We are partnering with select Liberty homeowners who share our commitment to quality and guest experience, helping them prepare their properties for the unprecedented demand the World Cup will bring.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4 max-w-4xl mx-auto">
-                Each property added to The American Collection undergoes thorough evaluation and preparation to ensure it meets our standards. We invest in professional photography, detailed property descriptions, and any improvements necessary to deliver the experience our guests expect.
+                Each property added to The Americon Collection undergoes thorough evaluation and preparation to ensure it meets our standards. We invest in professional photography, detailed property descriptions, and any improvements necessary to deliver the experience our guests expect.
               </p>
             </div>
           </div>

@@ -47,7 +47,7 @@ const CyberTruckService = () => {
                 </div>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Make your World Cup 2026 experience truly unforgettable with our exclusive Tesla CyberTruck transportation service. Available to guests staying at The American Estate and The Carriage House, this premium amenity ensures you arrive at GEHA Field at Arrowhead Stadium in cutting-edge style and comfort.
+                Make your World Cup 2026 experience truly unforgettable with our exclusive Tesla CyberTruck transportation service. Available to guests staying at The Americon Estate and The Carriage House, this premium amenity ensures you arrive at GEHA Field at Arrowhead Stadium in cutting-edge style and comfort.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Skip the parking hassles and traffic stress—let us handle the logistics while you focus on enjoying the matches.

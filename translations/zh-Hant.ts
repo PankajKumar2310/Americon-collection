@@ -3,124 +3,569 @@ import { Translations } from "./types";
 const zhHant: Translations = {
   languageCode: "zh-Hant",
   languageName: "繁體中文",
-  nav: { 
-    home: "首頁", 
-    listings: "住宿", 
-    gallery: "畫廊", 
-    worldCup: "KCWC26", 
-    about: "關於我們", 
-    contact: "聯繫",
+  nav: {
+    home: "首頁",
+    listings: "房源",
+    gallery: "畫廊",
+    worldCup: "KCWC26",
+    about: "關於我們",
+    contact: "聯絡我們",
     blogs: "部落格",
   },
   footer: {
-    collectionSectionLabel: "系列",
+    collectionSectionLabel: "精選系列",
     exploreSectionLabel: "探索",
     informationSectionLabel: "資訊",
-    collectionLinks: { yellowHouse: "The Yellow House", americanEstate: "The American Estate", carriageHouse: "The Carriage House" },
-    exploreLinks: { listings: "住宿", gallery: "畫廊", worldCup: "KCWC26", explore: "探索KC和Liberty", transportation: "交通", about: "關於我們", contact: "聯繫" },
-    infoLinks: { privacy: "隱私政策", terms: "條款和條件" },
-    worldCupTagline: "2026世界盃住宿靠近堪薩斯城",
+    collectionLinks: {
+      yellowHouse: "黃色別墅",
+      americanEstate: "美國莊園",
+      carriageHouse: "馬車屋",
+    },
+    exploreLinks: {
+      listings: "房源",
+      gallery: "畫廊",
+      worldCup: "KCWC26",
+      explore: "探索堪薩斯城與自由市",
+      transportation: "交通",
+      about: "關於我們",
+      contact: "聯絡我們",
+    },
+    infoLinks: {
+      privacy: "隱私政策",
+      terms: "條款與條件",
+    },
+    worldCupTagline: "2026世界盃住宿，鄰近堪薩斯城",
   },
   pages: {
-    listings: { title: "The American Collection", subtitle: "三處住宅。一致的標準。", exploreCta: "探索" },
-    contact: { title: "讓我們聯繫。", description: "如有預訂查詢、問題或合作想法，請聯繫我們。" },
-    home: {
-      hero: { headlineLine1: "用心的住宿。", headlineLine2: "精心選址。", subtitle: "堪薩斯城附近精緻的短期住宅。", primaryCta: "預訂住宿", secondaryCta: "探索系列" },
-      heroSearch: {
-        pickDate: "選擇日期",
-        guests: "房客",
-        guestLabel: "房客",
-        guestsLabel: "房客",
-        checkAvailability: "查看可訂狀態",
-        selectStay: "選擇住宿",
+    listings: {
+      title: "美國精選系列",
+      subtitle: "三處住所，一致標準",
+      exploreCta: "探索",
+      americanEstate: {
+        title: "美國莊園",
+        descriptor: "私密、寬敞，格局與環境皆為上乘",
+        heroTitle: "精緻靜修之所",
+        heroDescription: "美國莊園座落於三英畝的私人土地上，提供開闊的格局與隱密的空間。無論是盛大聚會、高管住宿，抑或單純渴望更多空間，此處皆是理想之選。寬敞的起居區域、專業廚房及私人庭院，為您打造難忘時刻的背景。",
+        keyFeatures: "主要特色",
+        gallery: "畫廊",
+        amenities: {
+          bedrooms: "臥室",
+          bathrooms: "浴室",
+          sleeps: "可容納人數",
+          grounds: "庭院面積",
+          privatePool: "私人泳池",
+          chefKitchen: "專業廚房",
+          ampleParking: "充足停車位",
+          highSpeedWifi: "高速WiFi"
+        }
       },
-      featuredListingsIntro: { eyebrow: "我們的系列", heading: "三處獨特住宅，每處都為舒適而設計。" },
-      featuredListings: {
-        yellowHouse: { title: "The Yellow House", descriptor: "溫暖。光線充足。", supportingLine: "適合家庭。", ctaText: "查看" },
-        americanEstate: { title: "The American Estate", descriptor: "私密。寬敞。", supportingLine: "精緻的避風港。", ctaText: "探索" },
-        carriageHouse: { title: "The Carriage House", descriptor: "精緻。獨立。", supportingLine: "獨立住宿。", ctaText: "發現" },
+      yellowHouse: {
+        title: "黃色別墅",
+        descriptor: "溫暖、光線充足，專為共享時刻設計",
+        heroTitle: "聯繫情感之所",
+        heroDescription: "黃色別墅是一個採光極佳、開放式概念的住宅，專為家庭、長期住宿及休閒聚會設計。寬敞的起居空間和設備齊全的廚房，讓您無論是度週末或住上一個月，都能輕鬆安頓，感到賓至如歸。",
+        keyFeatures: "主要特色",
+        gallery: "畫廊",
+        amenities: {
+          bedrooms: "臥室",
+          bathrooms: "浴室",
+          sleeps: "可容納人數",
+          highSpeedWifi: "高速WiFi",
+          smartTvs: "智能電視",
+          fullKitchen: "全套廚房",
+          parking: "停車位"
+        }
       },
-      why: {
-        title: "為什麼選擇American Collection",
-        subtitle: "更寧靜的短期住宿方式。",
-        cards: {
-          approach: { category: "方法", title: "精心挑選的住宅", paragraphs: ["以特色和舒適為標準選擇的住宅。"] },
-          experience: { category: "體驗", title: "寧靜舒適的住宿", paragraphs: ["從入住那刻起就感到舒適。"] },
-          hospitality: { category: "款待", title: "個人化服務", paragraphs: ["快速溝通和當地知識。"] },
-          booking: { category: "預訂", title: "直接預訂", paragraphs: ["直接預訂享受最優價格。"] },
+      carriageHouse: {
+        title: "馬車屋",
+        descriptor: "精緻、獨立，設計體現寧靜",
+        heroTitle: "獨立住宿體驗",
+        heroDescription: "馬車屋是一個設計周到、設備齊全的獨立住宅，非常適合單獨旅行者或情侶。擁有獨立入口和精心配置的設施，提供一種輕鬆自主的體驗，每個細節都恰到好處。",
+        keyFeatures: "主要特色",
+        gallery: "畫廊",
+        amenities: {
+          bedroom: "臥室",
+          bathroom: "浴室",
+          sleeps: "可容納人數",
+          privateEntry: "獨立入口",
+          kitchenette: "簡易廚房",
+          highSpeedWifi: "高速WiFi",
+          smartTv: "智能電視",
+          parking: "停車位"
+        }
+      },
+      bookYourStay: "預訂住宿",
+      viewMoreImages: "查看更多圖片",
+      moreImagesCount: "更多圖片"
+    },
+    contact: {
+      title: "讓我們建立聯繫",
+      description: "有關預訂查詢、問題或合作想法，請隨時聯絡我們。我們通常會在24小時內回覆。",
+      form: {
+        fullName: "姓名",
+        emailAddress: "電子郵件地址",
+        yourMessage: "您的訊息",
+        namePlaceholder: "張三",
+        emailPlaceholder: "zhangsan@example.com",
+        messagePlaceholder: "請告訴我們您的旅行計劃或任何疑問...",
+        sendButton: "傳送訊息",
+        validation: {
+          nameMin: "姓名至少需2個字符",
+          emailValid: "請輸入有效的電子郵件地址",
+          messageMin: "訊息至少需10個字符"
         },
-      },
-      worldCupContext: { title: "2026世界盃 — 寧靜位置", body: "我們在Liberty的住宅提供精緻的避風港。", cta: "探索世界盃住宿" },
-      theExperience: {
-        title: "為您的旅行方式設計",
-        experiences: [
-          { title: "輕鬆抵達", description: "無縫入住。" },
-          { title: "舒適安頓", description: "從第一刻起就有家的感覺。" },
-          { title: "按您的節奏", description: "低調的支持。" },
-        ],
-      },
-      capturedMoments: { title: "捕捉的瞬間", body: "American Collection的瞬間。", cta: "查看畫廊" },
-      bookWithConfidence: { title: "自信預訂", points: ["直接預訂。", "清晰的條款。", "透明的價格。", "個人化支持。"] },
-      finalCta: { title: "找到合適的住宿地點", primaryCta: "預訂住宿", secondaryCta: "探索系列" },
+        messages: {
+          sending: "正在傳送訊息...",
+          success: "感謝您的訊息！我們將盡快與您聯絡。",
+          error: "傳送訊息失敗。請稍後再試。"
+        }
+      }
+    },
+    gallery: {
+      title: "探索美國精選系列",
+      subtitle: "踏入我們精心策劃的住宅，體驗定義美國精選系列每一處住宿的舒適、設計與特色。我們的畫廊讓您近距離欣賞我們位於密蘇里州堪薩斯城和自由市附近的短期住宅，展示其內外環境及令每處房產與眾不同的細節。",
+      captions: {
+        morningLight: "晨光",
+        sharedEvenings: "共享夜晚",
+        quietArrivals: "靜謐抵達",
+        spaceToUnwind: "放鬆空間",
+        detailsThatMatter: "重要細節",
+        comfortableStay: "舒適住宿"
+      }
     },
     about: {
-      hero: { title: "關於American Collection", subtitle: "堪薩斯城的舒適，加上個人風格。" },
-      foundersStory: "我們是Jay和Jenny，創造舒適的空間。",
-      originStory: { title: "一切的開始", paragraph1: "從一棟房子開始。", paragraph2: "今天有三處住宅。" },
-      personalityStory: { title: "我們如何接待", paragraph1: "款待在於細節。", paragraph2: "我們隨時為您服務。" },
-      brandStatement: { line1: "我們把每次住宿都當作自己的家。", line2: "因為確實如此。" },
-      values: [
-        { headline: "一塵不染的空間", text: "不可妥協的清潔標準。" },
-        { headline: "用心的細節", text: "我們關注小事。" },
-        { headline: "個人化溝通", text: "快速、人性化的回應。" },
-        { headline: "當地款待", text: "真誠的推薦。" },
-      ],
-      bookDirectMessage: { title: "直接預訂。住得更好。", description: "最優價格和個人化支持。", cta: "立即預訂" },
-      closingStatement: { text: "期待歡迎您成為American Collection的客人。", signature: "— Jay & Jenny" },
+      hero: {
+        title: "關於美國精選系列",
+        subtitle: "美國精選系列的創立基於一個簡單的理念——旅行應讓人感到平靜、個人化且富有意義。我們提供精心策劃、位於密蘇里州堪薩斯城和自由市附近的短期住宅，專為重視舒適、空間及更深層次住宿體驗的客人設計。",
+      },
+      philosophy: {
+        title: "我們的理念：用心的待客之道",
+        subtitle: "旅行應如同歸家，而不僅僅是到訪一個地方。我們致力於創造能讓客人安頓下來、深呼吸、並體驗中西部真摯熱情的空間。",
+        description: "我們系列中的每個細節都經過深思熟慮的選擇——從床品的質量到家具的佈局，從迎賓禮品到我們提供的當地推薦。我們的方法將設備齊全的家的舒適感與優質待客之道的服務標準相結合。",
+        values: [
+          "優先考慮舒適與功能性的周到設計",
+          "所有房產保持一致的品質",
+          "令每次住宿難忘的個人化細節",
+          "提升您堪薩斯城體驗的在地見解"
+        ]
+      },
+      flagship: {
+        title: "美國莊園：我們的旗艦房產",
+        subtitle: "奢華與宜居性在自由市中心的交融",
+        description: "美國莊園代表了我們系列的頂峰——一個寬敞、優雅配置的住宅，展示了我們對卓越賓客體驗的承諾。此處房產奠定了定義美國精選系列每次住宿的品質與舒適標準。",
+        features: [
+          "寬敞的起居區域，非常適合團體與家庭",
+          "全屋高級家具與設計師裝飾",
+          "配備齊全的美食廚房，供您烹製難忘餐點",
+          "帶有水療般設施的豪華主臥套房",
+          "供放鬆與娛樂的戶外空間",
+          "提供無縫舒適體驗的智能家居技術"
+        ]
+      },
+      hosts: {
+        title: "認識Jay與Jenny：系列背後的房東",
+        subtitle: "對卓越待客之道充滿熱情的本地專家",
+        description: "Jay和Jenny將多年的待客經驗及對堪薩斯城地區的深厚熱愛，融入美國精選系列的方方面面。他們的願景很簡單：創造讓遊客能體驗自由市真實熱情與魅力，同時享受世界級舒適與服務的空間。",
+        jayBio: "Jay在奢華待客領域的背景和對細節的關注，確保每處房產都達到最高的品質與舒適標準。他在物業管理和賓客服務方面的專業知識，為卓越的住宿體驗奠定了基礎。",
+        jennyBio: "Jenny對設計和在地文化的熱情，為每處房產注入了獨特的個性和周到的設施。她對堪薩斯城地區的了解，為客人提供了探索該地區最佳體驗的內部途徑。"
+      },
+      properties: {
+        title: "我們的房產：為卓越體驗精選",
+        subtitle: "每處住宅都提供獨特的個性，同時保持我們標誌性的舒適與品質標準",
+        description: "我們的系列包含三處各具特色的房產，每處都因其提供卓越賓客體驗的能力而被選中。從適合家庭的空間到私密的靜修所，每棟房屋都維持著最高標準，旨在讓您的住宿難忘。",
+        propertyList: [
+          {
+            name: "黃色別墅",
+            description: "溫馨宜人，光線充足的空間和舒適的佈局，非常適合家庭和長期住宿"
+          },
+          {
+            name: "美國莊園",
+            description: "我們的旗艦房產，提供豪華設施、寬敞的起居區域及全屋高級裝飾"
+          },
+          {
+            name: "馬車屋",
+            description: "一處精緻、獨立的住宅，非常適合尋求隱私與寧靜的獨立旅行者"
+          }
+        ]
+      },
+      whyLiberty: {
+        title: "為什麼選擇密蘇里州自由市？",
+        subtitle: "小鎮魅力與大城市便利性的完美融合",
+        description: "自由市為體驗堪薩斯城地區的精華提供了理想位置。這個歷史名鎮提供了一個寧靜的休憩地，同時讓您與大都會區的所有精彩和景點保持聯繫。",
+        highlights: [
+          "擁有獨特商店和餐飲的歷史悠久的市中心廣場",
+          "距箭頭體育場等主要場館僅15分鐘車程",
+          "輕鬆前往堪薩斯城國際機場",
+          "安全、適合步行、綠樹成蔭的社區",
+          "豐富的歷史與文化景點",
+          "鄰近企業中心與商業區"
+        ]
+      },
+      lookingAhead: {
+        title: "展望未來：2026年世界盃及以後",
+        subtitle: "立足於未來，同時保持我們對卓越待客之道的承諾",
+        description: "隨著堪薩斯城準備主辦國際足總世界盃2026賽事，美國精選系列正處於絕佳位置，歡迎國際訪客、球隊和足球迷。我們的房產提供了鄰近場館與享受這一全球盛事所需的寧靜休憩地的理想組合。",
+        worldcupPrep: [
+          "距箭頭體育場僅數分鐘車程的戰略位置",
+          "接待國際賓客與團體的經驗",
+          "為賽事參與者提供的交通服務",
+          "為球隊和支持者提供的長期住宿選項",
+          "為提升賓客體驗的當地合作夥伴關係"
+        ],
+        futureVision: "除了世界盃，我們將繼續擴展我們的系列並提升我們的服務，始終致力於提供展示堪薩斯城待客之道精髓的卓越住宿體驗。"
+      }
     },
-    gallery: { title: "捕捉的瞬間", subtitle: "American Collection的瞬間。", centerText: "值得回味的瞬間。", captions: { morningLight: "晨光", sharedEvenings: "共度夜晚", quietArrivals: "寧靜抵達", spaceToUnwind: "放鬆空間", detailsThatMatter: "重要細節" } },
-    worldCup: { title: "2026世界盃。", titleLine2: "精心選址。", paragraph1: "體驗世界盃的能量。", paragraph2: "完美的休息環境。", cta: "查詢WC26住宿" },
+    home: {
+      hero: {
+        headlineLine1: "奢華體驗國際足總世界盃2026",
+        headlineLine2: "堪薩斯城附近的優質租賃房源",
+        subtitle: "歡迎來到美國精選系列，這是一個在密蘇里州堪薩斯城和自由市精心策劃的高端短期度假租賃組合，專為世界盃2026旅行者、國際賓客、球隊和團體打造。您在密蘇里州自由市的豪華度假屋獨家系列。非常適合世界盃球迷、家庭和團體，在距箭頭體育場僅數分鐘的舒適環境中尋求住所。",
+        primaryCta: "立即預訂您的世界盃住宿",
+        secondaryCta: "查看我們的系列",
+      },
+      heroSearch: {
+        pickDate: "選擇日期",
+        guests: "房客人數",
+        guestLabel: "位房客",
+        guestsLabel: "位房客",
+        checkAvailability: "查詢空房",
+        selectStay: "選擇您的住宿",
+      },
+      featuredListingsIntro: {
+        eyebrow: "我們的頂級系列：堪薩斯城豪華度假租賃",
+        heading: "探索您國際足總世界盃2026及堪薩斯城冒險之旅的完美基地。美國精選系列的每處房產都提供獨特的奢華享受、現代化設施，以及隱私性與鄰近世界級賽事地點的完美平衡。無論您需要大家庭團聚、一群朋友結伴觀賽，還是親密度假的空間，我們的系列都能在密蘇里州中心地帶提供難忘的體驗。",
+      },
+      featuredListings: {
+        yellowHouse: {
+          title: "黃色別墅",
+          descriptor: "溫暖且光線充足，黃色別墅非常適合家庭、長期住宿和休閒聚會。其溫馨的空間是創造持久回憶的理想場所。",
+          supportingLine: "非常適合家庭、長期住宿和休閒聚會。",
+          ctaText: "預訂住宿",
+        },
+        americanEstate: {
+          title: "美國莊園",
+          descriptor: "私密且寬敞，美國莊園提供一個格局開闊的環境，讓您有空間抵達、安頓並享受時尚住宿——非常適合團體或特殊旅程。",
+          supportingLine: "一個精緻的靜修之所，有空間抵達、安頓並居住。",
+          ctaText: "預訂住宿",
+        },
+        carriageHouse: {
+          title: "馬車屋",
+          descriptor: "精緻且獨立，馬車屋專為需要空間、隱私和寧靜舒適的獨立旅行者設計。",
+          supportingLine: "為獨立、輕鬆的住宿周到設計。",
+          ctaText: "預訂住宿",
+        },
+      },
+      cybertruck: {
+        title: "時尚出行：專屬CyberTruck交通服務",
+        subtitle: "用優質交通服務提升您的堪薩斯城體驗",
+        description: "搭乘我們的專屬CyberTruck交通服務，時尚舒適地抵達目的地。非常適合機場接送、世界盃場館交通，或豪華探索堪薩斯城。我們的優質車輛確保您在旅途中舒適並引人注目。",
+        features: [
+          "豪華CyberTruck車輛，提供獨特的旅行體驗",
+          "專業、知識淵博的本地司機",
+          "堪薩斯城國際機場（MCI）接送",
+          "前往世界盃場館及賽事的交通",
+          "客製化城市遊覽與探索服務",
+          "所有美國精選系列客人均可預訂"
+        ],
+        cta: "預約車輛"
+      },
+      libertyHomeowners: {
+        title: "自由市房主：把握世界盃2026商機",
+        subtitle: "與我們合作，向世界展示自由市的待客之道",
+        description: "隨著自由市準備迎接成千上萬的國際訪客參加國際足總世界盃2026，當地房主擁有一個參與這一歷史性賽事的獨特機會。與美國精選系列合作，在展示您房產的同時，保持我們的卓越標準。",
+        benefits: [
+          "接入我們優質的預訂和營銷平台",
+          "專業的物業管理與賓客服務",
+          "世界盃期間及之後的營收潛力",
+          "與美國精選系列品牌建立關聯",
+          "獲得經驗豐富的待客專家的支持"
+        ],
+        cta: "了解合作夥伴關係"
+      },
+      whyLibertyBase: {
+        title: "為什麼密蘇里州自由市是您2026世界盃的完美基地",
+        subtitle: "在迷人的美國小鎮舒適地體驗世界盃激情",
+        description: "密蘇里州自由市為尋求激情與寧靜的2026世界盃訪客提供了理想地點。距箭頭體育場僅15分鐘車程，我們這個歷史名鎮讓您輕鬆前往所有世界盃場館，同時提供一個遠離堪薩斯城市中心人群和擁擠的寧靜休憩地。",
+        advantages: [
+          "距箭頭體育場和世界盃場館15分鐘車程",
+          "擁有獨特餐飲和購物的歷史悠久的市中心",
+          "供您靜謐休息的寧靜住宅區",
+          "輕鬆上高速公路，前往所有堪薩斯城景點",
+          "小鎮魅力，大城市便利",
+          "安全、適合步行、綠樹成蔭的社區"
+        ],
+        cta: "探索自由市"
+      },
+      worldCupGateway: {
+        title: "通往國際足總世界盃2026™及堪薩斯城之門",
+        subtitle: "全球最大足球慶典的頂級住宿",
+        description: "美國精選系列為國際足總世界盃2026™呈現位置絕佳的獨家豪華住宿。我們在密蘇里州自由市的優質房產，提供了鄰近世界盃場館與享受這一全球體育盛事所需的寧靜休憩地的理想組合，舒適且時尚。",
+        highlights: [
+          "距世界盃場館——箭頭體育場僅數分鐘",
+          "為團體和家庭提供的豪華住宿",
+          "可安排的交通服務",
+          "為球隊和支持者提供的長期住宿選項",
+          "具國際標準的在地待客之道"
+        ],
+        primaryCta: "查看完整賽程表",
+        secondaryCta: "規劃您的堪薩斯城冒險"
+      },
+      trustBadges: {
+        title: "信任標章與資質",
+        subtitle: "品質、可靠性與卓越服務的保證",
+        description: "美國精選系列在短期租賃待客領域保持最高標準。我們的資質與合作夥伴關係反映了我們致力於為每位客人，從世界盃訪客到休閒旅行者，提供卓越體驗的承諾。",
+        badges: [
+          {
+            name: "持牌及已投保",
+            description: "持有完整牌照的短期租賃運營商，擁有全面的保險保障"
+          },
+          {
+            name: "超讚房東身份",
+            description: "因卓越的賓客評價和待客標準而獲得認可"
+          },
+          {
+            name: "在地企業認證",
+            description: "自由市和堪薩斯城商業社區的驕傲成員"
+          },
+          {
+            name: "世界盃準備就緒",
+            description: "已為國際足總世界盃2026的訪客和球隊正式做好準備"
+          }
+        ]
+      },
+      why: {
+        title: "為什麼選擇美國精選系列",
+        subtitle: "在美國精選系列，我們相信一次美好的住宿始於一個用心的家——而不僅僅是一個房間。因此，每一處住宅都因其品質、舒適和周到的設計而被選中。",
+        cards: {
+          approach: {
+            category: "理念",
+            title: "精選住宅",
+            paragraphs: [
+              "我們系列中的每處房產都體現了用心與關懷——從地理位置到空間佈局——讓您從抵達的那一刻起就感到踏實與自在。",
+            ],
+          },
+          experience: {
+            category: "體驗",
+            title: "寧靜舒適的住宿",
+            paragraphs: [
+              "享受設計精良、融合風格與功能性的空間，寧靜的社區，以及真正能讓您放鬆的環境。",
+            ],
+          },
+          hospitality: {
+            category: "待客之道",
+            title: "個人化、在地化的接待",
+            paragraphs: [
+              "我們的團隊提供周到但不打擾的支持——幫助您享受住宿而不受干擾。",
+            ],
+          },
+          booking: {
+            category: "預訂",
+            title: "直接透明的預訂",
+            paragraphs: [
+              "直接向我們預訂——沒有令人困惑的費用，沒有隱藏成本，清晰的政策讓您的體驗無壓力。",
+            ],
+          },
+        },
+      },
+      worldCupContext: {
+        title: "世界盃2026——寧靜選址",
+        body: "正在規劃您的2026年世界盃住宿嗎？美國精選系列在密蘇里州自由市提供優雅的住宅，距離堪薩斯城最大的賽事場館和景點僅有很短車程。享受私人住宅的空間、隱私和便利，同時又能近距離體驗每一刻精彩——無需忍受市中心酒店的擁擠。",
+        cta: "探索世界盃住宿",
+      },
+      theExperience: {
+        title: "為您的旅行方式而設計",
+        experiences: [
+          {
+            title: "輕鬆抵達",
+            description: "無縫的入住流程和清晰的抵達指引，幫助您安心開啟住宿。",
+          },
+          {
+            title: "舒適安頓",
+            description: "每處住宅都經過用心準備，確保您在步入的那一刻就感到賓至如歸。",
+          },
+          {
+            title: "按您的節奏行動",
+            description: "謹慎而迅速的賓客支持，確保您的住宿順利愉快。",
+          },
+        ],
+      },
+      capturedMoments: {
+        title: "畫廊——精彩時刻",
+        body: "探索我們住宅和賓客住宿的亮點。發現定義美國精選體驗的共享時刻的溫暖、放鬆的空間和充滿意圖的設計。",
+        cta: "查看畫廊",
+      },
+      bookWithConfidence: {
+        title: "自信預訂",
+        points: [
+          "直接預訂，價格清晰。",
+          "簡單明瞭的預訂與取消政策。",
+          "透明費用，無隱藏收費。",
+          "我們團隊提供的及時、個人化支持。",
+        ],
+      },
+      finalCta: {
+        title: "找到合適的住宿地點",
+        primaryCta: "預訂住宿",
+        para: "無論您計劃週末度假、較長期的訪問還是特殊賽事住宿，美國精選系列住宅都提供周到的舒適感、用心的設計，以及一種在堪薩斯城及密蘇里州自由市附近更寧靜的住宿方式。",
+        secondaryCta: "探索系列",
+      },
+    },
+    worldCup: {
+      hero: {
+        title: "國際足總世界盃2026™ 堪薩斯城",
+        subtitle: "在距箭頭體育場僅數分鐘的豪華住宿中體驗全球最大的足球慶典",
+        description: "歡迎來到堪薩斯城參加國際足總世界盃2026™的頂級目的地！美國精選系列在密蘇里州自由市提供獨家豪華住宿，位置絕佳，非常適合足球迷和國際訪客。我們的優質房產為體驗世界盃比賽提供了理想的基地，同時讓您享受高檔住宅的舒適與隱私。",
+        primaryCta: "預訂您的世界盃住宿",
+        secondaryCta: "查看賽程表"
+      },
+      venue: {
+        title: "箭頭體育場：世界盃場館",
+        subtitle: "堪薩斯城酋長隊及國際足總世界盃2026™比賽的主場",
+        description: "箭頭體育場，位於我們的房產僅15分鐘車程處，將主辦多場國際足總世界盃2026™比賽。這個以令人難以置信的氛圍和熱情球迷而聞名的傳奇場館，將在此歷史性賽事中迎接來自世界各地的足球迷。",
+        highlights: [
+          "距美國精選系列房產15分鐘車程",
+          "主辦多場世界盃比賽，包括淘汰賽階段",
+          "擁有76,000多個座位的傳奇場館",
+          "最先進的設施和球迷體驗",
+          "便捷的高速公路入口和停車場"
+        ]
+      },
+      accommodations: {
+        title: "世界盃住宿",
+        subtitle: "專為國際訪客和足球迷設計的豪華住宅",
+        description: "我們的房產專為2026年世界盃™訪客準備，提供奢華、舒適與便利的完美結合。每處住宅都為團體、家庭和球隊提供充足的空間，配備優質設施和體現足球文化及中西部待客之道的周到細節。",
+        propertyTypes: [
+          {
+            name: "團體住宿",
+            description: "寬敞的房產，非常適合結伴觀看世界盃比賽的大型團體、球隊和家庭。"
+          },
+          {
+            name: "長期住宿",
+            description: "設備齊全的住宅，非常適合計劃觀看多場比賽或整個賽事的訪客。"
+          },
+          {
+            name: "豪華體驗",
+            description: "優質設施、設計師家具和卓越服務，為尋求升級舒適度的訪客提供。"
+          }
+        ]
+      },
+      transportation: {
+        title: "交通與通行",
+        subtitle: "與世界盃場館和堪薩斯城景點的無縫連接",
+        description: "從我們在自由市的位置，在世界盃2026™期間出行將非常輕鬆。利用我們的優質交通服務和戰略位置，輕鬆前往箭頭體育場、堪薩斯城市中心和所有賽事場館。",
+        options: [
+          "優質CyberTruck交通服務",
+          "距箭頭體育場15分鐘車程",
+          "輕鬆前往I-35和I-435等主要高速公路",
+          "距堪薩斯城國際機場20分鐘",
+          "隨時可用的共乘服務",
+          "附近有公共交通選項"
+        ]
+      },
+      fanFestival: {
+        title: "國際足總球迷節™與賽事氛圍",
+        subtitle: "在堪薩斯城市中心體驗為期一個月的足球文化慶典",
+        description: "國際足總世界盃2026™的體驗遠不止箭頭體育場90分鐘的比賽時間。堪薩斯城市中心的國際足總球迷節™創造了一個為期一個月的慶典，匯聚來自世界各地的球迷，在整個賽事期間提供娛樂、文化體驗和社區聚會空間。",
+        features: [
+          "所有訪客免費入場，無需比賽門票",
+          "大型螢幕直播所有世界盃比賽",
+          "國際美食攤販和文化體驗",
+          "現場娛樂和音樂表演",
+          "互動足球活動和球迷區",
+          "位於堪薩斯城市中心充滿活力的娛樂區"
+        ]
+      },
+      kansasCity: {
+        title: "探索堪薩斯城",
+        subtitle: "發現為什麼堪薩斯城是完美的世界盃主辦城市",
+        description: "除了足球比賽，堪薩斯城為訪客提供豐富多彩的體驗。從世界級的燒烤和爵士樂到文化景點和中西部熱情，我們的城市為您的世界盃冒險提供了完美的背景。",
+        attractions: [
+          "世界著名的燒烤餐廳和美食",
+          "歷史悠久的18th & Vine爵士區",
+          "納爾遜-阿特金斯藝術博物館和文化機構",
+          "電力與燈光區娛樂",
+          "鄉村俱樂部廣場購物與餐飲",
+          "足球以外的職業體育"
+        ]
+      },
+      booking: {
+        title: "預訂您的世界盃住宿",
+        subtitle: "為國際足總世界盃2026™確保您的豪華住宿",
+        description: "不要錯過從豪華住宿舒適體驗2026年世界盃™的機會。我們的房產正因這一歷史性賽事而快速被預訂。今天就聯絡我們，確保您心儀的日期，並體驗堪薩斯城最優質的待客之道。",
+        cta: "預訂您的世界盃住宿",
+        contactInfo: [
+          "直接預訂，無隱藏費用",
+          "賽事期間的靈活住宿選項",
+          "提供團體住宿",
+          "可安排交通服務",
+          "在地專業知識和禮賓服務"
+        ]
+      }
+    },
     explore: {
-      title: "當地魅力，城市交通。",
-      description: "我們的物業位於歷史悠久的Liberty，提供寧靜的休閒場所，並可輕鬆前往堪薩斯城充滿活力的文化場所。",
+      title: "在地魅力，城市便利",
+      description: "我們的房產坐落於歷史悠久的自由市，提供寧靜的休憩地，並可無縫通往堪薩斯城充滿活力的文化和主要場館。",
       historicLiberty: {
-        title: "歷史悠久的Liberty市中心",
-        text: "探索堪薩斯城地區最具歷史意義的城鎮之一。漫步於保存完好的19世紀廣場，瀏覽獨特的當地商店。",
+        title: "歷史悠久的自由市中心",
+        text: "探索堪薩斯城地區最具歷史氣息的小鎮之一。漫步在保存完好的19世紀市中心廣場，瀏覽獨特的當地商店，並在家族經營的餐廳享用美食。自由市提供了一個溫馨的小鎮氛圍，距離您的門口僅數分鐘路程。",
       },
       kcAttractions: {
         title: "堪薩斯城景點",
-        text: "短途車程即可到達堪薩斯城市中心。體驗世界級的燒烤和充滿活力的爵士俱樂部。",
+        text: "很短車程即可將您連接到堪薩斯城的中心。體驗世界級的燒烤、18th & Vine區充滿活力的爵士俱樂部、箭頭和考夫曼體育場的主要體育賽事，以及納爾遜-阿特金斯博物館的世界級藝術收藏。",
       },
     },
     transportation: {
-      title: "無縫連接。",
-      description: "我們的位置提供前往區域交通樞紐的直接通道。",
+      title: "無縫連接",
+      description: "我們的位置提供直達區域交通樞紐和關鍵目的地的通道，確保您的旅行和住宿一樣順暢。",
       airportAccess: {
-        title: "機場和高速公路",
-        text: "距離堪薩斯城國際機場（MCI）僅20分鐘車程。",
+        title: "機場與高速公路通道",
+        text: "距離堪薩斯城國際機場（MCI）僅20分鐘車程，抵達和離開簡單且無壓力。我們的房產還提供直接通往主要高速公路的通道，包括I-35和I-435，讓您輕鬆連接整個大都會區。",
       },
       cityNavigation: {
-        title: "導航城市",
-        text: "享受前往堪薩斯城市中心的直達路線。",
+        title: "城市導航",
+        text: "享受直達堪薩斯城市中心、電力與燈光區以及箭頭體育場等主要賽事場館的路線。Uber和Lyft等共乘服務隨時可用，為探索城市提供便捷選擇，無需私人車輛。",
       },
     },
     privacy: {
       title: "隱私政策",
       lastUpdated: "最後更新：",
-      intro: "我們致力於保護您的隱私。",
-      collection: { title: "我們收集的信息", text: "我們可能會收集個人信息..." },
-      usage: { title: "我們如何使用您的信息", text: "我們使用收集的信息..." },
-      security: { title: "數據安全", text: "我們實施各種安全措施..." },
+      intro: "美國精選系列（「我們」、「我方」或「我們的」）致力於保護您的隱私。本隱私政策解釋了當您訪問我們的網站時，我們如何收集、使用、披露和保護您的資訊。",
+      collection: {
+        title: "我們收集的資訊",
+        text: "當您填寫聯絡表單或提出預訂查詢時，我們可能會收集您的個人資訊，例如姓名、電子郵件地址和電話號碼。我們還收集非個人資訊，如瀏覽器類型和操作系統，以改進我們的網站。",
+      },
+      usage: {
+        title: "我們如何使用您的資訊",
+        text: "我們使用收集到的資訊來：",
+        list: [
+          "回覆您的詢問並提供客戶支持。",
+          "處理預訂並管理您的住宿。",
+          "在獲得您同意的情況下，向您發送營銷和促銷通訊。",
+          "改進我們的網站和服務。",
+        ],
+      },
+      security: {
+        title: "資料安全",
+        text: "我們實施多種安全措施來維護您個人資訊的安全。您的個人資訊存儲在安全網路之後，僅有少數具有此類系統特殊訪問權限的人員可以訪問。",
+      },
     },
     terms: {
       title: "服務條款",
       lastUpdated: "最後更新：",
-      intro: "請仔細閱讀這些服務條款。",
-      bookings: { title: "預訂和付款", text: "所有預訂查詢視情況而定。" },
-      responsibilities: { title: "客人的責任", text: "客人應尊重財產。" },
-      liability: { title: "責任限制", text: "The American Collection不對損害負責。" },
+      intro: "請在使用我們的網站或預訂美國精選系列的住宿前，仔細閱讀這些服務條款（「條款」）。您訪問和使用服務的條件是您接受並遵守這些條款。",
+      bookings: {
+        title: "預訂與付款",
+        text: "所有預訂查詢均視供應情況和確認而定。通過進行預訂，您同意提供當前、完整和準確的購買和帳戶資訊。付款條款將在您的預訂協議中說明。",
+      },
+      responsibilities: {
+        title: "賓客責任",
+        text: "賓客應尊重並愛護房產。對房產或其物品的任何損壞將由賓客負責。所有房產均禁止吸菸。必須始終遵守每處房產的具體房屋規則。",
+      },
+      liability: {
+        title: "責任限制",
+        text: "美國精選系列對您在住宿期間可能發生的任何人身傷害、財產損失或損失概不負責。我們鼓勵所有賓客自行購買旅行保險。",
+      },
     },
-    common: { bookNow: "立即預訂", viewGallery: "查看畫廊", exploreCollection: "探索系列", bookYourStay: "預訂住宿", learnMore: "了解更多" },
   },
 };
 

@@ -23,7 +23,7 @@ const Listings = () => {
       imageUrl: "/images/yellowimages/bannerimage.jpg",
     },
     {
-      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The American Estate",
+      title: translations.pages.home?.featuredListings?.americanEstate?.title || "The Americon Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Considered.",
       linkTo: "/listings/american-estate",
       imageUrl: "/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp",
@@ -68,7 +68,7 @@ const Listings = () => {
     return (
       <div ref={componentRef} className="container mx-auto pt-32 pb-24">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-serif">{translations.pages.listings?.title || "The American Collection"}</h1>
+          <h1 className="text-4xl font-serif">{translations.pages.listings?.title || "The Americon Collection"}</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-md mx-auto">{translations.pages.listings?.subtitle || "Three residences. One consistent standard."}</p>
         </div>
         <div className="space-y-24">
@@ -94,7 +94,7 @@ const Listings = () => {
     <section ref={componentRef} className="py-32 md:py-48">
       <div className="container mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <h1 className="text-4xl md:text-5xl font-serif">{translations.pages.listings?.title || "The American Collection"}</h1>
+          <h1 className="text-4xl md:text-5xl font-serif">{translations.pages.listings?.title || "The Americon Collection"}</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-md mx-auto">{translations.pages.listings?.subtitle || "Three residences. One consistent standard."}</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
