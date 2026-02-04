@@ -227,7 +227,15 @@ const en: Translations = {
         },
         bookDirectMessage:{
           description:"When you book direct, you get our best rates and the warm local hospitality we're known for."
-        }
+        },
+        values:[
+          { headline: "Comfortable Living Spaces", text: "Well-maintained homes designed to feel welcoming, functional, and easy to settle into." },
+          { headline: "Privacy & Quiet", text: "Peaceful environments that allow guests to truly rest and recharge." },
+          { headline: "Balanced Locations", text: "Homes located close to Kansas City attractions while remaining away from congestion." },
+          { headline: "Transparent Pricing", text: "Clear rates with no hidden fees or unexpected charges." },
+          { headline: "Thoughtful Design", text: "Interiors planned for comfort, flow, and both short and extended stays." },
+          { headline: "Respectful Hosting", text: "Supportive communication when needed, with privacy always respected." }
+        ]
     },
     home: {
       hero: {
@@ -439,6 +447,7 @@ const en: Translations = {
         title:"FIFA World Cup 2026™ Kansas City",
         subtitle:"Experience the world's biggest soccer celebration from luxury accommodations just minutes from Arrowhead Stadium",
         description:"Welcome to Kansas City's premier destination for FIFA World Cup 2026™! The Americon Collection offers exclusive luxury accommodations in Liberty, Missouri, perfectly positioned for soccer fans and international visitors. Our premium properties provide the ideal base for experiencing World Cup matches while enjoying the comfort and privacy of upscale residences.",
+        americonDescription:"The Americon Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action.",
         primaryCta:"Book Your World Cup Stay",
         secondaryCta:"View Match Schedule"
       },
@@ -465,6 +474,7 @@ const en: Translations = {
         title:"Arrowhead Stadium: World Cup Venue",
         subtitle:"Home of Kansas City Chiefs and FIFA World Cup 2026™ matches",
         description:"Arrowhead Stadium, located just 15 minutes from our properties, will host multiple FIFA World Cup 2026™ matches. This legendary venue, known for its incredible atmosphere and passionate fans, will welcome soccer fans from around the world for this historic event.",
+        capacity:"With a capacity of approximately 76,640 for soccer configurations, Arrowhead Stadium creates an intimate yet massive atmosphere, with every seat offering a clear view of the pitch. The stadium's bowl design keeps fans close to the action, while modern amenities ensure comfort throughout the match experience.",
         highlights:[
           "15-minute drive from Americon Collection properties",
           "Home to multiple World Cup matches including knockout rounds",
@@ -496,6 +506,8 @@ const en: Translations = {
         title:"Transportation & Access",
         subtitle:"Seamless connectivity to World Cup venues and Kansas City attractions",
         description:"Getting around during World Cup 2026™ is effortless from our Liberty locations. Enjoy convenient access to Arrowhead Stadium, downtown Kansas City, and all tournament venues with our premium transportation services and strategic location.",
+        rentalVehicles:"For visitors with rental vehicles or staying at properties like The Americon Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions.",
+        cyberTruckService:"Guests staying at The Americon Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress.",
         options:[
           "Premium CyberTruck transportation service",
           "15-minute drive to Arrowhead Stadium",
@@ -509,6 +521,7 @@ const en: Translations = {
         title:"FIFA Fan Festival™ and Tournament Atmosphere",
         subtitle:"Experience the month-long celebration of soccer culture in downtown Kansas City",
         description:"The FIFA World Cup 2026™ experience extends far beyond the 90 minutes of match action at Arrowhead Stadium. The FIFA Fan Festival™ in downtown Kansas City creates a month-long celebration that brings together fans from around the world, offering entertainment, cultural experiences, and community gathering spaces throughout the tournament.",
+        location:"Located in the heart of downtown Kansas City, the FIFA Fan Festival™ transforms public spaces into an international celebration of soccer culture. Large screens broadcast all World Cup matches live, allowing fans to watch games from other host cities while enjoying the festival atmosphere. Entry to the FIFA Fan Festival™ is free, making it accessible to all visitors regardless of whether they have match tickets.",
         features:[
           "Free entry for all visitors regardless of match tickets",
           "Live broadcasts of all World Cup matches on large screens",

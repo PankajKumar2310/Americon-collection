@@ -48,7 +48,7 @@ const PropertiesSection = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-background rounded-lg shadow-lg overflow-hidden properties-anim">
               <img 
-                src="/images/yellowimages/bannerimage.jpg"
+                src="/images/americonimages/175903-461844-sb9MwTeizv--dxj8IQuPHG--8HtlLiF4eK8IRThJZjjAg-6932463aaf5d0.webp"
                 alt="The Yellow House"
                 className="w-full h-48 object-cover"
               />
@@ -62,7 +62,7 @@ const PropertiesSection = () => {
 
             <div className="bg-background rounded-lg shadow-lg overflow-hidden properties-anim">
               <img 
-                src="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
+                src="/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp"
                 alt="The Americon Estate"
                 className="w-full h-48 object-cover"
               />
@@ -76,7 +76,7 @@ const PropertiesSection = () => {
 
             <div className="bg-background rounded-lg shadow-lg overflow-hidden properties-anim">
               <img 
-                src="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
+                src="/images/carriageimages/175903-461812-----s9BMRTFQs1F5MopSI1G--GceoU6r--ajii-m--IjdLiE-69322a0070167.webp"
                 alt="The Carriage House"
                 className="w-full h-48 object-cover"
               />

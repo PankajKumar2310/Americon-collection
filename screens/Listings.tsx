@@ -26,7 +26,7 @@ const Listings = () => {
       title: translations.pages.home?.featuredListings?.americanEstate?.title || "The Americon Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Considered.",
       linkTo: "/listings/american-estate",
-      imageUrl: "/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp",
+      imageUrl: "/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp",
     },
     {
       title: translations.pages.home?.featuredListings?.carriageHouse?.title || "The Carriage House",

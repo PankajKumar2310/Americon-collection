@@ -3,10 +3,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const LookingAheadSection = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -38,10 +40,10 @@ const LookingAheadSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-serif looking-ahead-anim">
-              Looking Ahead: World Cup 2026 and Beyond
+              {translations.pages.about?.lookingAhead?.title || "Looking Ahead: World Cup 2026 and Beyond"}
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground looking-ahead-anim max-w-4xl mx-auto">
-              FIFA World Cup 2026 represents a transformative moment for Kansas City and The American Collection. As one of the host cities for this global event, Kansas City will welcome hundreds of thousands of visitors from around the world. The American Collection is preparing to play a significant role in ensuring these visitors experience exceptional hospitality and create lasting positive impressions of the United States.
+              {translations.pages.about?.lookingAhead?.description || "FIFA World Cup 2026 represents a transformative moment for Kansas City and The Americon Collection. As one of the host cities for this global event, Kansas City will welcome hundreds of thousands of visitors from around the world. The Americon Collection is preparing to play a significant role in ensuring these visitors experience exceptional hospitality and create lasting positive impressions of the United States."}
             </p>
           </div>
 
@@ -59,7 +61,7 @@ const LookingAheadSection = () => {
             </div>
             <div className="space-y-6 looking-ahead-anim">
               <img 
-                src="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
+                src="/images/carriageimages/ff.jpg"
                 alt="World Cup 2026 Preparation"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />
@@ -69,7 +71,7 @@ const LookingAheadSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 looking-ahead-anim">
               <img 
-                src="/images/yellowimages/bannerimage.jpg"
+                src="/images/yellowimages/yy.jpg"
                 alt="Creating Lasting Relationships"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />

@@ -210,6 +210,10 @@ export type Translations = {
       bookDirectMessage: {
         description: string;
       };
+      values: {
+        headline: string;
+        text: string;
+      }[];
     };
     home: {
       hero: {
@@ -338,86 +342,239 @@ export type Translations = {
       };
       finalCta: {
         title: string;
-        primaryCta: string;
-        para: string;
-        secondaryCta: string;
-      };
-    };
-    worldCup: {
-      hero: {
-        title: string;
-        subtitle: string;
-        description: string;
-        primaryCta: string;
-        secondaryCta: string;
-      };
-      venue: {
-        title: string;
-        subtitle: string;
-        description: string;
-        highlights: string[];
-      };
-      accommodations: {
-        title: string;
-        subtitle: string;
-        description: string;
-        propertyTypes: {
-          name: string;
-          description: string;
-        }[];
-      };
-      transportation: {
-        title: string;
-        subtitle: string;
-        description: string;
-        options: string[];
-      };
-      fanFestival: {
-        title: string;
-        subtitle: string;
-        description: string;
-        features: string[];
-      };
-      kansasCity: {
-        title: string;
-        subtitle: string;
-        description: string;
-        attractions: string[];
-      };
-      booking: {
-        title: string;
-        subtitle: string;
-        description: string;
-        cta: string;
-        contactInfo: string[];
-      };
-    };
-    explore: {
       title: string;
+      subtitle: string;
+    };
+    philosophy: {
+      title: string;
+      subtitle: string;
       description: string;
-      historicLiberty: {
+      management: string;
+      properties: string;
+      values: string[];
+    };
+    flagship: {
+      title: string;
+      subtitle: string;
+      description: string;
+      resortTitle: string;
+      resortDescription1: string;
+      resortDescription2: string;
+      outdoorTitle: string;
+      outdoorDescription1: string;
+      outdoorDescription2: string;
+      celebrationTitle: string;
+      celebrationDescription: string;
+      features: string[];
+    };
+    hosts: {
+      title: string;
+      subtitle: string;
+      description: string;
+      jayBio: string;
+      jennyBio: string;
+    };
+    properties: {
+      title: string;
+      subtitle: string;
+      description: string;
+      propertyList: {
+        name: string;
+        description: string;
+      }[];
+    };
+    whyLiberty: {
+      title: string;
+      subtitle: string;
+      description: string;
+      highlights: string[];
+    };
+    lookingAhead: {
+      title: string;
+      subtitle: string;
+      description: string;
+      worldcupPrep: string[];
+      futureVision: string;
+    };
+    bookDirectMessage: {
+      description: string;
+    };
+    values: {
+      headline: string;
+      text: string;
+    }[];
+  };
+  home: {
+    hero: {
+      headlineLine1: string;
+      headlineLine2: string;
+      subtitle: string;
+      primaryCta: string;
+      secondaryCta: string;
+    };
+    heroSearch: {
+      pickDate: string;
+      guests: string;
+      guestLabel: string;
+      guestsLabel: string;
+      checkAvailability: string;
+      selectStay: string;
+    };
+    featuredListingsIntro: {
+      eyebrow: string;
+      heading: string;
+    };
+    featuredListings: {
+      yellowHouse: {
         title: string;
-        text: string;
+        descriptor: string;
+        supportingLine: string;
+        ctaText: string;
       };
-      kcAttractions: {
+      americanEstate: {
         title: string;
-        text: string;
+        descriptor: string;
+        supportingLine: string;
+        ctaText: string;
       };
+      carriageHouse: {
+        title: string;
+        descriptor: string;
+        supportingLine: string;
+        ctaText: string;
+      };
+    };
+    cybertruck: {
+      title: string;
+      subtitle: string;
+      description: string;
+      features: string[];
+      cta: string;
+    };
+    libertyHomeowners: {
+      title: string;
+      subtitle: string;
+      description: string;
+      benefits: string[];
+      cta: string;
+    };
+    whyLibertyBase: {
+      title: string;
+      subtitle: string;
+      description: string;
+      advantages: string[];
+      cta: string;
+    };
+    worldCupGateway: {
+      title: string;
+      subtitle: string;
+      description: string;
+      highlights: string[];
+      primaryCta: string;
+      secondaryCta: string;
+    };
+    trustBadges: {
+      title: string;
+      subtitle: string;
+      description: string;
+      badges: {
+        name: string;
+        description: string;
+      }[];
+    };
+    why: {
+      title: string;
+      subtitle: string;
+      cards: {
+        approach: {
+          category: string;
+          title: string;
+          paragraphs: string[];
+        };
+        experience: {
+          category: string;
+          title: string;
+          paragraphs: string[];
+        };
+        hospitality: {
+          category: string;
+          title: string;
+          paragraphs: string[];
+        };
+        booking: {
+          category: string;
+          title: string;
+          paragraphs: string[];
+        };
+      };
+    };
+    worldCupContext: {
+      title: string;
+      body: string;
+      cta: string;
+    };
+    theExperience: {
+      title: string;
+      experiences: {
+        title: string;
+        description: string;
+      }[];
+    };
+    capturedMoments: {
+      title: string;
+      body: string;
+      cta: string;
+    };
+    bookWithConfidence: {
+      title: string;
+      points: string[];
+    };
+    finalCta: {
+      title: string;
+      primaryCta: string;
+      para: string;
+      secondaryCta: string;
+    };
+  };
+  worldCup: {
+    hero: {
+      title: string;
+      subtitle: string;
+      description: string;
+      americonDescription: string;
+      primaryCta: string;
+      secondaryCta: string;
+    };
+    venue: {
+      title: string;
+      subtitle: string;
+      description: string;
+      capacity: string;
+      highlights: string[];
+    };
+    accommodations: {
+      title: string;
+      subtitle: string;
+      description: string;
+      propertyTypes: {
+        name: string;
+        description: string;
+      }[];
     };
     transportation: {
       title: string;
+      subtitle: string;
       description: string;
-      airportAccess: {
-        title: string;
-        text: string;
-      };
-      cityNavigation: {
-        title: string;
-        text: string;
-      };
+      rentalVehicles: string;
+      cyberTruckService: string;
+      options: string[];
     };
-    privacy: {
+    fanFestival: {
       title: string;
+      subtitle: string;
+      description: string;
+      location: string;
+      features: string[];
       lastUpdated: string;
       intro: string;
       collection: {

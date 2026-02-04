@@ -38,16 +38,19 @@ const CyberTruckService = () => {
     <section ref={sectionRef} className="py-24 md:py-32 bg-card">
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
+          {/* Top Centered Exclusive Amenity Badge */}
+          <div className="text-center mb-8 cybertruck-anim">
+            <div className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
+              Exclusive Amenity
+            </div>
+          </div>
+
+          {/* Main Content: Text and Image in Row */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 cybertruck-anim">
-              <div className="relative">
-                <h2 className="text-3xl md:text-4xl font-serif text-center md:text-left mb-4">
-                  {translations.pages.home?.cybertruck?.title || "Travel in Style: Exclusive CyberTruck Transportation Service"}
-                </h2>
-                <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
-                  Exclusive Amenity
-                </div>
-              </div>
+              <h2 className="text-3xl md:text-4xl font-serif text-center md:text-left mb-4">
+                {translations.pages.home?.cybertruck?.title || "Travel in Style: Exclusive CyberTruck Transportation Service"}
+              </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 {translations.pages.home?.cybertruck?.description || "Make your World Cup 2026 experience truly unforgettable with our exclusive Tesla CyberTruck transportation service. Available to guests staying at The Americon Estate and The Carriage House, this premium amenity ensures you arrive at GEHA Field at Arrowhead Stadium in cutting-edge style and comfort."}
               </p>
@@ -60,7 +63,7 @@ const CyberTruckService = () => {
             </div>
             <div className="cybertruck-anim">
               <img
-                src="/images/americonimages/175903-461844-w68i-JV8SA-1nCCmPOPwuR1iiBYFYhx5l5HwmId4M9E-693246335eeb6.webp"
+                src="/images/americonimages/tesla1.jpeg"
                 alt="Tesla CyberTruck Transportation Service"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />

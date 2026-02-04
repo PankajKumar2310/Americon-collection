@@ -49,7 +49,7 @@ const WorldCup = () => {
                 {translations.pages.worldCup?.hero?.description || "Kansas City earned its place as a FIFA World Cup 2026™ host city through decades of passionate soccer support and world-class facilities. From June 11 through July 13, 2026, the region will welcome fans from around the globe to GEHA Field at Arrowhead Stadium for six thrilling matches spanning three weeks of competition. Whether you are traveling internationally for your first World Cup experience or coming from across the United States to support your team, this comprehensive guide provides everything you need to plan an unforgettable visit to America's Soccer Capital."}
               </p>
               <p className="wc-anim">
-                The Americon Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action.
+                {translations.pages.worldCup?.hero?.americonDescription || "The Americon Collection offers luxury vacation rentals in Liberty, Missouri, strategically located just 15 minutes from Arrowhead Stadium. Our properties provide the perfect home base for World Cup visitors seeking comfort, space, and authentic Midwest hospitality while staying close to all the action."}
               </p>
             </div>
             <div className="mt-10 wc-anim">
@@ -60,7 +60,7 @@ const WorldCup = () => {
           </div>
           <div className="wc-anim">
             <img
-              src="/images/americonimages/175903-461844-w68i-JV8SA-1nCCmPOPwuR1iiBYFYhx5l5HwmId4M9E-693246335eeb6.webp"
+              src="/images/americonimages/kansascity.jpeg"
               alt="Americon Estate luxurious living space perfect for World Cup stays"
               className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-full aspect-[4/5]"
             />
@@ -72,7 +72,7 @@ const WorldCup = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="wc-anim">
               <img
-                src="/images/yellowimages/bannerimage.jpg"
+                src="/images/yellowimages/stadium.jpeg"
                 alt="World Cup Match Schedule"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
@@ -127,12 +127,12 @@ const WorldCup = () => {
                 {translations.pages.worldCup?.venue?.description || "Arrowhead Stadium's selection as a FIFA World Cup 2026™ venue recognizes Kansas City's passionate soccer culture and the facility's world-class capabilities. Originally built for American football, the stadium has hosted numerous international soccer matches and consistently delivers exceptional experiences for players and fans alike."}
               </p>
               <p>
-                With a capacity of approximately 76,640 for soccer configurations, Arrowhead Stadium creates an intimate yet massive atmosphere, with every seat offering a clear view of the pitch. The stadium's bowl design keeps fans close to the action, while modern amenities ensure comfort throughout the match experience.
+                {translations.pages.worldCup?.venue?.capacity || "With a capacity of approximately 76,640 for soccer configurations, Arrowhead Stadium creates an intimate yet massive atmosphere, with every seat offering a clear view of the pitch. The stadium's bowl design keeps fans close to the action, while modern amenities ensure comfort throughout the match experience."}
               </p>
             </div>
             <div className="wc-anim">
               <img
-                src="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
+                src="/images/yellowimages/arrowstadium.webp"
                 alt="GEHA Field at Arrowhead Stadium"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
@@ -156,10 +156,10 @@ const WorldCup = () => {
                 {translations.pages.worldCup?.transportation?.description || "FIFA World Cup 2026™ offers a dedicated transportation solution for tournament visitors. The ConnectKC motorcoach bus service operates throughout the entire tournament period from June 11 through July 13, 2026, connecting the FIFA Fan Festival™ in downtown Kansas City with 15 regional sites across the metropolitan area."}
               </p>
               <p>
-                For visitors with rental vehicles or staying at properties like The Americon Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions.
+                {translations.pages.worldCup?.transportation?.rentalVehicles || "For visitors with rental vehicles or staying at properties like The Americon Collection in Liberty, driving to Arrowhead Stadium offers flexibility and convenience. The drive from Liberty, Missouri to Arrowhead Stadium follows Interstate 35 South, a straightforward route taking approximately 15 minutes in normal traffic conditions."}
               </p>
               <p>
-                Guests staying at The Americon Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress.
+                {translations.pages.worldCup?.transportation?.cyberTruckService || "Guests staying at The Americon Estate enjoy access to our exclusive Tesla CyberTruck transportation service, providing premium transportation to and from Arrowhead Stadium on match days. This complimentary service ensures you arrive in style while avoiding parking hassles and post-match traffic stress."}
               </p>
             </div>
           </div>
@@ -170,7 +170,7 @@ const WorldCup = () => {
           <h2 className="text-3xl md:text-4xl font-serif mb-8 wc-anim">{translations.pages.worldCup?.fanFestival?.title || "FIFA Fan Festival™ and Tournament Atmosphere"}</h2>
           <div className="mb-8 wc-anim">
             <img
-              src="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
+              src="/images/carriageimages/peoplesimg.avif"
               alt="FIFA Fan Festival Kansas City"
               className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full max-w-4xl mx-auto h-64 md:h-96"
             />
@@ -180,7 +180,7 @@ const WorldCup = () => {
               {translations.pages.worldCup?.fanFestival?.description || "The FIFA World Cup 2026™ experience extends far beyond the 90 minutes of match action at Arrowhead Stadium. The FIFA Fan Festival™ in downtown Kansas City creates a month-long celebration that brings together fans from around the world, offering entertainment, cultural experiences, and community gathering spaces throughout the tournament."}
             </p>
             <p>
-              Located in the heart of downtown Kansas City, the FIFA Fan Festival™ transforms public spaces into an international celebration of soccer culture. Large screens broadcast all World Cup matches live, allowing fans to watch games from other host cities while enjoying the festival atmosphere. Entry to the FIFA Fan Festival™ is free, making it accessible to all visitors regardless of whether they have match tickets.
+              {translations.pages.worldCup?.fanFestival?.location || "Located in the heart of downtown Kansas City, the FIFA Fan Festival™ transforms public spaces into an international celebration of soccer culture. Large screens broadcast all World Cup matches live, allowing fans to watch games from other host cities while enjoying the festival atmosphere. Entry to the FIFA Fan Festival™ is free, making it accessible to all visitors regardless of whether they have match tickets."}
             </p>
           </div>
         </section>
@@ -190,7 +190,7 @@ const WorldCup = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div className="wc-anim">
               <img
-                src="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
+                src="/images/americonimages/fountain.jpg"
                 alt="Kansas City Attractions"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
@@ -232,7 +232,7 @@ const WorldCup = () => {
             </div>
             <div className="wc-anim">
               <img
-                src="/images/yellowimages/bannerimage.jpg"
+                src="/images/yellowimages/liberty.jpeg"
                 alt="Historic Downtown Liberty"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />

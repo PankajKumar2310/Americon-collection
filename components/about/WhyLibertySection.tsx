@@ -59,7 +59,7 @@ const WhyLibertySection = () => {
             </div>
             <div className="space-y-6 liberty-anim">
               <img 
-                src="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
+                src="/images/americonimages/liberty_location1.jpeg"
                 alt="Liberty Missouri - Strategic Location"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />
@@ -69,7 +69,7 @@ const WhyLibertySection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 liberty-anim">
               <img 
-                src="/images/yellowimages/bannerimage.jpg"
+                src="/images/yellowimages/america.webp"
                 alt="Liberty Downtown Square"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />

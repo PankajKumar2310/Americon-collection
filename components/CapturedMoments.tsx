@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const images = [
   { src: "/images/yellowimages/175903-457908-H4rg2XMl0jsgdpP3IVEfe5aMWBtXFQWNhsFtcN2QWJA-69264eedb8aba.webp", alt: "Yellow House exterior", className: "w-[45vw] md:w-[22vw] top-0 left-[5%] -rotate-6" },
-  { src: "/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp", alt: "Americon Estate grounds", className: "w-[55vw] md:w-[28vw] top-[15%] left-[40%] rotate-3" },
+  { src: "/images/americonimages/175903-461844-eFRTiiGS0BnPHnM7wY6MTt0EmfmbRixfzHUQ9WIb8bM-693246258fb4a.webp", alt: "Americon Estate grounds", className: "w-[55vw] md:w-[28vw] top-[15%] left-[40%] rotate-3" },
   { src: "/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp", alt: "Carriage House interior", className: "w-[40vw] md:w-[20vw] top-[50%] left-[15%] rotate-8" },
   { src: "/images/yellowimages/175903-457908-D8gCyZRdRY81MkZaO5FfoTtuRdKDITwElB6LEkSR7v4-69264e716f2b2.webp", alt: "Yellow House living room", className: "w-[50vw] md:w-[25vw] top-[60%] left-[55%] -rotate-4" },
 ];

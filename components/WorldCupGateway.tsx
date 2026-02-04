@@ -60,7 +60,7 @@ const WorldCupGateway = () => {
                   <li>• Quarterfinal: July 11, 2026</li>
                 </ul>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-col gap-4">
                 <Button asChild size="default" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 py-3 text-sm font-sans uppercase tracking-widest">
                   <Link to="/kcwc26">View Complete Match Schedule</Link>
                 </Button>
@@ -71,7 +71,7 @@ const WorldCupGateway = () => {
             </div>
             <div className="gateway-anim">
               <img
-                src="/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp"
+                src="/images/carriageimages/fifamatch.jpeg"
                 alt="FIFA World Cup 2026 Kansas City"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
@@ -81,7 +81,7 @@ const WorldCupGateway = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="gateway-anim">
               <img
-                src="/images/americonimages/175903-461844-gdQVR-5JSAoS7Jtx4o91F5UsEfEbg5pXxAE4mWFT2b8-6932462240079.webp"
+                src="/images/americonimages/home.jpg"
                 alt="Explore Kansas City Attractions"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
@@ -107,14 +107,22 @@ const WorldCupGateway = () => {
             <div className="bg-card p-8 rounded-lg shadow-lg">
               <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-primary-foreground font-bold text-xs">WC2026</span>
+                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-2 overflow-hidden">
+                    <img 
+                      src="/images/logo/fifalogo.webp" 
+                      alt="FIFA World Cup 2026 Logo" 
+                      className="w-full h-full object-contain p-2"
+                    />
                   </div>
                   <p className="text-sm text-muted-foreground">FIFA World Cup 2026</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
-                    <span className="text-primary-foreground font-bold text-xs">SCA</span>
+                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-2 overflow-hidden">
+                    <img 
+                      src="/images/logo/sclogo.jpeg" 
+                      alt="Soccer Capital of America Logo" 
+                      className="w-full h-full object-contain p-2"
+                    />
                   </div>
                   <p className="text-sm text-muted-foreground">Soccer Capital of America®</p>
                 </div>

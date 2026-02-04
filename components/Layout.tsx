@@ -1,17 +1,17 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
-import Concierge from "./Concierge";
+// import Concierge from "./Concierge";
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <main className="relative z-10">
+      <main>
         <Outlet />
       </main>
       <Footer />
-      <Concierge />
+      {/* <Concierge /> */}
     </>
   );
 };

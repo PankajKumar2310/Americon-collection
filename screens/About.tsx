@@ -1,7 +1,7 @@
 import AboutHero from "../components/about/AboutHero";
-import FoundersStory from "../components/about/FoundersStory";
-import OriginStory from "../components/about/OriginStory";
-import PersonalityStory from "../components/about/PersonalityStory";
+// import FoundersStory from "../components/about/FoundersStory";
+// import OriginStory from "../components/about/OriginStory";
+// import PersonalityStory from "../components/about/PersonalityStory";
 import PhilosophySection from "../components/about/PhilosophySection";
 import FlagshipPropertySection from "../components/about/FlagshipPropertySection";
 import MeetHostsSection from "../components/about/MeetHostsSection";
@@ -16,9 +16,9 @@ const About = () => {
   return (
     <>
       <AboutHero />
-      <FoundersStory />
+      {/* <FoundersStory />
       <OriginStory />
-      <PersonalityStory />
+      <PersonalityStory /> */}
       <PhilosophySection />
       <FlagshipPropertySection />
       <MeetHostsSection />

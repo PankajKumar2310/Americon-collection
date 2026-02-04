@@ -50,7 +50,7 @@ const LibertyHomeowners = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="homeowners-anim">
               <img
-                src="/images/yellowimages/bannerimage.jpg"
+                src="/images/yellowimages/fun.jpeg"
                 alt="Liberty Homeowners Program"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />
