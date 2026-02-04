@@ -142,7 +142,9 @@ const en: Translations = {
         philosophy:{
           title:"Our Philosophy: Intentional Hospitality",
           subtitle:"Travel should feel like coming home, not just visiting a place. We believe in creating spaces where guests can settle in, breathe deeply, and experience the genuine warmth of Midwestern hospitality.",
-          description:"Every detail in our collection is chosen with intention — from the quality of linens to the layout of furniture, from the welcome amenities to the local recommendations we provide. Our approach combines the comfort of a well-appointed home with the service standards of premium hospitality.",
+          description:"Every detail matters when you are creating memories with the people who matter most. At The Americon Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary.",
+          management:"We personally manage every home in our collection, remaining hands-on with every detail and intentionally curating each stay from arrival to departure. This approach allows us to maintain the quality and consistency that turns first-time guests into returning friends. When you stay with us, you are not just booking a rental property. You are stepping into something thoughtfully created by people who genuinely care how your story unfolds.",
+          properties:"Our properties share a common philosophy even as each maintains its own distinct character. We focus on homes that comfortably accommodate groups, provide spaces for gathering and celebration, and offer the privacy and amenities that make extended stays effortless. Whether you are hosting a multi-generational family reunion, traveling with friends for a sporting event, or welcoming international visitors for the FIFA World Cup 2026, our properties provide the foundation for extraordinary experiences.",
           values:[
             "Thoughtful design that prioritizes comfort and functionality",
             "Consistent quality across all properties",
@@ -154,6 +156,14 @@ const en: Translations = {
           title:"The Americon Estate: Our Flagship Property",
           subtitle:"Where luxury meets livability in the heart of Liberty.",
           description:"The Americon Estate represents the pinnacle of our collection — a spacious, elegantly appointed residence that showcases our commitment to exceptional guest experiences. This property serves as the benchmark for quality and comfort that defines every Americon Collection stay.",
+          resortTitle:"A Resort Experience in a Private Setting",
+          resortDescription1:"The Americon Estate is offered exclusively to guests seeking the ultimate vacation experience, without compromise. The property features a resort-style private pool larger than most public pools, complete with a water slide, waterfall, and hot tub. This creates a setting that feels more like a private club than a rental home, giving your group exclusive access to amenities typically found only at high-end resorts.",
+          resortDescription2:"Poolside, guests can relax and watch matches on one of the two outdoor televisions, host cookouts using the professional-grade outdoor kitchen, or enjoy a refreshing drink from the poolside refrigerator. Everything is designed to keep your group together, comfortable, and entertained without ever leaving the property.",
+          outdoorTitle:"Beyond the Pool: Outdoor Experiences",
+          outdoorDescription1:"The experience continues beyond the pool area. A large fire pit tucked into the back corner of the woods offers a rare and unforgettable setting for summer nights. Perfect for s'mores, storytelling, and unwinding under the stars, this secluded space offers a peaceful retreat that feels worlds away from everyday life.",
+          outdoorDescription2:"Despite its privacy and acreage, The Americon Estate is located just minutes from Kansas City's major transportation corridors, making it easy for international travelers and groups to reach Arrowhead Stadium, downtown Kansas City attractions, and the region's entertainment districts.",
+          celebrationTitle:"Designed for Groups and Celebrations",
+          celebrationDescription:"The Americon Estate accommodates large groups comfortably, with multiple bedrooms, spacious common areas, and both indoor and outdoor gathering spaces. The open floor plan encourages togetherness while providing enough space that everyone can find their own comfortable spot. Every element reflects our understanding that the best vacation memories happen when spaces support natural interaction and celebration.",
           features:[
             "Expansive living areas perfect for groups and families",
             "Premium furnishings and designer finishes throughout",

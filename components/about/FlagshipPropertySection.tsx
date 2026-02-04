@@ -1,10 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const FlagshipPropertySection = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -36,10 +38,10 @@ const FlagshipPropertySection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-serif flagship-anim">
-              The Americon Estate: Our Flagship Property
+              {translations.pages.about?.flagship?.title || "The Americon Estate: Our Flagship Property"}
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground flagship-anim max-w-4xl mx-auto">
-              At the heart of The Americon Collection is The Americon Estate, our flagship luxury retreat set on three private acres of land. This property represents everything we believe vacation accommodations should be: exceptional, memorable, and designed for creating stories worth telling.
+              {translations.pages.about?.flagship?.subtitle || "At the heart of The Americon Collection is The Americon Estate, our flagship luxury retreat set on three private acres of land. This property represents everything we believe vacation accommodations should be: exceptional, memorable, and designed for creating stories worth telling."}
             </p>
           </div>
 
@@ -53,12 +55,12 @@ const FlagshipPropertySection = () => {
             </div>
             <div className="space-y-8 flagship-anim">
               <div>
-                <h3 className="text-2xl md:text-3xl font-serif mb-4">A Resort Experience in a Private Setting</h3>
+                <h3 className="text-2xl md:text-3xl font-serif mb-4">{translations.pages.about?.flagship?.resortTitle || "A Resort Experience in a Private Setting"}</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  The Americon Estate is offered exclusively to guests seeking the ultimate vacation experience, without compromise. The property features a resort-style private pool larger than most public pools, complete with a water slide, waterfall, and hot tub. This creates a setting that feels more like a private club than a rental home, giving your group exclusive access to amenities typically found only at high-end resorts.
+                  {translations.pages.about?.flagship?.resortDescription1 || "The Americon Estate is offered exclusively to guests seeking the ultimate vacation experience, without compromise. The property features a resort-style private pool larger than most public pools, complete with a water slide, waterfall, and hot tub. This creates a setting that feels more like a private club than a rental home, giving your group exclusive access to amenities typically found only at high-end resorts."}
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  Poolside, guests can relax and watch matches on one of the two outdoor televisions, host cookouts using the professional-grade outdoor kitchen, or enjoy a refreshing drink from the poolside refrigerator. Everything is designed to keep your group together, comfortable, and entertained without ever leaving the property.
+                  {translations.pages.about?.flagship?.resortDescription2 || "Poolside, guests can relax and watch matches on one of the two outdoor televisions, host cookouts using the professional-grade outdoor kitchen, or enjoy a refreshing drink from the poolside refrigerator. Everything is designed to keep your group together, comfortable, and entertained without ever leaving the property."}
                 </p>
               </div>
             </div>
@@ -67,12 +69,12 @@ const FlagshipPropertySection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 flagship-anim order-2 md:order-1">
               <div>
-                <h3 className="text-2xl md:text-3xl font-serif mb-4">Beyond the Pool: Outdoor Experiences</h3>
+                <h3 className="text-2xl md:text-3xl font-serif mb-4">{translations.pages.about?.flagship?.outdoorTitle || "Beyond the Pool: Outdoor Experiences"}</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  The experience continues beyond the pool area. A large fire pit tucked into the back corner of the woods offers a rare and unforgettable setting for summer nights. Perfect for s'mores, storytelling, and unwinding under the stars, this secluded space offers a peaceful retreat that feels worlds away from everyday life.
+                  {translations.pages.about?.flagship?.outdoorDescription1 || "The experience continues beyond the pool area. A large fire pit tucked into the back corner of the woods offers a rare and unforgettable setting for summer nights. Perfect for s'mores, storytelling, and unwinding under the stars, this secluded space offers a peaceful retreat that feels worlds away from everyday life."}
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  Despite its privacy and acreage, The Americon Estate is located just minutes from Kansas City's major transportation corridors, making it easy for international travelers and groups to reach Arrowhead Stadium, downtown Kansas City attractions, and the region's entertainment districts.
+                  {translations.pages.about?.flagship?.outdoorDescription2 || "Despite its privacy and acreage, The Americon Estate is located just minutes from Kansas City's major transportation corridors, making it easy for international travelers and groups to reach Arrowhead Stadium, downtown Kansas City attractions, and the region's entertainment districts."}
                 </p>
               </div>
             </div>
@@ -87,9 +89,9 @@ const FlagshipPropertySection = () => {
 
           <div className="mt-16 text-center flagship-anim">
             <div>
-              <h3 className="text-2xl md:text-3xl font-serif mb-4">Designed for Groups and Celebrations</h3>
+              <h3 className="text-2xl md:text-3xl font-serif mb-4">{translations.pages.about?.flagship?.celebrationTitle || "Designed for Groups and Celebrations"}</h3>
               <p className="text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                The Americon Estate accommodates large groups comfortably, with multiple bedrooms, spacious common areas, and both indoor and outdoor gathering spaces. The open floor plan encourages togetherness while providing enough space that everyone can find their own comfortable spot. Every element reflects our understanding that the best vacation memories happen when spaces support natural interaction and celebration.
+                {translations.pages.about?.flagship?.celebrationDescription || "The Americon Estate accommodates large groups comfortably, with multiple bedrooms, spacious common areas, and both indoor and outdoor gathering spaces. The open floor plan encourages togetherness while providing enough space that everyone can find their own comfortable spot. Every element reflects our understanding that the best vacation memories happen when spaces support natural interaction and celebration."}
               </p>
             </div>
           </div>

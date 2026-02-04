@@ -160,12 +160,22 @@ export type Translations = {
         title: string;
         subtitle: string;
         description: string;
+        management: string;
+        properties: string;
         values: string[];
       };
       flagship: {
         title: string;
         subtitle: string;
         description: string;
+        resortTitle: string;
+        resortDescription1: string;
+        resortDescription2: string;
+        outdoorTitle: string;
+        outdoorDescription1: string;
+        outdoorDescription2: string;
+        celebrationTitle: string;
+        celebrationDescription: string;
         features: string[];
       };
       hosts: {
@@ -196,6 +206,9 @@ export type Translations = {
         description: string;
         worldcupPrep: string[];
         futureVision: string;
+      };
+      bookDirectMessage: {
+        description: string;
       };
     };
     home: {

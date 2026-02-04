@@ -1,10 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyLibertySection = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -36,10 +38,10 @@ const WhyLibertySection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-serif liberty-anim">
-              Why Liberty, Missouri?
+              {translations.pages.about?.whyLiberty?.title || "Why Liberty, Missouri?"}
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground liberty-anim max-w-4xl mx-auto">
-              Our decision to focus on Liberty, Missouri, reflects both personal connection and strategic thinking. Jay and Jenny know Liberty intimately, understanding its character, its strengths, and its appeal to visitors. This local expertise enables them to provide insider guidance that enhances the guest experience.
+              {translations.pages.about?.whyLiberty?.description || "Our decision to focus on Liberty, Missouri, reflects both personal connection and strategic thinking. Jay and Jenny know Liberty intimately, understanding its character, its strengths, and its appeal to visitors. This local expertise enables them to provide insider guidance that enhances the guest experience."}
             </p>
           </div>
 

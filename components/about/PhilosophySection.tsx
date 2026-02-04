@@ -37,17 +37,17 @@ const PhilosophySection = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-6xl font-serif philosophy-anim">
-            Our Philosophy: Intentional Hospitality
+            {translations.pages.about?.philosophy?.title || "Our Philosophy: Intentional Hospitality"}
           </h2>
           <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed philosophy-anim">
             <p>
-              Every detail matters when you are creating memories with the people who matter most. At The Americon Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary.
+              {translations.pages.about?.philosophy?.description || "Every detail matters when you are creating memories with the people who matter most. At The Americon Collection, we believe luxury is not just about high-end finishes and premium amenities. True luxury is about thoughtfulness. It is about arriving to find everything you need already anticipated. It is about spaces that feel both exciting and grounding, whether you are visiting the United States for the first time or returning for something extraordinary."}
             </p>
             <p>
-              We personally manage every home in our collection, remaining hands-on with every detail and intentionally curating each stay from arrival to departure. This approach allows us to maintain the quality and consistency that turns first-time guests into returning friends. When you stay with us, you are not just booking a rental property. You are stepping into something thoughtfully created by people who genuinely care how your story unfolds.
+              {translations.pages.about?.philosophy?.management || "We personally manage every home in our collection, remaining hands-on with every detail and intentionally curating each stay from arrival to departure. This approach allows us to maintain the quality and consistency that turns first-time guests into returning friends. When you stay with us, you are not just booking a rental property. You are stepping into something thoughtfully created by people who genuinely care how your story unfolds."}
             </p>
             <p>
-              Our properties share a common philosophy even as each maintains its own distinct character. We focus on homes that comfortably accommodate groups, provide spaces for gathering and celebration, and offer the privacy and amenities that make extended stays effortless. Whether you are hosting a multi-generational family reunion, traveling with friends for a sporting event, or welcoming international visitors for the FIFA World Cup 2026, our properties provide the foundation for extraordinary experiences.
+              {translations.pages.about?.philosophy?.properties || "Our properties share a common philosophy even as each maintains its own distinct character. We focus on homes that comfortably accommodate groups, provide spaces for gathering and celebration, and offer the privacy and amenities that make extended stays effortless. Whether you are hosting a multi-generational family reunion, traveling with friends for a sporting event, or welcoming international visitors for the FIFA World Cup 2026, our properties provide the foundation for extraordinary experiences."}
             </p>
           </div>
         </div>

@@ -1,10 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const MeetHostsSection = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -36,10 +38,10 @@ const MeetHostsSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-serif hosts-anim">
-              Meet Jay & Jenny: The Hosts Behind The Collection
+              {translations.pages.about?.hosts?.title || "Meet Jay & Jenny: The Hosts Behind The Collection"}
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground hosts-anim max-w-4xl mx-auto">
-              The Americon Collection exists because Jay and Jenny believe that where you stay should be part of the story, not just the place you sleep. They are hosts by nature and the kind of people who notice the small things because those are the things guests remember long after the trip is over.
+              {translations.pages.about?.hosts?.description || "The Americon Collection exists because Jay and Jenny believe that where you stay should be part of the story, not just the place you sleep. They are hosts by nature and the kind of people who notice the small things because those are the things guests remember long after the trip is over."}
             </p>
           </div>
 
@@ -48,13 +50,10 @@ const MeetHostsSection = () => {
               <div>
                 <h3 className="text-2xl md:text-3xl font-serif mb-4">Complementary Strengths, Shared Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Jay is the big-picture thinker. He loves the strategy, the vision, and turning a "what if" into something real. His background in business and project management means he approaches hospitality with both creativity and precision. Jay sees possibilities where others see obstacles, whether that means transforming a property into something extraordinary or solving logistical challenges that make international travel seamless for guests.
+                  {translations.pages.about?.hosts?.jayBio || "Jay's background in luxury hospitality and attention to detail ensures every property meets the highest standards of quality and comfort. His expertise in property management and guest services creates the foundation for exceptional stays."}
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  Jenny is the heartbeat of The Americon Collection. She brings the design instincts, the warmth, and the eye for detail that make a space feel welcoming the moment you walk in. Her talent for creating environments that feel both luxurious and livable ensures every property in the collection strikes the perfect balance between impressive and comfortable.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mt-4">
-                  Together, they balance each other perfectly. One dreaming ahead, the other making sure every detail feels intentional and personal. This partnership creates properties that are both aspirational and accessible, impressive yet inviting.
+                  {translations.pages.about?.hosts?.jennyBio || "Jenny's passion for design and local culture infuses each property with distinctive character and thoughtful amenities. Her knowledge of the Kansas City area provides guests with insider access to the best experiences the region has to offer."}
                 </p>
               </div>
             </div>

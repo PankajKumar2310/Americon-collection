@@ -1,10 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "@/translations/LanguageProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const PropertiesSection = () => {
+  const { translations } = useLanguage();
   const sectionRef = useRef(null);
 
   useLayoutEffect(() => {
@@ -36,10 +38,10 @@ const PropertiesSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-serif properties-anim">
-              Our Properties: Curated for Exceptional Experiences
+              {translations.pages.about?.properties?.title || "Our Properties: Curated for Exceptional Experiences"}
             </h2>
             <p className="mt-6 text-lg md:text-xl text-muted-foreground properties-anim max-w-4xl mx-auto">
-              While The Americon Estate serves as our flagship property, The Americon Collection includes additional carefully selected homes throughout Liberty and the Kansas City suburbs. Each property is selected and prepared with the same attention to detail and commitment to the guest experience that define our brand.
+              {translations.pages.about?.properties?.description || "While The Americon Estate serves as our flagship property, The Americon Collection includes additional carefully selected homes throughout Liberty and the Kansas City suburbs. Each property is selected and prepared with the same attention to detail and commitment to the guest experience that define our brand."}
             </p>
           </div>
 
