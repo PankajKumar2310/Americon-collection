@@ -178,7 +178,7 @@ const en: Translations = {
         hosts:{
           title:"Meet Jay & Jenny: The Hosts Behind The Collection",
           subtitle:"Local experts with a passion for exceptional hospitality.",
-          description:"Jay and Jenny bring years of experience in hospitality and a deep love for the Kansas City area to every aspect of The Americon Collection. Their vision was simple: create spaces where visitors can experience the authentic warmth and charm of Liberty while enjoying world-class comfort and service.",
+          description:"Jay and Jenny bring years of experience in hospitality and a deep love for the Kansas City area to every aspect of The American Collection. Their vision was simple: create spaces where visitors can experience the authentic warmth and charm of Liberty while enjoying world-class comfort and service.",
           jayBio:"Jay's background in luxury hospitality and attention to detail ensures every property meets the highest standards of quality and comfort. His expertise in property management and guest services creates the foundation for exceptional stays.",
           jennyBio:"Jenny's passion for design and local culture infuses each property with distinctive character and thoughtful amenities. Her knowledge of the Kansas City area provides guests with insider access to the best experiences the region has to offer."
         },
@@ -244,7 +244,7 @@ const en: Translations = {
         headlineLine1: "Experience FIFA World Cup 2026 in Luxury",
         headlineLine2: "Premium Rentals Near Kansas City",
         subtitle:
-          "Welcome to The Americon Collection, a curated portfolio of upscale short-term vacation rentals in Kansas City and Liberty, Missouri, created specifically for World Cup 2026 travelers, international guests, teams, and groups. Your exclusive collection of luxury vacation homes in Liberty, Missouri. Perfect for World Cup fans, families, and groups seeking comfort just minutes from Arrowhead Stadium.",
+          "Welcome to The American Collection, a curated portfolio of upscale short-term vacation rentals in Kansas City and Liberty, Missouri, created specifically for World Cup 2026 travelers, international guests, teams, and groups. Your exclusive collection of luxury vacation homes in Liberty, Missouri. Perfect for World Cup fans, families, and groups seeking comfort just minutes from Arrowhead Stadium.",
         primaryCta: "Book Your World Cup Stay Now",
         secondaryCta: "View Our Collection",
       },
@@ -364,7 +364,7 @@ const en: Translations = {
       },
       why: {
         title: "Why American Collection",
-        subtitle: "At Americon Collection, we believe a great stay starts with a thoughtful home — not just a room. That’s why each residence is chosen for its quality, comfort, and thoughtful design.",
+        subtitle: "At American Collection, we believe a great stay starts with a thoughtful home — not just a room. That's why each residence is chosen for its quality, comfort, and thoughtful design.",
         cards: {
           approach: {
             category: "Approach",
@@ -396,12 +396,6 @@ const en: Translations = {
             ],
           },
         },
-      },
-      worldCupContext: {
-        title: "World Cup 2026 — Calmly Located",
-        body:
-          "Planning your stay for World Cup 2026? Americon Collection offers elegant homes in Liberty, Missouri, just a short drive from Kansas City’s biggest event venues and attractions. Enjoy the space, privacy, and convenience of a private residence while being close enough to experience every moment of the action — without the congestion of downtown hotels.",
-        cta: "Explore World Cup Stays",
       },
       theExperience: {
         title: "Designed for the Way You Travel",
@@ -440,7 +434,7 @@ const en: Translations = {
       finalCta: {
         title: "Find the Right Place to Stay",
         primaryCta: "Book Your Stay",
-        para:"Whether you’re planning a weekend getaway, a longer visit, or a special event stay, Americon Collection residences offer thoughtful comfort, intentional design, and a calmer way to stay near Kansas City & Liberty, Missouri.",
+        para:"Whether you’re planning a weekend getaway, a longer visit, or a special event stay, American Collection residences offer thoughtful comfort, intentional design, and a calmer way to stay near Kansas City & Liberty, Missouri.",
         secondaryCta: "Explore the Collection",
       },
     },
@@ -566,13 +560,13 @@ const en: Translations = {
       conclusion:{
         title:"Your Unforgettable Kansas City World Cup Experience Awaits",
         description:"FIFA World Cup 2026™ in Kansas City represents a once-in-a-lifetime opportunity to experience soccer's greatest tournament in America's heartland. From the passionate atmosphere at Arrowhead Stadium to the cultural richness of Kansas City's attractions and the warm hospitality of Liberty, Missouri, every element combines to create unforgettable memories.",
-        secondDescription:"The Americon Collection provides the perfect home base for your World Cup adventure. Our luxury properties offer space, comfort, and convenience that transform your visit from a simple trip to an extraordinary experience. Start planning your FIFA World Cup 2026™ Kansas City experience today.",
+        secondDescription:"The American Collection provides the perfect home base for your World Cup adventure. Our luxury properties offer space, comfort, and convenience that transform your visit from a simple trip to an extraordinary experience. Start planning your FIFA World Cup 2026™ Kansas City experience today.",
         primaryCta:"Reserve Your Property Now",
         secondaryCta:"Contact Us"
       },
       newsletter:{
         title:"Subscribe for World Cup Updates",
-        description:"Stay informed about the FIFA World Cup 2026™ in Kansas City with our newsletter. Receive updates about match schedules, ticket information, local events, and exclusive offers for Americon Collection guests.",
+        description:"Stay informed about the FIFA World Cup 2026™ in Kansas City with our newsletter. Receive updates about match schedules, ticket information, local events, and exclusive offers for American Collection guests.",
         emailPlaceholder:"Email Address (required)",
         namePlaceholder:"First Name (optional)",
         interestLabel:"Interested in...",
@@ -625,7 +619,7 @@ const en: Translations = {
     privacy: {
       title: "Privacy Policy",
       lastUpdated: "Last updated:",
-      intro: "The Americon Collection (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
+      intro: "The American Collection (\"we,\" \"us,\" or \"our\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
       collection: {
         title: "Information We Collect",
         text: "We may collect personal information from you such as your name, email address, and phone number when you fill out our contact form or make a booking inquiry. We also collect non-personal information, such as browser type and operating system, to improve our website.",
@@ -648,7 +642,7 @@ const en: Translations = {
     terms: {
       title: "Terms of Service",
       lastUpdated: "Last updated:",
-      intro: "Please read these Terms of Service (\"Terms\") carefully before using our website or booking a stay with The Americon Collection. Your access to and use of the service is conditioned on your acceptance of and compliance with these Terms.",
+      intro: "Please read these Terms of Service (\"Terms\") carefully before using our website or booking a stay with The American Collection. Your access to and use of the service is conditioned on your acceptance of and compliance with these Terms.",
       bookings: {
         title: "Bookings and Payments",
         text: "All booking inquiries are subject to availability and confirmation. By making a booking, you agree to provide current, complete, and accurate purchase and account information. Payment terms will be outlined in your booking agreement.",
@@ -659,7 +653,7 @@ const en: Translations = {
       },
       liability: {
         title: "Limitation of Liability",
-        text: "The Americon Collection is not liable for any personal injuries, property damage, or losses that may occur during your stay. We encourage all guests to secure their own travel insurance.",
+        text: "The American Collection is not liable for any personal injuries, property damage, or losses that may occur during your stay. We encourage all guests to secure their own travel insurance.",
       },
     },
   },
