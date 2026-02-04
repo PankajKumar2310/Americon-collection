@@ -217,7 +217,7 @@ const ChatInterface = () => {
       </div>
 
       <div className="flex-grow p-4 overflow-hidden">
-        <div className="h-full overflow-y-auto space-y-4">
+        <div className="h-full overflow-y-auto space-y-4 custom-scrollbar">
           {messages.map((msg) => (
             <div
               key={msg.id}
