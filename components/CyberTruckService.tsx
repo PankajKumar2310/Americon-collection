@@ -63,7 +63,7 @@ const CyberTruckService = () => {
             </div>
             <div className="cybertruck-anim">
               <img
-                src="/images/americonimages/tesla1.jpeg"
+                src="/images/americonimages/cybertruck.png"
                 alt="Tesla CyberTruck Transportation Service"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />

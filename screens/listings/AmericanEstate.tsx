@@ -28,7 +28,7 @@ const AmericanEstate = () => {
     <ListingPageLayout
       title={translations.pages.listings?.americanEstate?.title || "The American Estate"}
       descriptor={translations.pages.listings?.americanEstate?.descriptor || "Private. Spacious. Elevated in scale and setting."}
-      heroImageUrl="/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp"
+      heroImageUrl="/images/americonimages/americonmain.webp"
       
       bookingLink="https://www.americancollectionkc.com/listings/461844"
     >

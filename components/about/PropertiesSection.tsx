@@ -62,7 +62,7 @@ const PropertiesSection = () => {
 
             <div className="bg-background rounded-lg shadow-lg overflow-hidden properties-anim">
               <img 
-                src="/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp"
+                src="/images/americonimages/175903-461844-pdoWwixIzOkYijW--MdrVbmA5m3uwT1LUsXGoYegxjb8-6932462b9f9c6.webp"
                 alt="The American Estate"
                 className="w-full h-48 object-cover"
               />

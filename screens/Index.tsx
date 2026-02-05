@@ -18,8 +18,9 @@ const Index = () => {
     <>
       <Hero />
       <FeaturedListings />
-      <WhyAmericanCollection />
       <CyberTruckService />
+      <WhyAmericanCollection />
+      
       <LibertyHomeowners />
       <WhyLibertyBase />
       <WorldCupGateway />

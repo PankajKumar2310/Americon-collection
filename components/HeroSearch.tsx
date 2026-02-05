@@ -33,95 +33,143 @@ import { useLanguage } from "@/translations/LanguageProvider";
 export function HeroSearch() {
   const { translations } = useLanguage();
   const isMobile = useIsMobile();
-  const [date, setDate] = React.useState<DateRange | undefined>();
-  const [guests, setGuests] = React.useState<string>("2");
-  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
 
+  const [date, setDate] = React.useState<DateRange | undefined>();
+  const [guests, setGuests] = React.useState("2");
+  const [open, setOpen] = React.useState(false);
+
+  // 🔗 HOSTAWAY SEARCH
   const handleSearch = () => {
-    console.log("Searching with:", { date, guests });
-    if (isMobile) {
-      setIsDrawerOpen(false);
+    if (!date?.from || !date?.to) {
+      alert("Please select start and end dates");
+      return;
     }
+
+    const start = format(date.from, "yyyy-MM-dd");
+    const end = format(date.to, "yyyy-MM-dd");
+
+    const url = `https://www.americancollectionkc.com/search?start=${start}&end=${end}&numberOfGuests=${guests}`;
+
+    window.open(url, "_blank");
+
+    if (isMobile) setOpen(false);
   };
 
-  const searchForm = (
-    <div className={cn("grid items-start gap-4", isMobile ? "p-4" : "grid-cols-[2fr_1fr_auto] bg-card/80 backdrop-blur-sm p-3 rounded-full shadow-2xl shadow-black/30 border border-white/10")}>
+  const Form = (
+    <div
+      className={cn(
+        "grid gap-3 w-full",
+        isMobile
+          ? "p-4"
+          : "grid-cols-[2fr_1fr_auto] bg-card/80 backdrop-blur-md p-3 rounded-full border border-white/10 shadow-xl"
+      )}
+    >
+      {/* DATE */}
       <Popover>
         <PopoverTrigger asChild>
           <Button
-            id="date"
-            variant={"ghost"}
+            variant="ghost"
             className={cn(
-              "w-full justify-start text-left font-normal h-14 rounded-full px-6 text-base",
+              "h-14 w-full justify-start rounded-full px-6 text-base font-normal",
               !date && "text-muted-foreground",
-              isMobile && "bg-card border border-white/10"
+              isMobile && "bg-card border"
             )}
           >
-            <CalendarIcon className="mr-4 h-5 w-5" />
+            <CalendarIcon className="mr-3 h-5 w-5" />
             {date?.from ? (
               date.to ? (
                 <>
-                  {format(date.from, "LLL dd, y")} - {format(date.to, "LLL dd, y")}
+                  {format(date.from, "MMM dd, yyyy")} -{" "}
+                  {format(date.to, "MMM dd, yyyy")}
                 </>
               ) : (
-                format(date.from, "LLL dd, y")
+                format(date.from, "MMM dd, yyyy")
               )
             ) : (
-              <span>{translations.pages.home?.heroSearch?.pickDate || "Pick your dates"}</span>
+              translations.pages.home?.heroSearch?.pickDate ||
+              "Pick your dates"
             )}
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-auto p-0 bg-card border-white/10" align="start">
+
+        <PopoverContent className="p-0 w-auto">
           <Calendar
-            initialFocus
             mode="range"
-            defaultMonth={date?.from}
             selected={date}
             onSelect={setDate}
-            numberOfMonths={2}
+            numberOfMonths={isMobile ? 1 : 2}
+            initialFocus
           />
         </PopoverContent>
       </Popover>
 
+      {/* GUESTS */}
       <Select value={guests} onValueChange={setGuests}>
-        <SelectTrigger className="h-14 rounded-full px-6 text-base border-0 data-[state=open]:bg-card/90 focus:ring-0 focus:ring-offset-0 bg-transparent hover:bg-card/90">
+        <SelectTrigger className="h-14 rounded-full px-6">
           <div className="flex items-center">
-            <Users className="mr-4 h-5 w-5" />
-            <SelectValue placeholder={translations.pages.home?.heroSearch?.guests || "Guests"} />
+            <Users className="mr-3 h-5 w-5" />
+            <SelectValue
+              placeholder={
+                translations.pages.home?.heroSearch?.guests || "Guests"
+              }
+            />
           </div>
         </SelectTrigger>
-        <SelectContent className="bg-card border-white/10">
+
+        <SelectContent>
           {[...Array(12)].map((_, i) => (
             <SelectItem key={i + 1} value={`${i + 1}`}>
-              {i + 1} {i === 0 ? (translations.pages.home?.heroSearch?.guestLabel || "Guest") : (translations.pages.home?.heroSearch?.guestsLabel || "Guests")}
+              {i + 1}{" "}
+              {i === 0
+                ? translations.pages.home?.heroSearch?.guestLabel || "Guest"
+                : translations.pages.home?.heroSearch?.guestsLabel || "Guests"}
             </SelectItem>
           ))}
         </SelectContent>
       </Select>
 
-      <Button onClick={handleSearch} size="lg" className="h-14 rounded-full px-10 text-base font-sans uppercase tracking-widest bg-primary text-primary-foreground hover:bg-primary/90">
-        {translations.pages.home?.heroSearch?.checkAvailability || "Check Availability"}
+      {/* BUTTON */}
+      <Button
+        onClick={handleSearch}
+        className="h-14 rounded-full px-10 uppercase tracking-wider"
+      >
+        {translations.pages.home?.heroSearch?.checkAvailability ||
+          "Check Availability"}
       </Button>
     </div>
   );
 
+  /* ---------------- MOBILE DRAWER ---------------- */
+
   if (isMobile) {
     return (
-      <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
+      <Drawer open={open} onOpenChange={setOpen}>
         <DrawerTrigger asChild>
-          <Button size="lg" className="w-full max-w-sm bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-base font-sans uppercase tracking-widest">
-            {translations.pages.home?.heroSearch?.checkAvailability || "Check Availability"}
+          <Button className="w-full max-w-sm mx-auto rounded-full py-6 uppercase">
+            {translations.pages.home?.heroSearch?.checkAvailability ||
+              "Check Availability"}
           </Button>
         </DrawerTrigger>
-        <DrawerContent className="bg-background border-t-white/10">
-          <DrawerHeader className="text-left">
-            <DrawerTitle className="font-serif text-2xl">{translations.pages.home?.heroSearch?.selectStay || "Select your stay"}</DrawerTitle>
+
+        <DrawerContent>
+          <DrawerHeader>
+            <DrawerTitle className="text-xl">
+              {translations.pages.home?.heroSearch?.selectStay ||
+                "Select your stay"}
+            </DrawerTitle>
           </DrawerHeader>
-          <div className="p-4">{searchForm}</div>
+
+          {Form}
         </DrawerContent>
       </Drawer>
     );
   }
 
-  return searchForm;
+  /* ---------------- DESKTOP ---------------- */
+
+  return (
+    <div className="max-w-4xl mx-auto w-full">
+      {Form}
+    </div>
+  );
 }

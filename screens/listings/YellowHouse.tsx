@@ -27,7 +27,7 @@ const YellowHouse = () => {
     <ListingPageLayout
       title={translations.pages.listings?.yellowHouse?.title || "The Yellow House"}
       descriptor={translations.pages.listings?.yellowHouse?.descriptor || "Warm. Light-filled. Designed for shared moments."}
-      heroImageUrl="/images/yellowimages/bannerimage.jpg"
+      heroImageUrl="/images/yellowimages/maiin.webp"
       bookingLink="https://www.americancollectionkc.com/listings/457908"
     >
       <div className="max-w-4xl mx-auto">

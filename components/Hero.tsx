@@ -6,7 +6,10 @@ import { HeroSearch } from "@/components/HeroSearch";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/translations/LanguageProvider";
 
+
+
 const Hero = () => {
+  
   const { translations } = useLanguage();
   const heroRef = useRef(null);
   const video1Ref = useRef<HTMLVideoElement>(null);
@@ -107,7 +110,7 @@ const Hero = () => {
             <span className="hero-headline-line block" style={{ transform: 'translateY(16px)' }}>{translations.pages.home?.hero?.headlineLine1 || "Experience FIFA World Cup 2026 in Luxury"}</span>
             <span className="hero-headline-line block" style={{ transform: 'translateY(16px)' }}>{translations.pages.home?.hero?.headlineLine2 || "Premium Rentals Near Kansas City"}</span>
           </h1>
-          <p className="hero-subheadline mt-8 text-base md:text-lg max-w-2xl mx-auto text-muted-foreground" style={{ transform: 'translateY(12px)' }}>
+          <p className="hero-subheadline mt-8 text-base md:text-lg max-w-4xl mx-auto text-muted-foreground" style={{ transform: 'translateY(12px)' }}>
             {translations.pages.home?.hero?.subtitle || "Refined short-term residences near Kansas City—designed for calm, comfort, and effortless arrivals."}
           </p>
           <div className="hero-cta-group mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6" style={{ transform: 'translateY(12px)' }}>
@@ -123,7 +126,8 @@ const Hero = () => {
 
       <div className="relative z-30 w-full px-4 pb-8 md:pb-12">
         <div className="hero-search-container max-w-4xl mx-auto" style={{ transform: 'translateY(12px)' }}>
-          {/* <HeroSearch /> */}
+          <HeroSearch />
+
         </div>
       </div>
     </section>

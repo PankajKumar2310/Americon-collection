@@ -20,19 +20,19 @@ const Listings = () => {
       title: translations.pages.home?.featuredListings?.yellowHouse?.title || "The Yellow House",
       descriptor: translations.pages.home?.featuredListings?.yellowHouse?.descriptor || "Relaxed. Family-friendly. Inviting.",
       linkTo: "/listings/yellow-house",
-      imageUrl: "/images/yellowimages/bannerimage.jpg",
+      imageUrl: "/images/yellowimages/maiin.webp",
     },
     {
       title: translations.pages.home?.featuredListings?.americanEstate?.title || "The American Estate",
       descriptor: translations.pages.home?.featuredListings?.americanEstate?.descriptor || "Private. Spacious. Considered.",
       linkTo: "/listings/american-estate",
-      imageUrl: "/images/americonimages/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp",
+      imageUrl: "/images/americonimages/americonmain.webp",
     },
     {
       title: translations.pages.home?.featuredListings?.carriageHouse?.title || "The Carriage House",
       descriptor: translations.pages.home?.featuredListings?.carriageHouse?.descriptor || "Independent. Refined. Effortless.",
       linkTo: "/listings/carriage-house",
-      imageUrl: "/images/carriageimages/175903-461812-hKqN2Rn0xPjXtED3luveAJhggL2vLlIECmIHM6CbNOk-693229fd4baf9.webp",
+      imageUrl: "/images/carriageimages/175903-461812-o04e-oIoJqOkpLUIlIzyPcHbHWMLWMYlANYSIHCH8pk-69322a0174d15.webp",
     },
   ];
 

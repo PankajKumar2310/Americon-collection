@@ -146,7 +146,7 @@ const WorldCup = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="wc-anim">
               <img
-                src="/images/carriageimages/tesla.jpeg"
+                src="/images/americonimages/cybertruck.png"
                 alt="Transportation Options"
                 className="rounded-lg shadow-2xl shadow-black/30 object-cover w-full h-64 md:h-96"
               />

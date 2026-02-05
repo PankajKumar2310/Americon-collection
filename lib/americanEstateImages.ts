@@ -5,7 +5,7 @@ export const getAmericanEstateImages = () => {
     `${baseUrl}/175903-461844-2oUrxBqI-utbbWH2HCCnbNbUs6GfLWBKmGsz--TtrCqE-6932462fd6e75.webp`,
     `${baseUrl}/175903-461844-4FwXbl88jYROXyGDwmPV5GzIbGBpmugh8pgfPxiU6lg-693246396fff5.webp`,
     `${baseUrl}/175903-461844-HBe2Kz9U-jqTajEMLhZth2-OO--jkoESckoWslZnCulM-69324628e341a.webp`,
-    `${baseUrl}/175903-461844-J1-AFmyP3k64DcJMoHexVAhCx-XvJpSN7JEbyKcsRjs-69324663a93ef.webp`,
+    `${baseUrl}/175903-461844-pdoWwixIzOkYijW--MdrVbmA5m3uwT1LUsXGoYegxjb8-6932462b9f9c6.webp`,
     `${baseUrl}/175903-461844-JxqP12ae9iRAbgIYi--tqho6aTXYuWHssz5IkfpKYK0w-6932462412395.webp`,
     `${baseUrl}/175903-461844-O0tM9Ht2xbRFTrKN-qEkLMxGuGUu6j6KZpGW9gWV1fo-69324626d64be.webp`,
     `${baseUrl}/175903-461844-cFy1sGojBydttZ6lsYNWFXoZW1x-fqtauVYrFRG--oFk-69324637d2efc.webp`,

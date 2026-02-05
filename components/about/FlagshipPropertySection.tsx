@@ -48,7 +48,7 @@ const FlagshipPropertySection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="space-y-6 flagship-anim">
               <img 
-                src="/images/yellowimages/175903-457908---WcEPxFSnEI1Atuwy2xw2tgpYznLj9BYjGf2h7aWTvQ-6926510a2997b.webp"
+                src="/images/americonimages/175903-461844-4FwXbl88jYROXyGDwmPV5GzIbGBpmugh8pgfPxiU6lg-693246396fff5.webp"
                 alt="The Americon Estate - Luxury Pool Area"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />
@@ -80,7 +80,7 @@ const FlagshipPropertySection = () => {
             </div>
             <div className="space-y-6 flagship-anim order-1 md:order-2">
               <img 
-                src="/images/carriageimages/175903-461812-BzHVgSWlN9jqT0PMn88a3kWnS4uiDQb9PZBmtU034k4-693229fc0e0f8.webp"
+                src="/images/americonimages/175903-461844-O0tM9Ht2xbRFTrKN-qEkLMxGuGUu6j6KZpGW9gWV1fo-69324626d64be.webp"
                 alt="The Americon Estate - Fire Pit Area"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-xl"
               />
