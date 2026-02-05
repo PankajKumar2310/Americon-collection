@@ -65,7 +65,7 @@ const WorldCupGateway = () => {
                   <Link to="/kcwc26">View Complete Match Schedule</Link>
                 </Button>
                 <Button asChild variant="outline" size="default" className="rounded-full px-6 py-3 text-sm font-sans uppercase tracking-widest">
-                  <Link to="/explore-kc-liberty">Plan Your KC Adventure</Link>
+                  <Link to="/contact">Plan Your KC Adventure</Link>
                 </Button>
               </div>
             </div>

@@ -37,7 +37,7 @@ const Transportation = () => {
 
       <ExploreSection
         title={translations.pages.transportation?.airportAccess?.title || "Airport & Highway Access"}
-        imageUrl="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=3270&auto=format&fit=crop"
+        imageUrl="/images/americonimages/airport.jpeg"
       >
         <p>
           {translations.pages.transportation?.airportAccess?.text || "Located just a 20-minute drive from Kansas City International Airport (MCI), arriving and departing is simple and stress-free. Our properties also provide immediate access to major highways, including I-35 and I-435, connecting you effortlessly to the entire metropolitan area."}
@@ -46,7 +46,7 @@ const Transportation = () => {
 
       <ExploreSection
         title={translations.pages.transportation?.cityNavigation?.title || "Navigating the City"}
-        imageUrl="https://images.unsplash.com/photo-1599577181262-a905a5854643?q=80&w=3270&auto=format&fit=crop"
+        imageUrl="/images/americonimages/navigate.jpg"
         reverse={true}
       >
         <p>
