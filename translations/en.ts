@@ -98,6 +98,67 @@ const en: Translations = {
       viewMoreImages: "View More Images",
       moreImagesCount: "more images"
     },
+    about: {
+      hero: {
+        title: "About The American Collection",
+        subtitle: "Luxury short-term rentals in Kansas City and Liberty, Missouri"
+      },
+      hosts: {
+        title: "Your Hosts",
+        description: "We're Jay and Jenny, Kansas City locals who started hosting with one simple goal: create clean, comfortable spaces that feel good the moment you walk in.",
+        jayBio: "Jay's background in luxury hospitality and attention to detail ensures every property meets the highest standards of quality and comfort. His expertise in property management and guest services creates the foundation for exceptional stays.",
+        jennyBio: "Jenny's passion for design and local culture infuses each property with distinctive character and thoughtful amenities. Her knowledge of the Kansas City area provides guests with insider access to the best experiences the region has to offer."
+      },
+      philosophy: {
+        title: "Our Philosophy: Intentional Hospitality",
+        paragraphs: [
+          "We believe great hospitality starts with intention — not just accommodation. Every detail, from property selection to guest communication, is considered and executed with care.",
+          "Our approach combines Midwest warmth with professional standards, ensuring guests experience both comfort and authentic local character.",
+          "We manage each property as if it were our own home, maintaining them to the highest standards while respecting the privacy and independence of our guests."
+        ]
+      },
+      flagship: {
+        title: "The American Estate: Our Flagship Property",
+        subtitle: "A Resort Experience in a Private Setting",
+        description: "At the heart of The American Collection is The American Estate, our flagship luxury retreat set on three private acres of land. This property represents everything we believe vacation accommodations should be: exceptional, memorable, and designed for creating stories worth telling.",
+        resortTitle: "A Resort Experience in a Private Setting",
+        resortDescription: "The American Estate offers expansive living spaces, premium amenities, and attentive service — all within a private, peaceful setting that feels worlds away from everyday life."
+      },
+      properties: {
+        title: "Our Properties: Curated for Exceptional Experiences",
+        description: "While The American Estate serves as our flagship property, The American Collection includes additional carefully selected homes throughout Liberty and Kansas City suburbs. Each property is selected and prepared with the same attention to detail and commitment to guest experience that define our brand."
+      },
+      values: [
+        {
+          headline: "Comfortable Living Spaces",
+          text: "Well-maintained homes designed to feel welcoming, functional, and easy to settle into."
+        },
+        {
+          headline: "Privacy & Quiet",
+          text: "Peaceful environments that allow guests to truly rest and recharge."
+        },
+        {
+          headline: "Balanced Locations",
+          text: "Homes located close to Kansas City attractions while remaining away from congestion."
+        }
+      ],
+      whyLiberty: {
+        title: "Why Liberty, Missouri?",
+        description: "Our decision to focus on Liberty, Missouri, reflects both personal connection and strategic thinking. Jay and Jenny know Liberty intimately, understanding its character, its strengths, and its appeal to visitors. This local expertise enables them to provide insider guidance that enhances the guest experience."
+      },
+      originStory: {
+        title: "Our Origins",
+        paragraph1: "Our first property, The Carriage House, was our 'start small' moment. Calm, cozy, and classic."
+      },
+      personalityStory: {
+        title: "Our Personality",
+        paragraph1: "Then we designed The Yellow House, and things got fun fast. Bold colors, themed rooms, a whole giraffe mascot… we realized hosting could be equal parts comfort and personality."
+      },
+      lookingAhead: {
+        title: "Looking Ahead: World Cup 2026 and Beyond",
+        description: "FIFA World Cup 2026 represents a transformative moment for Kansas City and The American Collection. As one of the host cities for this global event, Kansas City will welcome hundreds of thousands of visitors from around the world. The American Collection is preparing to play a significant role in ensuring these visitors experience exceptional hospitality and create lasting positive impressions of the United States."
+      }
+    },
     contact: {
       title: "Let's connect.",
       description:
@@ -396,6 +457,11 @@ const en: Translations = {
             ],
           },
         },
+      },
+      worldCupContext: {
+        title: "World Cup 2026 — Calmly Located",
+        body: "Our residences in Liberty offer a refined retreat just a short drive from the heart of the action in Kansas City. Avoid the congestion and enjoy the space, privacy, and amenities of a private home, creating a World Cup experience that is both thrilling and restorative.",
+        cta: "Explore World Cup Stays"
       },
       theExperience: {
         title: "Designed for the Way You Travel",
